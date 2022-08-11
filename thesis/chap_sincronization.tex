@@ -1,0 +1,52 @@
+\chapter{Sincronização}
+
+O uso de equipamentos com função exclusiva de sincronização para coletas simultâneas é comum em pesquisas ambientes academicos e clínicos.
+A proposta de oferecer maior acessibilidade através da redução de custo e desenvolvimento de novas tecnologias encontra, portanto, um desafio a respeito 
+de como realizar a sincronização dos dados fisiológicos sem abrir mão da praticidade e custo dos equiapementos desenvolvidos. 
+Algumas propostas já foram exploradas a respeito, como o uso de piscadas e código temporal para garantir a sincronização de EEG e ET (Bækgaard et al. 2015, Notaro et al. 2018).
+
+\section{Frequência de Coleta}
+Como os sinais análogos são convertidos para sinais digitais, existe uma perda de informação por esta conversão. 
+A \textbf{resolução de frequência} mede o espaço entre duas frequências. 
+
+$$srate/N$$
+
+Srate = sampling rate 
+N = Número de amostras
+
+\subsection{Frequência Nyquist}
+É a frequência mais rápida onde o sinal pode ser medido, onde é estabelecido que a maior frequência que podemos medir é a metade 
+da frequência de coleta.
+
+
+\section{Sincronização com Timecode}
+Notaro et al. (2018) faz uso do código temporal, ou \textit{timecode}, para sincronizar dados de EEG, ET e dados comportamentais 
+coletados de participantes enquanto estes faziam atividades de um site de aprendizagem de linguas. O driver
+do fabricante do equipamento comercial de EEG utilizado permite alteração da latência da coleta de dados, que
+foi modificada do valor padrão de 16 milissegundos para 1 millisegundo, afim de aumentar a precisão do equipamento.
+A informação da ocorrência de clicks no site foi retina na forma de milissegundos (HH:MM:SS:MsMsMs), e esta informação foi utilizada 
+para sincronizar dados de ET, EEG e movimentação de mouse. 
+
+\section{Sincronização com Piscadas}
+Piscadas duram cerca de 200 milissegundos em média e podem indicar estados de alerta (Caffier, 2013). Piscadas também aparecem 
+em dados de EEG de forma característica, podendo alcançar uma amplitude de sinal acima de 200 microvolts em eletrodos próximos a órbita ocular (Hoffmann e Falkenstein, 2008). Assim sendo, é possível realizar uma sincronização por piscadas ao se detectar 
+o movimento em ambos os equiapmentos de coleta. No caso do EEG, as piscadas são comumente descartadas como artefatos indesejáveis. Já no estudo de 
+Bækgaard et al. (2015), elas são a assinatura de sincronização entre os equipamentos de coleta de EEG e ET em função de sua onda característica (geralmente muitos milivolts acima do sinal do EEG), e de também 
+ser detectdo através dos equipamentos de rastreamento ocular.
+
+\subsection{Identificação no Sinal do EEG}
+Para se detectar a piscada através de um sinal, é possível tentar realizar o método de \textit{Independent Component Analysis}, ou análise de 
+componente independente, mas as características do sinal de piscada também permite outras abordagens, como a identificação por função de probabilidade.
+Considerando o movimento de maior característica da piscada, é preferível se calcular a probabilidade do movimento de fechar os olhos 
+ao movimento de abertura, em função de uma variação em tempo ser mais comumente encontrada na fase de abertura (Caffier, 2013).
+
+\subsection{Identificação no Sinal de ET}
+Como o equipamento de rastreamento procura encontrar sinais da movimentação ocular, ele também detecta a ausencia desse sinal. No estudo 
+de Bækgaard et al. (2015), uma perda de até 500 milissegundos foi considerada como indicador da ocorrência de uma piscada. 
+
+\subsection{Correlação Cruzada}
+
+
+\section{Códigos para Sincronização}
+Alguns equipamentos podem se beneficiar da existencia de \textit{toolboxes} ou bibliotecas direcionadas à sincronização. É o caso 
+dos equipamentos Tobbii na solução de EEG-Eye para a linguagem MATLAB. Uma forma de se fazer sincronização é atrav´s 
