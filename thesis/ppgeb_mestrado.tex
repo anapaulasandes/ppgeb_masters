@@ -15,27 +15,27 @@
 % coorientador.
 %  Em  \publicacao{011A/2019}:  o  número  final  será   fornecido   pela
 
-\title{Modelo para dissertações do \\Programa de Pós-Graduação em Engenharia Biomédica}
-\tituloficha{Modelo para dissertações do Programa de Pós-Graduação em Engenharia Biomédica\\\phantom{}[Distrito Federal], 2019.} 
-\titulocapaA{Modelo para dissertações do}
-\titulocapaB{Programa de Pós-Graduação em Engenharia Biomédica}
+\title{Coleta Simultânea de Eletroencefalograma \\ e Rastreamento Ocular: Ferramenta e Estudo de Caso}
+\tituloficha{Coleta Simultânea de Eletroencefalograma e Rastreamento Ocular: Ferramenta e Estudo de Caso\\\phantom{}[Distrito Federal], 2019.} 
+\titulocapaA{Coleta Simultânea de Eletroencefalograma e}
+\titulocapaB{e Rastreamento Ocular: Ferramenta e Estudo de Caso}
 \titulocapaC{}
-\titulofichadois{Modelo para dissertações no Programa de Pós-Graduação em Engenharia Biomédica}
-\author{Claude Shannon}
-\nomeinvertido{Shannon, Claude}
-\orientador{Frank Lauren Hitchcock}
+\titulofichadois{Coleta Simultânea de Eletroencefalograma e Rastreamento Ocular: Ferramenta e Estudo de Caso}
+\author{Ana Paula Sandes de Souza}
+\nomeinvertido{Souza, Ana}
+\orientador{Dr. Gerardo Antonio Idrobo Pizo}
 %\coorientador{Nome do Coorientador}
-\publicacao{011A/2019}
-\data{julho de 2019}
-\ano{2019}
-\areaum{Radioterapia} % Preencher com termos escolhidos para identificar a área
-\areadois{Radioterapia de Intensidade Modulada (IMRT)}
-\areatres{Dosimetria}
-\areaquatro{Controle de qualidade}
-\endereco{email-do-candidato@unb.br}
-\cep{CEP xxxxx-xxx}
+\publicacao{011A/2022}
+\data{Agosto de 2022}
+\ano{2022}
+\areaum{Neurociência Computacional} % Preencher com termos escolhidos para identificar a área
+\areadois{Eletroencefalograma}
+\areatres{Rastreamento Ocular}
+\areaquatro{Sincronização de Sinais}
+\endereco{anapaulasandes.s@gmail.com}
+\cep{CEP 73105-904}
 
-\membrobancainterno{Dr. Membro Interno}
+\membrobancainterno{DRª. Marília Miranda Forte Gomes}
 \membrobancaexterno{Dr. Membro Externo}
 %---}}}
 
@@ -196,15 +196,11 @@ urlcolor = blue
 \acresetall % Manter essa linha!
 \vspace{12pt}
 
-Texto do resumo.
-
-Esta seção deve sintetizar todo o trabalho, incluindo a definição do problema de pesquisa, os objetivos, a metodologia, resultados e conclusão. Note que não se trata, portanto, apenas de uma visão geral do trabalho, mas de um resumo de toda a dissertação.
-
-O resumo pode ser dividido em parágrafos. A especificação de resumo em parágrafo único é comum a artigos de congressos e de periódicos, mas em dissertações e teses é permitida, dependendo do programa, a divisão em parágrafos.
+O eletroencefalograma (EEG) e o rastreamento ocular (ET) oferecem formas não-invasivas de se observar o comportamento do sistema nervoso e são importantes ferramentas na construção de bases de dados fisiológicos. O custo dos equipamentos de coleta e a sincronização dos dados coletados constituem gargalos na construção de datasets multimodais. Diferentes estudos relacionam a integração de dados fisiológicos a um maior poder classificatório em algoritmos de aprendizado supervisionado. O presente estudo observa os mais recentes métodos de sincronização de equipamentos de coleta e dados para a construção de datasets multimodas de EEG e ET, além de propor uma ferramenta de coleta simultânea de baixo custo que auxilie na construção de bases de dados fisiológicos. É esperado que uma forma acessível de construção de bases de dados multimodais incentive o desenvolvimento de novos algoritmos de aprendizado de máquina, e auxilie na criação de uma maior quantidade de datasets fisiológicos disponíveis para estudos futuros. 
 
 \vspace{14pt}
 
-\noindent{\textbf{Palavras-chave: }}inclua aqui as palavras-chave.
+\noindent{\textbf{Palavras-chave: }} EEG; ET; Sincronização; Base de Dados Fisiológicos;
 \acresetall % Manter essa linha!
 \clearpage
 \restoregeometry
@@ -213,15 +209,11 @@ O resumo pode ser dividido em parágrafos. A especificação de resumo em parág
 \acresetall % Manter essa linha!
 \vspace{24pt}
 
-Translation of the previous page into English.
-
-Here you can also divide the text into paragraphs.
-
-Do not overuse the passive voice. You should use the first person when describing what you developed yourself.
+Electroencephalogram (EEG) and eye tracking (ET) are non-invasive ways of observing the nervous system behavior and are important tools in the construction of physiological databases. The equipment cost and synchronization of data are bottlenecks in the multimodal dataset construction. Studies relate physiological data integration to a higher classification accuracy in supervised learning algorithms. This study observes the latest methods of synchronizing data for building multimodal EEG and ET datasets trough the usage of commercially available equipment. It is expected that an affordable way of building multimodal databases will encourage the development of new machine learning algorithms, and increase the amount of physiological datasets available for future studies.
 
 \vspace{14pt}
 
-\noindent{\textbf{Keywords: }}include the keywords here.
+\noindent{\textbf{Keywords: }} EEG; ET; Synchronization; Physiological Dataset;
 \acresetall % Manter essa linha!
 
 \indice
@@ -251,58 +243,62 @@ Do not overuse the passive voice. You should use the first person when describin
 
 \chapter{Introdução}
 
-A introdução deve apresentar uma contextualização sobre o tema de pesquisa, culminando nas lacunas de pesquisa e na definição de uma proposta científica diante destas lacunas. Esclareça seus objetivos de pesquisa, deixando claras as hipóteses e perguntas científicas.
+Existe uma importante vantagem advinda do uso de bases fisiológicas chamadas multimodais, ou de mais de um tipo de dado fisiológico em algoritmos supervisionados: a possibilidade de conferir um maior poder classificatório em relação aos datasets unimodais (Kang et al., 2020; Thapaliya et al., 2019). Sobre os benefícios já alcançados com estes datasets, é possível citar: melhora de diagnóstico de transtornos neurológicos, como depressão e autismo (Kang et al., 2020; Thapaliya et al., 2019; Wu et al., 2021), maior poder de classificação de emoções (Guo et al., 2019; Zheng et al., 2019;  Lu et al, 2015; Zheng et al., 2014), e uma maior compreensão da ativação de mecanismos nervosos durante atividades de rotina, como leitura (Hollenstein et al., 2018). Um modelo específico de dataset fisiológico multimodal é constituído do eletroencefalograma (EEG) e rastreamento ocular (RO ou ET, da palavra em inglês Eye Tracking). Seu uso no treinamento de algoritmos classificatórios atestou sua aplicabilidade em diferentes contextos clínicos e acadêmicos, além de um aumento de acurácia na classificação de diferentes doenças nervosas e de emoções. 
 
-Se você deseja que o primeiro parágrafo de cada seção também tenha indentação, inclua no preâmbulo o comando \verb,\usepackage{indentfirst},.
+%Se você deseja que o primeiro parágrafo de cada seção também tenha indentação, inclua no preâmbulo o comando \verb,\usepackage{indentfirst},.
 
-Organize o texto em seções bem dimensionadas. Escreva de forma objetiva, usando conceitos claros e evitando comparações de caráter subjetivo. Evite frases muito longas.
+\section{Contextualização de Problema}
 
-A escolha dos títulos das seções cabe ao autor, mas é comum haver uma seção especificamente para os objetivos, frequentemente dividida em uma subseção \emph{objetivo geral} e uma subseção \emph{objetivos específicos}, conforme ilustrado a seguir. É comum que haja uma ou mais seções antes disso para contextualização, definição do problema científico, proposta de pesquisa.
+Apesar das múltiplas vantagens, o acesso a estes datasets ainda é restrito. Sobre a coleta de EEG e ET, Kastrati et al. (2021) comenta:
 
-\section{Observações Sobre Citações}
 
-Cada afirmação no texto deve ser embasada na literatura científica, com um uma citação ao final da afirmação (não só ao final do parágrafo), ou em argumentos ou dados próprios.
+\textit{“Coletar e classificar dados simultâneos de EEG e de rastreamento ocular é demorado e caro, pois requer equipamento e experiência para aquisição de EEG e rastreamento ocular. Portanto, o acesso a dados de EEG-ET gravados simultaneamente é altamente restrito, o que retarda significativamente o progresso neste campo”. – Kastrati et al. (2021).}
 
-No caso da citação de um texto da literatura, não copiar o texto; \textbf{mesmo com a indicação da referência, isso constitui plágio}. Cópias de texto podem ser usadas em casos específicos (por exemplo, na discussão de textos literários ou na apresentações de definições técnicas consagradas), mas isso exige que seja usado um formato específico de transcrição (texto indentado, em itálico, com indicação explícita de que se trata de texto de outro autor).
+A redução do custo das coletas fisiológicas já vem sido abordada através de equipamentos comercialmente disponíveis. Um exemplo é o desenvolvimento de “smart watches”, pequenos computadores de pulso que permitem o acompanhamento da frequência cardíaca do usuário, além do monitoramento de outras atividades fisiológicas, como o sono. O Mindwave Mobile 2, do fabricante Neurosky®, é um exemplo de equipamento comercial que possibilita a captura de ondas cerebrais e métricas próprias do fabricante utilizadas para estimar medidas de atenção, meditação e a captura de piscadas dos usuários. Este equipamento permite o desenvolvimento de aplicações na forma de jogos interativos, neurofeedback e outras aplicações lúdicas (Neurosky). A respeito de seu uso em pesquisas científicas, ele já foi utilizado para estimar quais métodos de ensino despertavam maior atenção em alunos do ensino fundamental, estimar personalidade de participantes através da apresentação de vídeo clips eleitos para instigar um determinado traço de personalidade, e classificação de emoções. Além deste equipamento para coleta de EEG, também existem equipamentos disponíveis comercialmente para a coleta de ET, como o GP3 (Gazepoint®). 
 
-Ao citar outros trabalhos, dê preferência a artigos científicos, de periódicos fortes na área de pesquisa. Durante a definição do problema de pesquisa, é importante que sejam incluídas referências recentes (ainda que haja, também, referências mais antigas).
 
-Você pode escolher um dos seguintes formatos para citação:
-\begin{enumerate}[a)]
-\item Citação pelo número da referência entre colchetes, conforme o exemplo a seguir~\cite{Kachuee2017}. Neste caso, os itens das lista de referências devem ser também numerados, com o número entre colchetes ao início de cada item. Os itens devem aparecer na lista em ordem alfabética do nome de família de cada autor. Nomes de instituições têm a ordem definida pelo nome inicial. Veja o exemplo no final deste modelo; cabe observar que é errada a ideia de que no caso de citações por número a lista de referências é sempre ordenada pela ordem de citação. Há ordenação pela ordem alfabética, como adotado pelo PPGEB e diversos outros programas, e por ordem de citação, como adotado por vários periódicos em que o número de citações é tipicamente bem menor.
-\item Citação por autor e ano, conforme o exemplo a seguir~(Galahabi, 2017). Neste caso, o autor e ano aparecem entre parênteses, e a lista de referências não é numerada. Novamente os itens aparecem em ordem alfabética do nome da família de cada autor. Nomes de instituições têm a ordem definida pelo nome inicial. No caso de mais de um trabalho do mesmo autor no mesmo ano, inclua uma letra minúscula para diferenciá-los.
-\end{enumerate}
+Com o propósito de aumentar a acessibilidade aos datasets multimodais e suas amplas vantagens de uso, o presente projeto tem por objetivo a criação de uma ferramenta de coleta simultânea de EEG e RO acessível a partir da coleta de dados de dois equipamentos comerciais – GP3 para a coleta de RO, e Mindwave Mobile 2 para a coleta de dados de ativação neuronal. A ferramenta terá como output um dataset constituído de dados de EEG e RO coletados simultaneamente. O output será testado em um estudo de caso através da análise de performance de quatro diferentes algoritmos classificatórios treinados com o output para classificar entre duas possíveis atividades. 
 
-Em LaTeX, para fazer uma citação use o comando \verb|\cite|, da seguinte forma. Após a informação a ser referenciada, coloque \verb|~\cite{chave}|, sendo \verb|chave| o identificador da referência a ser citada, conforme consta do arquivo \verb|referencias.bib|. Aqui, \verb|~| representa um espaço não-separável (não coloque caracter de espaço antes de \verb|~|). Veja os exemplos a seguir.
-
-Uma primeira citação~\cite{Kachuee2017}. A lista de referências está em ordem alfabética, e neste exemplo o primeiro trabalho citado não é o primeiro da lista (não foi utilizada ordem de citação; coloque suas referências em ordem alfabética).
-
-Segue um exemplo de citação~\cite{Gabriel2017}.
-
-Outro exemplo~\cite{Ghahabi2017}.
-
-Para citar vários trabalhos num mesmo ponto do texto, faça como neste exemplo~\cite{Kachuee2017,Gabriel2017,Ghahabi2017}.
-
-Para símbolo de percentagem, utilize uma barra invertida antes (ou use o comando percent definido no preâmbulo). Exemplo: 37\percent.
-
-\section{Observações Sobre o Uso de Siglas}
-
-Quanto às siglas: sempre usar por extenso no primeiro uso, e colocar (no primeiro uso) a sigla entre parênteses. A partir do segundo uso, a sigla pode ser usada. Mas definições eventuais que tenham sido usadas no resumo não contam para o restante do texto, ou seja, se uma sigla foi definida e usada no resumo, ainda assim ela deve ser redefinida no primeiro uso após o resumo. Há comandos em LaTeX que facilitam esses procedimentos, conforme mostrado a seguir.
-
-Exemplo de uso sigla. No serviço de radioterapia, o \ac{CQ} deve ser realizado segundo a norma XX/XX. O \ac{CQ} é normalmente acompanhado... 
-
-A \ac{3DCRT} é normalmente usada... No Brasil, a \ac{3DCRT}...
-
-Segundo a \ac{AAPM}, há duas formas... Essa orientação da \ac{AAPM} começou em...
-
-O \ac{SPT} é um programa que permite o cálculo... Todo tratamento de radioterapia é baseado no \ac{SPT}.
 
 \section{Objetivos}
-\subsection{Objetivo Geral}
+
+Criar uma ferramenta capaz de gerar um dataset de EEG e ET coletado de forma síncrona e validar o dataset através da performance de algoritmos de aprendizado supervisionado treinados com ele.
 
 \subsection{Objetivos Específicos}
 
-(Incluir as seções que se façam necessárias).
+\begin{enumerate}
+    \item Criar código para coleta simultânea de EEG e RO;
+    \item Criar dataset multimodal a partir da fusão de dados de EEG e RO coletados pela ferramenta e classificado de acordo com o estímulo apresentado ao participante;
+    \item Treinar diferentes algoritmos supervisionados com o dataset multimodal gerado;
+\end{enumerate}
+
+\section{Justificativa}
+Apesar da existência de técnicas que permitam a extração de mais de um modo de dados fisiológicos a partir de um equipamento apenas - como a extração da posição ocular a partir de assinaturas elétricas em dados de EEG, estes métodos necessitam de um grande volume de dados, o que exige equipamentos mais refinados e, por vezes, uma grande disponibilidade de tempo para criação dos datasets e deslocamento de participantes até a estação de coleta. A coleta de ET e EEG por equipamento comercial e acessível, seria, portanto, uma alternativa que permite um maior controle no desenvolvimento de estudos com algoritmos de aprendizado de máquina, sem depender de equipamentos de alto custo ou deslocamento de participantes até a estação. 
+
+
+É argumentado que um maior acesso a construção de bases de dados multimodais poderá expandir e aprofundar os avanços em neurociência e estudos comportamentais, ao proporcionar um maior controle do design de experimento e expandir a quantidade de datasets fisiológicos gerados. 
+
+\section{Organização do Documento}
+O presente texto tem nove capítulos. O primeiro capítulo trata da contextualização do problema, objetivos gerais e específicos, e a justificativa para a abordagem selecionada. 
+
+O segundo capítulo trata do referencial teórico, levantando pontos históricos importantes ao desenvolvimento desta pesquisa, uma introdução ao que seriam os sinais capturados pelos dois equipamentos de EEG e ET, características dos diferentes tipos de equipamento de captura e aborda a conversão de sinais analógicos para digital. 
+
+O terceiro capítulo trata do processo da aquisição e do tratamento de sinais fisiológicos a serem classificados por algoritmos de aprendizado de máquina supervisionado – processos como remoção de ruído e seleção de características. Também aborda métodos de fusão de bases de dados de diferentes fontes - a nível de característica e a nível de decisão. 
+
+O quarto capítulo apresenta os métodos de avaliação dos algoritmos classificatórios. 
+
+O quinto capítulo aprofunda nos possíveis métodos de sincronização de coleta e de bases de dados.
+
+O sexto capítulo introduz a proposta de ferramenta de coleta simultânea elaborada por código e aborda o método de sincronização off-line, com sincronização por código temporal. 
+
+O sétimo capítulo aborda o cronograma.
+
+O oitavo capítulo aborda os resultados esperados do estudo.
+
+
+O nono capítulo apresenta as referencias do estudo.
+
+\include{chap_series_temporais.tex}
 
 \include{chap_sincronization.tex}
 

@@ -2,46 +2,47 @@ This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ppgeb_mestrado.aux
 The style file: plain.bst
+A level-1 auxiliary file: chap_series_temporais.aux
 A level-1 auxiliary file: chap_sincronization.aux
 Database file #1: referencias.bib
-You've used 6 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            544 strings with 5522 characters,
-and the built_in function-call counts, 1773 in all, are:
-= -- 178
-> -- 81
+            522 strings with 4884 characters,
+and the built_in function-call counts, 679 in all, are:
+= -- 67
+> -- 27
 < -- 0
-+ -- 32
-- -- 26
-* -- 129
-:= -- 318
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 31
++ -- 11
+- -- 8
+* -- 35
+:= -- 135
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 63
-empty$ -- 132
-format.name$ -- 26
-if$ -- 352
+cite$ -- 3
+duplicate$ -- 30
+empty$ -- 51
+format.name$ -- 8
+if$ -- 133
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 5
-newline$ -- 33
-num.names$ -- 12
-pop$ -- 27
+int.to.str$ -- 3
+missing$ -- 2
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 15
 preamble$ -- 1
-purify$ -- 25
+purify$ -- 10
 quote$ -- 0
-skip$ -- 39
+skip$ -- 17
 stack$ -- 0
-substring$ -- 105
-swap$ -- 6
+substring$ -- 15
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
+type$ -- 10
 warning$ -- 0
-while$ -- 18
-width$ -- 7
-write$ -- 69
+while$ -- 6
+width$ -- 4
+write$ -- 36

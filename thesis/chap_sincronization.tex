@@ -16,11 +16,11 @@ N = Número de amostras
 
 \subsection{Frequência Nyquist}
 É a frequência mais rápida onde o sinal pode ser medido, onde é estabelecido que a maior frequência que podemos medir é a metade 
-da frequência de coleta.
+da frequência de coleta.s
 
 
 \section{Sincronização com Timecode}
-Notaro et al. (2018) faz uso do código temporal, ou \textit{timecode}, para sincronizar dados de EEG, ET e dados comportamentais 
+Notaro et al. (2018) faz uso do código temporsal, ou \textit{timecode}, para sincronizar dados de EEG, ET e dados comportamentais 
 coletados de participantes enquanto estes faziam atividades de um site de aprendizagem de linguas. O driver
 do fabricante do equipamento comercial de EEG utilizado permite alteração da latência da coleta de dados, que
 foi modificada do valor padrão de 16 milissegundos para 1 millisegundo, afim de aumentar a precisão do equipamento.
@@ -42,11 +42,21 @@ ao movimento de abertura, em função de uma variação em tempo ser mais comume
 
 \subsection{Identificação no Sinal de ET}
 Como o equipamento de rastreamento procura encontrar sinais da movimentação ocular, ele também detecta a ausencia desse sinal. No estudo 
-de Bækgaard et al. (2015), uma perda de até 500 milissegundos foi considerada como indicador da ocorrência de uma piscada. 
+de Bækgaard et al. (2015), uma perda de até 500 milissegundos foi considerada como indicador da ocorrência de uma piscada. No equipamento de coleta de ET GP3, 
+o fabricante oferece uma forma de identificar a existencia de uma piscada. Ela ocorre através da propriedade Blinking Validation Flag, ou BKID, onde qualquer 
+valor diferente de 0 indica ocorrência de piscada durante o timeframe. A extração de piscada através do BKID foi utilizada no estudo de Seha et al. (2019), 
+onde o blink rate foi validado e sincronizado com o vídeo do próprio equipamento (que indica quando houve piscada através da ausencia da imgem dos olhos do usuário).
 
-\subsection{Correlação Cruzada}
+\section{Correlação Cruzada}
+A correlação cruzada procura calcular a similaridade entre dois sinais com a aplicação de um \textit{delay} em apenas um dos sinais.
+Para correlacionar assinaturas diferentes, as probabilidades de ocorrencia de um evento (piscada) em duas séries temporais são convertidas em uma mesma frequência amostral (Bækgaard et al., 2014).
+A similatidade entre sinais é medida na amplitude do sinal da correlação. A correlação cruzada é definida como:
+\begin{equation}\label{eq:correlação cruzada}
+    (f * g) = f(-t)*g(t), 
+    \end{equation}
+onde * significa convolução e f(-t) é o conjugado complexo de f(t).
 
 
 \section{Códigos para Sincronização}
 Alguns equipamentos podem se beneficiar da existencia de \textit{toolboxes} ou bibliotecas direcionadas à sincronização. É o caso 
-dos equipamentos Tobbii na solução de EEG-Eye para a linguagem MATLAB. Uma forma de se fazer sincronização é atrav´s 
+dos equipamentos Tobbii na solução de EEG-Eye para a linguagem MATLAB. Uma forma de se fazer sincdronização é através 
