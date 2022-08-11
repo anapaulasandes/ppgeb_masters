@@ -2,13 +2,13 @@
 
 \section{Proposta de Ferramenta}
 
-Dois equipamentos serão utilizados para construção da ferramenta de coleta sincronizada: Mindwave Mobile 2 da Neurosky Inc. e o
+Dois equipamentos serão utilizados para construção da ferramenta de coleta sincronizada: Mindwave Mobile II da Neurosky Inc. e o
 GP3 da Gazepoint Inc., para a coleta de EEG e ET, respectivamente. Um código será construído de forma a permitir a coleta 
 síncrona do movimento ocular e das ondas cerebrais pelos dois equipamentos comerciais. 
 No presente capítulo as ferramentas serão apresentadas no que diz respeito às suas principais características, 
 e especificidades do código de coleta serão apresentadas.
 
-\subsection{Mindwave Mobile II}
+\section{Mindwave Mobile II}
 O equipamento (representado na figura 6.1) possui um eletrodo de coleta e um eletrodo de referência que ficam posicionados 
 acima da sobrancelha esquerda e na orelha esquerda do participante, respectivamente. 
 A posição do eletrodo de coleta em relação ao sistema de referência de posição de eletrodos (10-20), é o FP1, 
@@ -22,17 +22,55 @@ Também mede a ativação muscular próxima ao eletrodo para estimar a qualidade
 O MindWave Mobile filtra interferência elétrica e converte o sinal detectado pelo eletrodo em sinal digital. 
 O chip que faz o filtro e conversão se chama ThinkGear, e permite a filtragem de ruído para interferência ativação muscular (EMG) e 50/60Hz de corrente alternada. 
 
-\subsection{Gazepoint GP3}
+\section{Gazepoint GP3}
+
 O GP3 é um equipamento comercial de coleta do movimento dos olhos, 
 fabricado pela Gazepoint Inc (representado na figura 6.2). Possui software próprio para análise dos dados, 
-além de ser possível realizar coleta de dados com linguagens de programação open-source. 
-Coleta em uma frequência de 60Hz, com 0.5 a 1 grau de acurácia do ângulo visual e cinco a nove 
-pontos para ajuste do ponto focal (Gazepoint Inc.). Consiste em dois cabos USBs, um tripé próprio e a câmera de gravação do olhar (Figura 1). 
-
-O GP3 funciona emitindo uma luz infravermelha (IR) 
+além de ser possível realizar coleta de dados com linguagens de programação open-source. O GP3 funciona emitindo uma luz infravermelha (IR) 
 diretamente nos olhos do participante e captando a reflexão da luz para localizar o ponto focal ao longo do tempo. 
 Permite coletar a direção do olhar, número de fixações, tempo até a primeira fixação, taxa de piscadas,
  duração de piscadas, diâmetro da pupila, tempo de duração do olhar em um determinado ponto focal, 
  objetos observados em uma imagem, entre outros (Gazepoint Inc.).
+
+
+\subsection{Especificações GP3}
+
+O Gazepoint GP3 estabelece sua conexão com o computador através de dois cabos USB - um cabo de energia e outro para dados.
+Seu posicionamento ideal é logo abaixo do monitorde estímulo. Para um melhor posicionamento, o fabricante 
+sugere uma distância ideal de 65 cm dos olhos do participante até o equipamento. O GP3 possui as seguintes características:
+
+\begin{itemize}
+    \item Acurácia de 0.5-1 grau de ângulo visual
+    \item 60 Hz de frequencia de atualização
+    \item calibração de 5 e 9 pontos
+    \item API
+    \item Captura movimento de 25cm horizontais e 11cm verticais
+    \item 15 cm de limite de profundidade de movimento
+\end{itemize}
+
+Para poder realizar a coleta dos dados, é necessário manter o Gazepoint Control (API do desenvolvedor) ligado. 
+
+\subsection{Calibração GP3}
+Uma calibração é realizada pela própria API do equipamento, afim de estabelecer qual o apontamento ocular do participante. 
+A calibração pode ser feita em 5 pontos ou 9 pontos no monitor de exibição de estímulo. Os pontos na tela são apresentados
+em sequencia e o participante deve acompanha-los com o olhar até a finalização da calibração. 
+
+Após a calibração ser concluída, a API calcula o erro do sistema em relação ao olhar para o olho esquerdo (em verde) 
+e direito (vermelho). 
+
+\subsection{Dados Capturados pelo GP3}
+
+\textbf{Fixação} É um agrupamento de pontos focais do olhar que duram entre 20-300 ms (Brand, 2020).
+
+\textbf{Gaze Point} Gaze point é o ponto focal do usuário em um dado momento. No equipamento GP3 é gravado um ponto focal a cada aproximadamente 17 milisegundos.
+O ponto de gaze é gravado em relação as coordenadas x e y, que servem para identificar a posição do olhar na tela de experimento. 
+
+\textbf{Sacada} A sacada compreende a um movimento rápido dos olhos após a fixação.
+
+\subsection{Avaliação da Qualidade dos Dados}
+\textbf{Acurácia}
+\textbf{Precisão}
+
+
 
 \subsection{}
