@@ -1,0 +1,77 @@
+\chapter{Aplicação de Datasets Fisiológicos}
+
+O pré-processamento de EEG consiste em remoção de artefatos, 
+tais como contração muscular e movimentação ocular.
+Um exemplo de pipeline de processamento para dados de EEG é apresentado na figura 3.3.
+A etapa de extração de características consiste em, partindo dos dados com 
+remoção de artefatos indesejáveis, extrair métricas estatísticas, como média, 
+mediana e desvio padrão aplicados a uma janela de tempo, ou outras métricas, como entropia de Shannon 
+(como feito no estudo de Thapaliya et al. (2019)). A seleção de features pode 
+envolver o uso de algoritmos que permitem reduzir o número de características a 
+serem apresentadas como input ao algoritmo, como o Principal Componen Analysis (PCA).
+ A partir dessas etapas, os dados seguem são comumente divididos entre treinamento e 
+ teste, para validar o algoritmo ou algoritmos a serem estudados. 
+ O estudo de King et al. (2017) apresenta alguns exemplos de informações que podem ser extraídas de sinais fisiológicos capturados por sensores no quadro 3.1.s
+
+\section{Avaliação de Algortimos}
+
+Após entender como deverá ser realizado o pré-processamento dos dados fisiológicos multimodais e sua união, 
+é necessário entender de qual forma a avaliação do melhor método de sincronização será realizada. 
+No presente estudo, o objetivo esperado é de se encontrar o melhor
+método de integrar os dados multimodais como sendo aquele que obtêm uma maior acurácia dentre os 
+algoritmos selecionados. O presente capítulo introduz o conceito de classificadores lineares,
+não lineares e das métricas de avaliação de algoritmos classificatórios.
+
+
+Algoritmos classificatórios
+podem ser lineares ou não lineares. 
+Classificadores lineares conseguem separar 
+as categorias de dados em uma reta no espaço vetorial, seja ela com uma ou mais dimensões (reta, plano ou hiperplano). Um exemplo do que seriam dados linearmente separáveis e não podem ser observados na figura 4.1.
+Alguns algoritmos classificatórios bastante utilizados são introduzidos adiante. Para problemas mais complexos,
+é comum o uso de algoritmos que classifiquem dados não lineares, como o Support Vsector Machine (SVM), K-Nearest Neightbor (KNN), 
+Rede Neural Artificial (ANN) e Regressão Logística (RL).
+
+Para a avaliação do algoritmo, a acurácia e precisão oferecem métricas para avaliar o erro observado do output (ou resultado) do modelo. 
+Para isso, é necessário saber o valor real e o valor estimado pelo algoritmo classificatório. 
+A acurácia mede a proximidade de um determinado valor e o valor de referência (ou valor real) (equação 4.1). 
+A precisão mede a dispersão dos valores obtidos pelo modelo (equação 4.2). Um bom algoritmo é preciso e possui alta acurácia. 
+
+A performance de algoritmos classificatórios pode ser 
+melhor observada através de uma matriz de confusão. 
+Esta matriz permite observar onde o algoritmo mais erra, se em 
+classificar verdadeiros positivos ou verdadeiros negativos. 
+A matriz do exemplo é utilizada para classificadores binários,
+embora uma versão desta matriz possa ser utilizada para classificadores multicategóricos. 
+
+
+Em seu estudo sobre o uso de algoritmos para classificação de emoções a partir de dados fisiológicos, Zheng et al. (2014) coletou dados de dilatação da pupila, movimentação ocular e EEG para identificar qual seria a classificação do estímulo emocional apresentado aos participantes. O processo de coleta do estudo pode ser observado na figura 2. A classificação do estímulo apresentado (vídeo clips de 4 minutos de duração) obteve acurácia máxima de 73.59% de dados coletados em 12 sessões de experimento, onde, em cada sessão, os 5 participantes assistiram a 15 vídeos (5 de emoção neutra, 5 de positiva e 5 de negativa). 
+ 
+Figura 5.4. Design de Experimento para Coleta de EEG e ET. Fonte: Zheng et al. (2014).
+
+Lu et al. (2015) também faz uso de dados de EEG e RO para classificação de emoções nas três valências emocionais eleitas no estudo de Zheng et al. (2014). Em contraste com o volume de informações coletadas no estudo de Zheng et al., Lu et al. coletam uma maior quantidade de dados de rastreamento ocular – extraindo 16 métricas de RO, enquanto o estudo de Zheng foca em apenas métricas principais da dilatação ocular. Os resultados da acurácia do algoritmo aplicado aos diferentes métodos de fusão de dados multimodais estão resumidos na imagem 5.5, ficando evidente que, independente do método utilizado para fusão das modalidades de EEG e RO, as melhores acurácias foram encontradas para base de dados de mais de uma fonte de informação fisiológica. 
+ 
+Figura 5.5. Acurácia por Método de Fusão de Modalidade e Modalidade Única em Algoritmo Supervisionado. Fonte: Lu et. al. (2015).
+No trabalho de Thapaliya et al. (2019) dados de EEG e ET foram aplicados em algoritmos de máquina, com o objetivo de estudar uma melhora no método de diagnóstico de crianças com autismo através de diferentes formas de pré-processamento (exemplo de processamento do estudo na figura 5.6). Os dados de EEG tiveram suas métricas estatísticas coletadas para a construção de um vetor de características (incluindo desvio padrão e média por janela de tempo dos dados de EEG filtrados), assim como a entropia calculada por janela temporal. Para os dados de RO, os tempos de fixação foram coletados, em conjunto com o resultado de testes cognitivos. 
+ 
+Figura 5.6. União de dados de EEG e ET. Fonte: Thapaliya et al. (2019).
+Em seu estudo, diferentes métodos de construção de vetores de características foram analisados, tanto para os dados unimodais quanto para a junção de EEG e ET. Através das acurácias apresentadas para os diferentes métodos de processamento, podemos observar que determinados algoritmos aumentaram sua acurácia a depender do modo no qual o vetor de características foi construído. Por exemplo, enquanto o algoritmo Support Vector Machine (SVM) atingiu 71% de acurácia com o vetor que incluiu Entropia para as janelas de EEG e uso do Principal Component Analysis (PCA), a regressão logística com maior acurácia foi atingida com o dataset de desvio padrão de EEG e dados de rastreamento ocular sem a aplicação de PCA (Thapaliya et al., 2019). 
+Lim e Chia (2015), estudaram a correlação de ondas EEG detectadas em um equipamento de eletrodo único e estresse cognitivo induzido pelo teste de Stroop. A análise foi feita com base na aplicação de três algoritmos: Artificial Neural Network, k-Nearest Neighboor (KNN) e Linear Discriminant Analysis (LDA), dos dados de EEG transformados pela aplicação da Transformação Cosseno Discreta (Discrete Cosine Transform – DCT). O KNN com o DCT conseguiu classificar melhor o estado de estresse do participante.
+O uso do MindWave Mobile 2 foi recentemente empregado para o controle de cadeira de rodas (Abuzaher e Al-Azzeh, 2021; Permana et al., 2019), controle de mão robótica e robô móvel (Purnamasari et al., 2019; Rusanu et al., 2019; Rușanu et al., 2021) e predição de personalidade (Bhardwaj et al., 2021). Outro estudo com uso de eletrodo único como fonte de dados eletrofisiológicos foi o trabalho de Quesada-Tabares et al. (2017), onde foi demonstrado que o uso de EEG comercial e com eletrodo único também possui um importante poder classificatório quando aplicado em algoritmos. Em seu estudo, sete participantes observaram imagens selecionadas do International Affective Picture System (IAPS) pertencentes a três grupos com diferentes valores de valência e excitabilidade. O teste de ANOVA aplicado indicou uma diferença estatisticamente significante entre os sets de imagens. Um segundo teste foi conduzido pela aplicação de um algoritmo de classificação no estilo árvore de decisão, chegando a uma acurácia média entre os sete participantes de 80.71%. Os estudos foram analisados pelo MATLAB.
+Bos (2021) também explora o uso do MindWave no contexto escolar para medir a atenção dos alunos. Em seu estudo, o nível de atenção com alunos assistindo a um vídeo educacional sem e outro com interações (fazendo pergunta aos alunos) é explorado e a distribuição percentual das diferentes bandas de frequência são comparadas entre os grupos. Bos (2021) observou uma relativa diminuição banda de frequência de onda beta para o grupo que não assistiu ao vídeo interativo, o que foi relacionado a um processamento cognitivo reduzido e menor atenção.
+Bhardwaj et al. (2021) analisou o uso dos dados coletados com o MindWave para classificar sete traços de personalidade com o algoritmo deep long short term memory (DeepLSTM) e tratando os dados com transformada de Fourier Rápida. A pesquisa contou com 50 participantes (25 mulheres e 25 homens), com idades entre 18 e 46 anos, ao longo de cinco dias, e os dados foram coletados enquanto os participantes assistiam vídeos relacionados a traços de personalidade. Os traços foram separados de acordo com os tipos de personalidade definidos no Myers-Briggs Type Indicator, e ao final de cada vídeo, o participante deveria dizer se concordavam, discordavam ou eram neutros aos questionários de personalidade sobre o traço proeminente no estímulo. O questionário de cada participante foi utilizado para determinar o traço de personalidade, que serviria para então classificar os dados em três possíveis outputs: (a) participante tem traço de personalidade apresentado no vídeo, (b) participante não tem traço apresentado de forma significativa e (c) participante tem traço oposto ao apresentado no vídeo. 
+5.6 CONSIDERAÇÕES FINAIS
+Datasets multimodais tendem a performar melhor em algoritmos classificatórios que datasets unimodais. 
+A forma de processamento dos dados também pode ter impactos na performance classificatórias dos algoritmos. 
+Equipamentos comerciais já foram previamente utilizados em estudos de algoritmos classificatórios. 
+É esperado que um método de fusão eficiente reflita em uma maior acurácia dos algoritmos treinados no dataset. 
+Para comparar a eficácia de um determinado método de construção de bases de dados, 
+cada uma das bases geradas no presente projeto terá a acurácia calculada e comparada com as demais bases de dados.
+
+
+
+
+
+Outra forma de avaliação é através da curva ROC, 
+ou Característica de Operação do Receptor. A curva é obtida a
+o se observar a variação da taxa de verdadeiros positivos (sensibilidade, ou Positivos Verdadeiros / Positivos Totais) em função de 1 – 
+especificidade, ou taxa de falsos positivos (Positivos Falsos / Negativos Totais). 

@@ -298,57 +298,19 @@ O oitavo capítulo aborda os resultados esperados do estudo.
 
 O nono capítulo apresenta as referencias do estudo.
 
+\include{chap_eletricidade_cerebral.tex}
+
+\include{chap_rastreamento_ocular.tex}
+
 \include{chap_series_temporais.tex}
 
 \include{chap_sincronization.tex}
 
-\chapter{Fundamentação Teórica}\label{chap:FT}
+\include{chap_acesso_a_datasets.tex}
 
-Este capítulo pode ter outro nome, e na verdade sugiro um nome mais específico (indique no título sobre o que trata a fundamentação em questão).
+\include{chap_uso_datasets_em_aprendizado_maquina.tex}
 
-Inclua as seções que se façam necessárias.
-
-\section{Observações Sobre Figuras}
-
-Cada figura deve ser citada ao menos uma vez antes de aparecer no texto. As figuras devem ser numeradas no formato x.y, com x o número do capítulo e y o número da figura dentro do capítulo, e devem incluir uma legenda com o número e com um texto explicativo abaixo da figura em si. Como um exemplo, a Figura~\ref{fig:acelerador} ilustra um acelerador linear do Hospital Universitário de Brasília. Note que a citação foi com a palavra ``figura'' em letra maiúscula, como aparece na legenda. Note ainda que a legenda é em fonte menor do que o texto principal, e com margem reduzida em relação ao resto do texto.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=100mm]{Acelerador2}
-\caption[Exemplo de um acelerador linear utilizado no Hospital Universitário de Brasília.]{Exemplo de um acelerador linear utilizado no Hospital Universitário de Brasília. Os ângulos de 360${^{\textrm{o}} }$, 180${^{\textrm{o}} }$ e 180${^{\textrm{o}} }$ indicam os possíveis valores de rotação do acelerador e do \emph{gantry}. Os valores em centímetros indicam as dimensões do \emph{gantry} e as distâncias em relação à mesa e ao chão. Fonte:~\cite{Avelino2013}.}\label{fig:acelerador}
-\end{figure}
-
-Se você inserir figuras de outras fontes (livros, artigos, etc), deve incluir a fonte na legenda. Diga explicitamente ``Fonte: [X]'', sendo X a referência de onde foi tirada a figura. Ou use ``Adaptada de [X]'', caso a figura tenha sido modificada (por exemplo, traduzida). Não abuse, no entanto, da utilização de figuras de outras fontes. Dê preferência a trabalhos de sua autoria. Note que uma figura de outra fonte, mesmo com a devida citação, só poderia ser utilizada com autorização por escrito, para evitar processo por direitos autorais. Já o caso de inclusão de figuras de outras fontes sem a devida citação constitui plágio, sendo o autor do plágio sujeito à perda do título eventualmente obtido com a publicação e de outros direitos dela decorrentes.
-
-\textbf{No caso de figuras de sua própria autoria, não indique isso na legenda. Não escreva, por exemplo, ``Fonte: o autor''}. Já se assume no texto que todo o material apresentado é produção do autor indicado, e os outros casos, que devem ser comparativamente poucos, é que devem ser explicitados.
-
-\section{Observações Sobre Equações}
-
-As equações são normalmente escritas de forma centralizada ao longo da direção horizontal, e com uma numeração à direita no caso das equações que são citadas. As equações que não são citadas posteriormente não precisam ser numeradas. Quando há numeração, ela aparece entre parênteses, e no formado x.y, com x o número do capítulo e y o número da equação dentro do capítulo.
-
-Segue um exemplo de uma equação. Em um triângulo retângulo, a medida da hipotenusa é dada por
-\begin{equation}\label{eq:hipotenusa}
-a = \sqrt{b^2 + c^2},
-\end{equation}
-com ${b}$ e ${c}$ as medidas dos dois catetos.
-
-Note em \eqref{eq:hipotenusa} que a equação faz parte do texto, no sentido de que ela não interrompe o fluxo da frase iniciada por ``Em um triângulo''. Não se deve, por exemplo, escrever ``a medida da hipotenusa é dada pela Equação 2.1'', e então colocar a equação abaixo como se fosse um objeto à parte do parágrafo (como acontece com as figuras e tabelas -- estas sim não se inserem no próprio texto, e são referenciadas como objetos independentes do parágrafo).
-
-Por este motivo, as equações devem ser pontuadas conforme o texto normal. Elas devem ser seguidas, por exemplo, de ponto, vírgula, ou ponto-e-vírgula, conforme o fluxo do texto, a não ser que o texto imediatamente continue com a palavra ``e''.
-
-Além disso, observe que todos os termos de uma equação que não foram previamente definidos devem ser definidos logo em seguida, como no caso de \eqref{eq:hipotenusa}. Os termos ${b}$ e ${c}$ foram definidos imediatamente após a equação. Nunca deve haver termos numa equação que não são explicitamente definidos no texto.
-
-Segue um outro exemplo. A transformada discreta de Fourier de um sinal ${x}$ de comprimento ${N}$ é dada por
-\begin{equation}
-\hat{x}[k]=\sum_{n=0}^{N-1}x[n]\exp\left(-j\frac{2\pi nk}{N}\right),
-\end{equation}
-sendo ${j}$ a unidade imaginária e ${k}$ o índice de frequência considerado, com ${k\in\left\{0,1,\ldots,N\right\}}$.
-
-\chapter{Materiais e Métodos}\label{chap:Metodologia}
-
-Este capítulo pode ter outro nome, e na verdade sugiro um nome mais específico; indique no título sobre os tópicos metodológicos tratados. Pode ser usado mais de um capítulo para esses tópicos, se necessário.
-
-Inclua as seções que se façam necessárias.
+\include{chap_materiais_e_métodos.tex}
 
 \section{Dicas para o capítulo}
 Dicas importantes que devem ser contempladas neste capítulo, segundo~\cite{marconi.lakatos:2003}:

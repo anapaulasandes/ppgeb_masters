@@ -1,0 +1,38 @@
+\chapter{Materiais e Métodos}
+
+\section{Proposta de Ferramenta}
+
+Dois equipamentos serão utilizados para construção da ferramenta de coleta sincronizada: Mindwave Mobile 2 da Neurosky Inc. e o
+GP3 da Gazepoint Inc., para a coleta de EEG e ET, respectivamente. Um código será construído de forma a permitir a coleta 
+síncrona do movimento ocular e das ondas cerebrais pelos dois equipamentos comerciais. 
+No presente capítulo as ferramentas serão apresentadas no que diz respeito às suas principais características, 
+e especificidades do código de coleta serão apresentadas.
+
+\subsection{Mindwave Mobile II}
+O equipamento (representado na figura 6.1) possui um eletrodo de coleta e um eletrodo de referência que ficam posicionados 
+acima da sobrancelha esquerda e na orelha esquerda do participante, respectivamente. 
+A posição do eletrodo de coleta em relação ao sistema de referência de posição de eletrodos (10-20), é o FP1, 
+correspondendo a região Frontopolar 1. A coleta de dados do aparelho se dá por conexão via bluetooth e 
+funciona em computadores Mac, Windows ou celulares Androids ou iOS, disponíveis em um raio de 10 metros. 
+Ele coleta ondas cerebrais variando entre 3 e 100Hz, com uma frequência de 512Hz (NeuroSky Inc., 2015). 
+O aparelho automaticamente distingue os dados coletados em ondas alfa, beta, gama, teta e delta; 
+além de coletar informações subjetivas no formato de medidas de atenção e meditação, 
+por meio de um algoritmo de reforço de aprendizado não disponibilizado ao publico. 
+Também mede a ativação muscular próxima ao eletrodo para estimar a qualidade do sinal. 
+O MindWave Mobile filtra interferência elétrica e converte o sinal detectado pelo eletrodo em sinal digital. 
+O chip que faz o filtro e conversão se chama ThinkGear, e permite a filtragem de ruído para interferência ativação muscular (EMG) e 50/60Hz de corrente alternada. 
+
+\subsection{Gazepoint GP3}
+O GP3 é um equipamento comercial de coleta do movimento dos olhos, 
+fabricado pela Gazepoint Inc (representado na figura 6.2). Possui software próprio para análise dos dados, 
+além de ser possível realizar coleta de dados com linguagens de programação open-source. 
+Coleta em uma frequência de 60Hz, com 0.5 a 1 grau de acurácia do ângulo visual e cinco a nove 
+pontos para ajuste do ponto focal (Gazepoint Inc.). Consiste em dois cabos USBs, um tripé próprio e a câmera de gravação do olhar (Figura 1). 
+
+O GP3 funciona emitindo uma luz infravermelha (IR) 
+diretamente nos olhos do participante e captando a reflexão da luz para localizar o ponto focal ao longo do tempo. 
+Permite coletar a direção do olhar, número de fixações, tempo até a primeira fixação, taxa de piscadas,
+ duração de piscadas, diâmetro da pupila, tempo de duração do olhar em um determinado ponto focal, 
+ objetos observados em uma imagem, entre outros (Gazepoint Inc.).
+
+\subsection{}

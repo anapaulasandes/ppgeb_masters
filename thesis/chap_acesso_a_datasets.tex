@@ -1,0 +1,43 @@
+\chapter{Acesso a Datasets Fisiológicos}
+
+Apesar da existência de fontes de datasets fisiológicos, 
+o número de datasets disponíveis ainda é restrito. Sobre a qualidade dos datasets, 
+Mendoza et al. (2021) observou que nenhum dos nove datasets disponíveis publicamente para 
+treinamento de algoritmos de classificação de emoção analisados possuía todos os critérios de 
+referência levantados por estudos anteriores. Apesar da ausência dessas referencias, os datasets 
+apresentaram uma base para desenvolvimentos futuros. Sobre a disponibilidade de datasets fisiológicos,
+Rim et al. (2020) faz uma análise de datasets públicos e privados.
+ No exemplo apresentado na figura 3.1, 
+ é possível observar que datasets públicos combinando sinais são minoria nas diferentes fontes de dados analisadas. 
+
+ O campo de neurociência computacional é um dos diversos campos beneficiados 
+ com o desenvolvimento da tecnologia, que constantemente melhora no sentido 
+ de propor novas ferramentas de captura de sinais fisiológicos e novas formas de
+  processá-los. Diferentes equipamentos de EEG e ET implicam em uma diferente forma
+   de se montar a coleta e processar os dados coletados.
+  Embora surjam novos métodos, importantes considerações devem ser feitas a 
+  respeito da resolução de captura, de forma a não se deixar perder informação desejada.   
+
+\section{Aquisição de Dados Fisiológicos}
+
+Um exemplo de como se realizar a montagem para coleta de EEG e ET é demonstrado na figura 3.1, utilizado na montagem do dataset EEGEyeNet (Kastrati et al., 2021),
+onde o participante é colocado de frente para o monitor para apresentação de estímulos com o equi
+pamento de coleta de EEG sobre a cabeça e o aparelho de ET direcionado aos olhos do participante. A piscada é comumente
+removida como artefato indesejável nos dados de EEG, fazendo parte de muitos pré-processamentos de estudos com EEG e ET (Hosseini, 2020).
+Entretanto, ET e EEG podem ser sincronizados a partir da assinatura da piscada, permitindo uma correção contínua dos dados (Bækgaard e Larsen, 2014). 
+Outras formas de sincronização de EEG e ET também foram propostas, como por código temporal ou com auxílio de equipamentos externos – exploradas adiante. 
+ 
+Figura 3.2. Setup de coleta de EEG e ET. Fonte: Kastrati et al. (2021)
+A fusão de dados pode ser realizada no nível de característica ou feature,
+assim como a nível de decisão do algoritmo classificatório (Klein, 2014; Mendes et al., 2016).  explicadas adiante.
+      Na figura 3.2. é possível observar um fluxo de processamento dos sinais capturados por diferentes sensores.  Os diferentes 
+      sensores representados no estudo de Mendes et al. (2016) são aqui representados pela coleta de EEG e ET.
+ 
+
+Figura 3.2. Exemplo de Fluxo para Fusão de Dados de Sensores. Fonte:  Mendes et al. (2016).
+Na Feature Level Fusion (FLF), os dados de diversas fontes são extraídos dos sensores e unidos de forma a 
+gerar um vetor único com informações multimodais; no Decision Fusion (DL) a classificação ocorre para cada categoria 
+de fonte de dado (exemplo: uma classificação para EEG e outra para ET) e estas classificações são combinadas em um esquema de voto (exemplo: a classificação mais comum) para se chegar em uma categoria final (Bota et al., 2020). A respeito de qual formato seria melhor, Bota et al. (2020) explorou o assunto para cinco bases de dados fisiológicos classificados de acordo com o estímulo emocional apresentado ao participante e observou que o melhor método de fusão é altamente correlacionado à base dados, embora o FLF tenha sido escolhido como o melhor em função de sua baixa complexidade em relação ao DF. 
+No estudo de Kastrati et al. (2021), dados de EEG e ET foram coletados por equipamentos com 500Hz de resolução e si
+ncronizados por código, com auxílio do Eye EEG Toolbox para MATLAB. A sincronização foi confirmada pelo início de s
+inais registrados em ambos os equipamentos, apresentando erros menores que dois milissegundos. 
