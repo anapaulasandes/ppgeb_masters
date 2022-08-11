@@ -75,20 +75,17 @@ ExecuteRecordGP3Data(session1_client,outputFileName);
 
 j = 0;
 i = 0;
-time0 = tic;
-timeLimit = 30;
 while (i < 10240)   %loop for 20 seconds
     if (calllib('thinkgear','TG_ReadPackets',connectionId1,1) == 1)   %if a packet was read...
-        if toc(time0)>timeLimit
-            if (calllib('thinkgear','TG_GetValueStatus',connectionId1,TG_DATA_BLINK_STRENGTH) ~= 0)   %if RAW has been updated 
+        
+            if (calllib('thinkgear','TG_GetValueStatus',connectionId1,TG_DATA_RAW) ~= 0)   %if RAW has been updated 
                 j = j + 1;
                 i = i + 1;
-                data(j) = calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_BLINK_STRENGTH);
-                total(i) = calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_BLINK_STRENGTH);
-                SendMsgToGP3(session1_client, num2str(calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_BLINK_STRENGTH)));
+                data(j) = calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW);
+                total(i) = calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW);
+                SendMsgToGP3(session1_client, num2str(calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW)));
             end
-        end
-        calllib('thinkgear', 'TG_FreeConnection', connectionId1 );
+        
     end
     
     
@@ -116,7 +113,7 @@ raw = total; %return value of data
 %end
 %% close mindwave connection
 
-%calllib('thinkgear', 'TG_FreeConnection', connectionId1 );
+calllib('thinkgear', 'TG_FreeConnection', connectionId1 );
 
 
 %% Stop collecting data in client2
@@ -126,4 +123,4 @@ SendMsgToGP3(session1_client,'STOP_EYETRACKER');
 
 %% Clean-up socket
 CleanUpSocket(session1_client);
-fclose all;
+fclose all;git s
