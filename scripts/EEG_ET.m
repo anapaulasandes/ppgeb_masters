@@ -1,7 +1,5 @@
 clear all
 close all
-
-
 %% Generate path to GP3 subfolders
 [mainDir,~,~] = fileparts(mfilename('fullpath'));
 addpath(genpath(mainDir));
@@ -10,12 +8,12 @@ addpath(genpath(mainDir));
 session1_client = ConnectToGP3;
 
 %% Calibration
-%StartCalibration(session1_client);
-%fprintf(session1_client, '<GET ID="CALIBRATE_RESULT_SUMMARY" />');
-%while  session1_client.BytesAvailable > 0
-% dataReceived = fscanf(session1_client);
-% disp(dataReceived)
-%end
+StartCalibration(session1_client);
+fprintf(session1_client, '<GET ID="CALIBRATE_RESULT_SUMMARY" />');
+while  session1_client.BytesAvailable > 0
+ dataReceived = fscanf(session1_client);
+ disp(dataReceived)
+end
 
 %% connect to mindwave
 portnum1 =      4;      %COM port#
