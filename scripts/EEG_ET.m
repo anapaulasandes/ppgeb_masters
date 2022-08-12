@@ -63,7 +63,7 @@ fprintf( 'Connected.  Reading EEG Packets...\n' );
 
 
 %% Spawn a second Matlab session2 that records GP3 data to output file
-outputFileName = 'teste_ana6.txt';
+outputFileName = 'teste_ana.txt';
 ExecuteRecordGP3Data(session1_client,outputFileName);
 
 
@@ -85,7 +85,6 @@ while (i < 10240)   %loop for 20 seconds
                 total(i) = calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW);
                 SendMsgToGP3(session1_client, num2str(calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW)));
             end
-        
     end
     
     
@@ -123,4 +122,3 @@ SendMsgToGP3(session1_client,'STOP_EYETRACKER');
 
 %% Clean-up socket
 CleanUpSocket(session1_client);
-fclose all;git s
