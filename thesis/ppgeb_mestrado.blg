@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: ppgeb_mestrado.aux
 The style file: plain.bst
-A level-1 auxiliary file: fundamentacao_teorica/chap_eletricidade_cerebral.tex.aux
+A level-1 auxiliary file: fundamentacao_teorica/chap_eletricidade_cerebral.aux
 A level-1 auxiliary file: fundamentacao_teorica/chap_rastreamento_ocular.aux
 A level-1 auxiliary file: fundamentacao_teorica/chap_series_temporais.aux
 A level-1 auxiliary file: fundamentacao_teorica/chap_sincronization.aux
@@ -12,7 +12,7 @@ A level-1 auxiliary file: fundamentacao_teorica/chap_materiais_e_métodos.aux
 Database file #1: referencias.bib
 You've used 2 entries,
             2118 wiz_defined-function locations,
-            520 strings with 4848 characters,
+            520 strings with 4844 characters,
 and the built_in function-call counts, 481 in all, are:
 = -- 46
 > -- 20

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.14)  12 AUG 2022 01:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.14)  12 AUG 2022 17:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -442,7 +442,7 @@ Package caption Info: Standard document class detected.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
-) (./ppgeb_mestrado.aux (./fundamentacao_teorica/chap_eletricidade_cerebral.tex.aux) (./fundamentacao_teorica/chap_rastreamento_ocular.aux) (./fundamentacao_teorica/chap_series_temporais.aux) (./fundamentacao_teorica/chap_sincronization.aux) (./fundamentacao_teorica/chap_acesso_a_datasets.aux) (./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux) (./fundamentacao_teorica/chap_materiais_e_métodos.aux))
+) (./ppgeb_mestrado.aux (./fundamentacao_teorica/chap_eletricidade_cerebral.aux) (./fundamentacao_teorica/chap_rastreamento_ocular.aux) (./fundamentacao_teorica/chap_series_temporais.aux) (./fundamentacao_teorica/chap_sincronization.aux) (./fundamentacao_teorica/chap_acesso_a_datasets.aux) (./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux) (./fundamentacao_teorica/chap_materiais_e_métodos.aux))
 \openout1 = `ppgeb_mestrado.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
@@ -546,7 +546,7 @@ LaTeX Info: Redefining \nameref on input line 146.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<figuras/capa.pdf, id=171, 597.23125pt x 845.1575pt>
+<figuras/capa.pdf, id=199, 597.23125pt x 845.1575pt>
 File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf>
 Package pdftex.def Info: figuras/capa.pdf  used on input line 149.
@@ -555,7 +555,7 @@ File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf>
 Package pdftex.def Info: figuras/capa.pdf  used on input line 149.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<figuras/capa.pdf, id=174, page=1, 597.23125pt x 845.1575pt>
+<figuras/capa.pdf, id=202, page=1, 597.23125pt x 845.1575pt>
 File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf, page 1>
 Package pdftex.def Info: figuras/capa.pdf , page1 used on input line 149.
@@ -586,7 +586,7 @@ Package pdftex.def Info: figuras/capa.pdf , page1 used on input line 149.
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figuras/capa.pdf>]
-<figuras//ppgeb.png, id=189, 817.1328pt x 335.5737pt>
+<figuras//ppgeb.png, id=218, 817.1328pt x 335.5737pt>
 File: figuras//ppgeb.png Graphic file (type png)
 <use figuras//ppgeb.png>
 Package pdftex.def Info: figuras//ppgeb.png  used on input line 149.
@@ -718,29 +718,29 @@ LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <24.88> not available
 (Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 219.
  (./ppgeb_mestrado.toc [7
 
-])
+] [8])
 \tf@toc=\write4
 \openout4 = `ppgeb_mestrado.toc'.
 
- [8] (./ppgeb_mestrado.lot)
+ [9] (./ppgeb_mestrado.lot)
 \tf@lot=\write5
 \openout5 = `ppgeb_mestrado.lot'.
 
- [9
+ [10
 
 ] (./ppgeb_mestrado.loa)
 \tf@loa=\write6
 \openout6 = `ppgeb_mestrado.loa'.
 
- [10
+ [11
 
 ] (./ppgeb_mestrado.lof)
 \tf@lof=\write7
 \openout7 = `ppgeb_mestrado.lof'.
 
- [11
+ [12
 
-] [12
+] [13
 
 ]
 Cap\'{\i }tulo 1.
@@ -750,26 +750,48 @@ LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <17.28> not available
 
 
 ] [2] [3]
-\openout2 = `fundamentacao_teorica/chap_eletricidade_cerebral.tex.aux'.
+\openout2 = `fundamentacao_teorica/chap_eletricidade_cerebral.aux'.
+
+ (./fundamentacao_teorica/chap_eletricidade_cerebral.tex
+Cap\'{\i }tulo 2.
+[4
 
 
-No file fundamentacao_teorica/chap_eletricidade_cerebral.tex.tex.
+]
+<figuras//Action_Potential.jpeg, id=376, 330.5148pt x 209.583pt>
+File: figuras//Action_Potential.jpeg Graphic file (type jpg)
+<use figuras//Action_Potential.jpeg>
+Package pdftex.def Info: figuras//Action_Potential.jpeg  used on input line 35.
+(pdftex.def)             Requested size: 284.52756pt x 180.42653pt.
+<figuras//serie_temporal_EEG.png, id=377, 336.25626pt x 133.49875pt>
+File: figuras//serie_temporal_EEG.png Graphic file (type png)
+<use figuras//serie_temporal_EEG.png>
+Package pdftex.def Info: figuras//serie_temporal_EEG.png  used on input line 46.
+(pdftex.def)             Requested size: 284.52756pt x 112.96315pt.
+ [5 <./figuras//Action_Potential.jpeg> <./figuras//serie_temporal_EEG.png>]) [6]
 \openout2 = `fundamentacao_teorica/chap_rastreamento_ocular.aux'.
 
-(./fundamentacao_teorica/chap_rastreamento_ocular.tex
-Cap\'{\i }tulo 2.
-) [4
+ (./fundamentacao_teorica/chap_rastreamento_ocular.tex
+Cap\'{\i }tulo 3.
+<figuras//anatomy.jpeg, id=391, 401.5pt x 463.7325pt>
+File: figuras//anatomy.jpeg Graphic file (type jpg)
+<use figuras//anatomy.jpeg>
+Package pdftex.def Info: figuras//anatomy.jpeg  used on input line 16.
+(pdftex.def)             Requested size: 284.52756pt x 328.65091pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [7
 
 
 
 
-
-] [5]
+] [8 <./figuras//anatomy.jpeg>]
 \openout2 = `fundamentacao_teorica/chap_series_temporais.aux'.
 
  (./fundamentacao_teorica/chap_series_temporais.tex
-Cap\'{\i }tulo 3.
-) [6
+Cap\'{\i }tulo 4.
+) [9
 
 
 
@@ -778,48 +800,48 @@ Cap\'{\i }tulo 3.
 \openout2 = `fundamentacao_teorica/chap_sincronization.aux'.
 
  (./fundamentacao_teorica/chap_sincronization.tex
-Cap\'{\i }tulo 4.
+Cap\'{\i }tulo 5.
 
 Overfull \hbox (0.92769pt too wide) in paragraph at lines 3--7
 []\OT1/cmr/m/n/12 O uso de equi-pa-men-tos com fun^^Xc~ao ex-clu-siva de sin-cro-niza^^Xc~ao para co-le-tas si-mult^aneas
  []
 
-[7
-
-
-
-
-] [8]) [9]
-\openout2 = `fundamentacao_teorica/chap_acesso_a_datasets.aux'.
-
- (./fundamentacao_teorica/chap_acesso_a_datasets.tex
-Cap\'{\i }tulo 5.
 [10
 
 
 
 
-]) [11]
+] [11]) [12]
+\openout2 = `fundamentacao_teorica/chap_acesso_a_datasets.aux'.
+
+ (./fundamentacao_teorica/chap_acesso_a_datasets.tex
+Cap\'{\i }tulo 6.
+[13
+
+
+
+
+]) [14]
 \openout2 = `fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux'.
 
  (./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
-Cap\'{\i }tulo 6.
-[12
+Cap\'{\i }tulo 7.
+[15
 
 
 
 
-] [13] [14]) [15]
+] [16] [17]) [18]
 \openout2 = `fundamentacao_teorica/chap_materiais_e_métodos.aux'.
 
  (./fundamentacao_teorica/chap_materiais_e_métodos.tex
-Cap\'{\i }tulo 7.
-[16
+Cap\'{\i }tulo 8.
+[19
 
 
 
 
-] [17]) [18]
+] [20]) [21]
 Package hyperref Info: bookmark level for unknown quadro defaults to 0 on input line 345.
 
 
@@ -847,54 +869,54 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.46002> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.23001> not available
 (Font)              size <5> substituted on input line 348.
 
-[19
+[22
 
 
-] [20]
-Cap\'{\i }tulo 8.
-[21
+] [23]
+Cap\'{\i }tulo 9.
+[24
 
 ]
-Cap\'{\i }tulo 9.
-(./ppgeb_mestrado.bbl [22
+Cap\'{\i }tulo 10.
+(./ppgeb_mestrado.bbl [25
 
 ])
 \c@apendice=\count315
- [23
+ [26
 
-] [24
+] [27
 
 ]
 \c@anexo=\count316
- [25
+ [28
 
-] [26
+] [29
 
 ] 
 AED: lastpage setting LastPage
-[27
+[30
 
-] (./ppgeb_mestrado.aux (./fundamentacao_teorica/chap_eletricidade_cerebral.tex.aux) (./fundamentacao_teorica/chap_rastreamento_ocular.aux) (./fundamentacao_teorica/chap_series_temporais.aux) (./fundamentacao_teorica/chap_sincronization.aux) (./fundamentacao_teorica/chap_acesso_a_datasets.aux) (./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux) (./fundamentacao_teorica/chap_materiais_e_métodos.aux))
+] (./ppgeb_mestrado.aux (./fundamentacao_teorica/chap_eletricidade_cerebral.aux) (./fundamentacao_teorica/chap_rastreamento_ocular.aux) (./fundamentacao_teorica/chap_series_temporais.aux) (./fundamentacao_teorica/chap_sincronization.aux) (./fundamentacao_teorica/chap_acesso_a_datasets.aux) (./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux) (./fundamentacao_teorica/chap_materiais_e_métodos.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.76999pt have occurred.
 
 Package rerunfilecheck Info: File `ppgeb_mestrado.out' has not changed.
-(rerunfilecheck)             Checksum: 38E1C4A4BF2AD75F36CFFC0C280DEABC;6851.
+(rerunfilecheck)             Checksum: AABEB6C8A151E5269B897C05FECC7247;8249.
  ) 
 Here is how much of TeX's memory you used:
- 15747 strings out of 478268
- 270762 string characters out of 5846347
- 586780 words of memory out of 5000000
- 33518 multiletter control sequences out of 15000+600000
+ 15805 strings out of 478268
+ 271958 string characters out of 5846347
+ 586905 words of memory out of 5000000
+ 33556 multiletter control sequences out of 15000+600000
  485173 words of font info for 88 fonts, out of 8000000 for 9000
  1150 hyphenation exceptions out of 8191
- 85i,18n,90p,1334b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,18n,90p,1334b,568s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.1037pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.720pk></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on ppgeb_mestrado.pdf (39 pages, 1187926 bytes).
+Output written on ppgeb_mestrado.pdf (43 pages, 1361073 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 470 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
- 362 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 766 PDF objects out of 1000 (max. 8388607)
+ 527 compressed objects within 6 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 433 words of extra memory for PDF output out of 10000 (max. 10000000)
 
