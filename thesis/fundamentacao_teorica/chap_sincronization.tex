@@ -20,7 +20,7 @@ da frequência de coleta.s
 
 
 \section{Sincronização com Timecode}
-Notaro et al. (2018) faz uso do código temporsal, ou \textit{timecode}, para sincronizar dados de EEG, ET e dados comportamentais 
+Notaro et al. (2018) faz uso do código temporal, ou \textit{timecode}, para sincronizar dados de EEG, ET e dados comportamentais 
 coletados de participantes enquanto estes faziam atividades de um site de aprendizagem de linguas. O driver
 do fabricante do equipamento comercial de EEG utilizado permite alteração da latência da coleta de dados, que
 foi modificada do valor padrão de 16 milissegundos para 1 millisegundo, afim de aumentar a precisão do equipamento.
@@ -34,11 +34,30 @@ o movimento em ambos os equiapmentos de coleta. No caso do EEG, as piscadas são
 Bækgaard et al. (2015), elas são a assinatura de sincronização entre os equipamentos de coleta de EEG e ET em função de sua onda característica (geralmente muitos milivolts acima do sinal do EEG), e de também 
 ser detectdo através dos equipamentos de rastreamento ocular.
 
+O desafio da sincronização de EEG e ET se dá em função de serem séries temporais muito distintas e 
+de frequências de amostra diferentes. No caso dos equipamentos comerciais de interesse desta pesquisa,
+a coleta de EEG pode ser realizada em até 512 Hz, enquanto a frequencia de coleta de ET chega num máximo de 60 Hz. 
+Além disso, o sinal de EEG pode apresentar mais de um canal, enquanto dados de ET podem ser representados
+na forma de coordenadas. Desta forma, Bækgaard et al. (2015) propõe uma sincronização por assinaturas dentro de cada um dos tipos de dados
+coletados. Piscadas ocorrem com frequencia e de forma expontanea, além de ser uma informação capturada em 
+equipamentos de EEG e ET.
+
+
+
+
 \subsection{Identificação no Sinal do EEG}
+
+A piscada envolve ativação muscular, e o dipolo ocular também influencia na captura de alterações de voltagem em eletrodos próximos aos olhos
+(Croft e Barry, 2000). Seu reflexo no EEG pode ser facilmente identificado pois tente a ter uma amplitude e forma de sinal característicos. 
+A amplitude de uma atividade de piscada no sinal de EEG tem uma média de 200 microvolts (Hoffmann et al., 2008). Esta característica permite
+que o poder elétrico somado de eletrodos de interesse possam auxiliar na determinação de uma probabilidade do evento capturado ser uma piscada. 
+No estudo de Bækgaard et al. (2015), as assinaturas de piscadas foram alinhadas entre as modalidades de EEG e ET para garantir a sincronizaçã, e
+o começo da atividade de piscada (com o fechamento das pálpebras) foi eleito como o ponto de referencia da assinatura. 
+
+
 Para se detectar a piscada através de um sinal, é possível tentar realizar o método de \textit{Independent Component Analysis}, ou análise de 
 componente independente, mas as características do sinal de piscada também permite outras abordagens, como a identificação por função de probabilidade.
-Considerando o movimento de maior característica da piscada, é preferível se calcular a probabilidade do movimento de fechar os olhos 
-ao movimento de abertura, em função de uma variação em tempo ser mais comumente encontrada na fase de abertura (Caffier, 2013).
+
 
 \subsection{Identificação no Sinal de ET}
 Como o equipamento de rastreamento procura encontrar sinais da movimentação ocular, ele também detecta a ausencia desse sinal. No estudo 
@@ -49,6 +68,8 @@ onde o blink rate foi validado e sincronizado com o vídeo do próprio equipamen
 
 \section{Correlação Cruzada}
 A correlação cruzada procura calcular a similaridade entre dois sinais com a aplicação de um \textit{delay} em apenas um dos sinais.
+Com dois sinais diferentes em EEG e ET, Bækgaard et al. (2015) opta por correlacionar as funções de probabilidade do evento observado em 
+ambos os equipamentos, ser uma piscada. 
 Para correlacionar assinaturas diferentes, as probabilidades de ocorrencia de um evento (piscada) em duas séries temporais são convertidas em uma mesma frequência amostral (Bækgaard et al., 2014).
 A similatidade entre sinais é medida na amplitude do sinal da correlação. A correlação cruzada é definida como:
 \begin{equation}\label{eq:correlação cruzada}

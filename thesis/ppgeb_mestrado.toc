@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {4.2}Sincronização com Timecode}{7}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Sincronização com Piscadas}{8}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Identificação no Sinal do EEG}{8}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Identificação no Sinal de ET}{8}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Identificação no Sinal de ET}{9}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}Correlação Cruzada}{9}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Códigos para Sincronização}{9}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Acesso a Datasets Fisiológicos}{10}{chapter.5}%

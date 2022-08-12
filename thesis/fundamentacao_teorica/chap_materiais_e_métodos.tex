@@ -37,7 +37,8 @@ Permite coletar a direção do olhar, número de fixações, tempo até a primei
 
 O Gazepoint GP3 estabelece sua conexão com o computador através de dois cabos USB - um cabo de energia e outro para dados.
 Seu posicionamento ideal é logo abaixo do monitorde estímulo. Para um melhor posicionamento, o fabricante 
-sugere uma distância ideal de 65 cm dos olhos do participante até o equipamento. O GP3 possui as seguintes características:
+sugere uma distância ideal de 65 cm dos olhos do participante até o equipamento. O GP3 possui as seguintes características, conforme
+especificado pelo fabricante:
 
 \begin{itemize}
     \item Acurácia de 0.5-1 grau de ângulo visual
@@ -60,12 +61,17 @@ e direito (vermelho).
 
 \subsection{Dados Capturados pelo GP3}
 
-\textbf{Fixação} É um agrupamento de pontos focais do olhar que duram entre 20-300 ms (Brand, 2020).
+\textbf{Fixação:} É um agrupamento de pontos focais do olhar que duram entre 20-300 ms (Brand, 2020).
 
-\textbf{Gaze Point} Gaze point é o ponto focal do usuário em um dado momento. No equipamento GP3 é gravado um ponto focal a cada aproximadamente 17 milisegundos.
+\textbf{Gaze Point:} Gaze point é o ponto focal do usuário em um dado momento. No equipamento GP3 é gravado um ponto focal a cada aproximadamente 17 milisegundos.
 O ponto de gaze é gravado em relação as coordenadas x e y, que servem para identificar a posição do olhar na tela de experimento. 
 
-\textbf{Sacada} A sacada compreende a um movimento rápido dos olhos após a fixação.
+%Anjith George and Aurobinda Routray, “A score level fusion method for eye movement biometrics,” Pattern Recognition Letters, vol. 82, pp. 207–215, 2016
+\textbf{Sacada:} Compreende a um movimento rápido dos olhos após a fixação, e pode ser medida através de pixels por segundo.
+O valor limite entre sacada e fixação é a velocidade de 1.8 pixels por segundo (George e Routray, 2016), onde acima
+é uma sacada e abaixo, uma fixação.
+
+
 
 \subsection{Avaliação da Qualidade dos Dados}
 
