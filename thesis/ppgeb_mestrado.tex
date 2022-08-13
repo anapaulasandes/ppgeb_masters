@@ -47,6 +47,8 @@
  \usepackage[brazil]{babel}
 \usepackage{xfrac}
 \usepackage{hyperref}
+\usepackage[printonlyused]{acronym}
+\usepackage[acronym]{glossaries}
 \hypersetup{
 colorlinks = true,
 linkcolor = black,
@@ -223,31 +225,30 @@ A performance dos algortimos será utilizada para argumentar sobre a possível a
 \acresetall % Manter essa linha!
 \vspace{24pt}
 
-Electroencephalogram (EEG) and eye tracking (ET) are non-invasive ways of observing the nervous system behavior and are important tools in the construction of physiological databases. The equipment cost and synchronization of data are bottlenecks in the multimodal dataset construction. Studies relate physiological data integration to a higher classification accuracy in supervised learning algorithms. This study observes the latest methods of synchronizing data for building multimodal EEG and ET datasets trough the usage of commercially available equipment. It is expected that an affordable way of building multimodal databases will encourage the development of new machine learning algorithms, and increase the amount of physiological datasets available for future studies.
+Electroencephalogram (EEG) and Eye Tracking (ET) are non-invasive methods of observing the nervous system behavior 
+by monitoring neural activity and ocular positioning over time. They are important tools in the construction of physiological 
+databases. Databases with more than one type of physiological data confer advantages in classification algorithms, 
+presenting a greater accuracy than algorithms trained with unimodal datasets. However, access to these datasets is still restricted
+ due to the equipment cost and synchronization complexity between different sensors. The present study aims to present a tool built 
+ from commercially available devices whose output is a multimodal dataset of EEG and ET collected simultaneously. 
+ The tool is expected to promote accessibility to multimodal datasets by generating a database from
+low-cost equipment (in comparison to clinical equipment) and encourage the development of different areas of research 
+that can benefit from easier access to physiological data acquisition. The tool will be evaluated regarding its ability 
+to synchronize EEG and ET, and the multimodal dataset will be evaluated in a case study with the participant being submited to emotional 
+stimuli to be classified by the trained algorithms in Orange software. The algorithms performance will be used to discuss about the 
+tool applicability in future studies.
 
 \vspace{14pt}
 
 \noindent{\textbf{Keywords: }} EEG; ET; Synchronization; Physiological Dataset;
 \acresetall % Manter essa linha!
-
 \indice
 
 \begin{center}
 
-{\bfseries{\maiusc{\large Lista de Nomenclaturas e Abreviações}} }%
+{\bfseries{\maiusc{\large Lista de Nomenclaturas e Abreviações}} } %não consigo usar por nada isso!! 
 \end{center}
 
-\acrodef{3DCRT}[3DCRT]{Radioterapia Conformacional 3D, do inglês \emph{3D Conformal Radiotherapy}}
-\acrodef{AAPM}[AAPM]{Associação Americana de Física na Medicina, do inglês \emph{American Association of Physics in Medicine}}
-\acrodef{CQ}[CQ]{Controle de Qualidade}
-\acrodef{SPT}[SPT]{Sistema de Planejamento de Tratamento}
-
-\begin{acronym}
-\acro{3DCRT}{Radioterapia Conformacional 3D, do inglês \emph{3D Conformal Radiotherapy}}
-\acro{AAPM}{Associação Americana de Física na Medicina, do inglês \emph{American Association of Physics in Medicine}}
-\acro{CQ}{Controle de Qualidade}
-\acro{SPT}{Sistema de Planejamento de Tratamento}
-\end{acronym}
 
 \clearpage
 
@@ -257,18 +258,64 @@ Electroencephalogram (EEG) and eye tracking (ET) are non-invasive ways of observ
 
 \chapter{Introdução}
 
-Existe uma importante vantagem advinda do uso de bases fisiológicas chamadas multimodais, ou de mais de um tipo de dado fisiológico em algoritmos supervisionados: a possibilidade de conferir um maior poder classificatório em relação aos datasets unimodais (Kang et al., 2020; Thapaliya et al., 2019). Sobre os benefícios já alcançados com estes datasets, é possível citar: melhora de diagnóstico de transtornos neurológicos, como depressão e autismo (Kang et al., 2020; Thapaliya et al., 2019; Wu et al., 2021), maior poder de classificação de emoções (Guo et al., 2019; Zheng et al., 2019;  Lu et al, 2015; Zheng et al., 2014), e uma maior compreensão da ativação de mecanismos nervosos durante atividades de rotina, como leitura (Hollenstein et al., 2018). Um modelo específico de dataset fisiológico multimodal é constituído do eletroencefalograma (EEG) e rastreamento ocular (RO ou ET, da palavra em inglês Eye Tracking). Seu uso no treinamento de algoritmos classificatórios atestou sua aplicabilidade em diferentes contextos clínicos e acadêmicos, além de um aumento de acurácia na classificação de diferentes doenças nervosas e de emoções. 
+Existe uma importante vantagem advinda do uso de bases fisiológicas chamadas multimodais, 
+ou de mais de um tipo de dado fisiológico em algoritmos supervisionados: a possibilidade de conferir 
+um maior poder classificatório em relação aos datasets unimodais (Kang et al., 2020; Thapaliya et al., 2019). 
+Sobre os benefícios já alcançados com estes datasets, é possível citar: melhora de diagnóstico de transtornos 
+neurológicos, como depressão e autismo (Kang et al., 2020; Thapaliya et al., 2019; Wu et al., 2021), 
+maior poder de classificação de emoções (Guo et al., 2019; Zheng et al., 2019;  Lu et al, 2015; Zheng et al., 2014), 
+e uma maior compreensão da ativação de mecanismos nervosos durante atividades de rotina, como leitura (Hollenstein et al., 2018). 
+Um modelo específico de dataset fisiológico multimodal é constituído do eletroencefalograma (EEG) e
+ rastreamento ocular (RO ou ET, da palavra em inglês \textit{Eye Tracking}), já tendo sido utilizado em diferentes estudos
+ de aprendizado supervisionado e estudos de \textit{Brain Computer Interface}, ou BCI; onde a integração homem-máquina é aprofundada
+ (Xu et al., 2022; Kim et al., 2015; Lee et al., 2010).
 
 %Se você deseja que o primeiro parágrafo de cada seção também tenha indentação, inclua no preâmbulo o comando \verb,\usepackage{indentfirst},.
 
 \section{Contextualização de Problema}
 
-Apesar das múltiplas vantagens, o acesso a estes datasets ainda é restrito. Sobre a coleta de EEG e ET, Kastrati et al. (2021) comenta:
+Apesar das múltiplas vantagens, o acesso a estes datasets ainda é restrito. Sobre a coleta de EEG e ET, 
+Kastrati et al. comenta:
+
+\textit{“Coletar e classificar dados simultâneos de EEG e de rastreamento ocular é \textbf{demorado e caro},
+ pois requer equipamento e experiência [...]. 
+ Portanto, o acesso a dados de EEG-ET gravados simultaneamente é \textbf{altamente restrito}, o que retarda significativamente o progresso neste campo”. – Kastrati et al. (2021).}
+
+No recente estudo sobre a análise conjunta de dados de EEG e ET por Dimigen e Ehinger (2020) foram levantados
+ quatro principais problemas com este tipo de coleta (figura 1.1):
 
 
-\textit{“Coletar e classificar dados simultâneos de EEG e de rastreamento ocular é demorado e caro, pois requer equipamento e experiência para aquisição de EEG e rastreamento ocular. Portanto, o acesso a dados de EEG-ET gravados simultaneamente é altamente restrito, o que retarda significativamente o progresso neste campo”. – Kastrati et al. (2021).}
+\begin{itemize}
+    \item Integração de dados
+    \item A remoção de artefatos
+    \item Controle de sobreposição temporal de respostas cerebrais
+    \item Controle de influências de baixo-nível
+\end{itemize}
 
-A redução do custo das coletas fisiológicas já vem sido abordada através de equipamentos comercialmente disponíveis. Um exemplo é o desenvolvimento de “smart watches”, pequenos computadores de pulso que permitem o acompanhamento da frequência cardíaca do usuário, além do monitoramento de outras atividades fisiológicas, como o sono. O Mindwave Mobile 2, do fabricante Neurosky®, é um exemplo de equipamento comercial que possibilita a captura de ondas cerebrais e métricas próprias do fabricante utilizadas para estimar medidas de atenção, meditação e a captura de piscadas dos usuários. Este equipamento permite o desenvolvimento de aplicações na forma de jogos interativos, neurofeedback e outras aplicações lúdicas (Neurosky). A respeito de seu uso em pesquisas científicas, ele já foi utilizado para estimar quais métodos de ensino despertavam maior atenção em alunos do ensino fundamental, estimar personalidade de participantes através da apresentação de vídeo clips eleitos para instigar um determinado traço de personalidade, e classificação de emoções. Além deste equipamento para coleta de EEG, também existem equipamentos disponíveis comercialmente para a coleta de ET, como o GP3 (Gazepoint®). 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=130mm]{problemas_eeget.jpg}
+    \caption[Exemplo de um acelerador linear utilizado no Hospital Universitário de Brasília.]
+    {Principais problemas de integração em datasets de EEG e ET. Fonte: Dimigen e
+    Ehinger (2020).}\label{fig:acelerador}
+    \end{figure}
+
+Para resolver os problemas levantados, a solução dos autores consistiu na construção de códigos especializados (no pacote EYE-EEG),
+que trabalham de forma integrada a uma \textit{toolbox} já consolidada em estudos de EEG, o EEGLAB (Delorme e Makeig, 2014), que será explorada adiante.
+
+ A redução do custo das coletas fisiológicas já vem sido abordada através de equipamentos comercialmente disponíveis. 
+Um exemplo é o desenvolvimento de “smart watches”, pequenos computadores de pulso que permitem o acompanhamento da
+frequência cardíaca do usuário, além do monitoramento de outras atividades fisiológicas, como o sono. O Mindwave Mobile 2,
+do fabricante Neurosky®, é um exemplo de equipamento comercial que possibilita a captura de ondas cerebrais e métricas 
+próprias do fabricante utilizadas para estimar medidas de atenção, meditação e a captura de piscadas dos usuários.
+Este equipamento permite o desenvolvimento de aplicações na forma de jogos interativos, neurofeedback e 
+utras aplicações lúdicas (Neurosky).
+
+A respeito de seu uso em pesquisas científicas, ele já foi utilizado para estimar quais métodos de ensino 
+ despertavam maior atenção em alunos do ensino fundamental, estimar personalidade de participantes através
+ da apresentação de vídeo clips eleitos para instigar um determinado 
+ traço de personalidade, e classificação de emoções. Além deste equipamento para coleta de EEG, 
+ também existem equipamentos disponíveis comercialmente para a coleta de ET, como o GP3 (Gazepoint®). 
 
 
 Com o propósito de aumentar a acessibilidade aos datasets multimodais e suas amplas vantagens de uso, o presente projeto tem por objetivo a criação de uma ferramenta de coleta simultânea de EEG e RO acessível a partir da coleta de dados de dois equipamentos comerciais – GP3 para a coleta de RO, e Mindwave Mobile 2 para a coleta de dados de ativação neuronal. A ferramenta terá como output um dataset constituído de dados de EEG e RO coletados simultaneamente. O output será testado em um estudo de caso através da análise de performance de quatro diferentes algoritmos classificatórios treinados com o output para classificar entre duas possíveis atividades. 

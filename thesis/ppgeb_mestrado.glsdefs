@@ -1,0 +1,28 @@
+\glsdefs@newdocentry{lfs}%
+{%
+name={LFS},%
+sort={LFS},%
+type={acronym},%
+first={Labour Force Survey\glsspace (LFS)},%
+firstplural={Labour Force Survey\acrpluralsuffix \glsspace (LFS\acrpluralsuffix )},%
+text={LFS},%
+plural={LFS\acrpluralsuffix },%
+description={Labour Force Survey},%
+descriptionplural={Labour Force Survey\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Labour Force Survey},%
+longplural={Labour Force Surveys},%
+short={LFS},%
+shortplural={LFSs},%
+counter={page},%
+parent={},%
+%
+}%
+
