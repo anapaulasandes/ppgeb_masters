@@ -63,7 +63,7 @@ fprintf( 'Connected.  Reading EEG Packets...\n' );
 
 
 %% Spawn a second Matlab session2 that records GP3 data to output file
-outputFileName = 'teste_ana.txt';
+outputFileName = 'teste_ana_13_08.txt';
 ExecuteRecordGP3Data(session1_client,outputFileName);
 
 
