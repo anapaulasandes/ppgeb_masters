@@ -83,10 +83,9 @@ while (i < 10240)   %loop for 20 seconds
                 i = i + 1;
                 data(j) = calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW);
                 total(i) = calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW);
-                SendMsgToGP3(session1_client, num2str(calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW)));
+                SendMsgToGP3(session1_client, num2str(calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW))); %envio de triggers
             end
     end
-    
     
     if (j == 256)
         modPlotRAW(data);            %plot the data, update every .5 seconds (256 points)
