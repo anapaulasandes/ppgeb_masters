@@ -1140,6 +1140,7 @@ INPUT ./fundamentacao_teorica/chap_sincronization.tex
 INPUT fundamentacao_teorica/chap_sincronization.tex
 INPUT ./fundamentacao_teorica/chap_sincronization.tex
 INPUT fundamentacao_teorica/chap_sincronization.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.tex
 OUTPUT fundamentacao_teorica/chap_acesso_a_datasets.aux
 INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.tex
@@ -1214,6 +1215,7 @@ INPUT /Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-m
 INPUT /Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.720pk
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb

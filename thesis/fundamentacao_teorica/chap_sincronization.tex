@@ -66,9 +66,19 @@ o fabricante oferece uma forma de identificar a existencia de uma piscada. Ela o
 valor diferente de 0 indica ocorrência de piscada durante o timeframe. A extração de piscada através do BKID foi utilizada no estudo de Seha et al. (2019), 
 onde o blink rate foi validado e sincronizado com o vídeo do próprio equipamento (que indica quando houve piscada através da ausencia da imgem dos olhos do usuário).
 
-\section{Correlação Cruzada}
-A correlação cruzada procura calcular a similaridade entre dois sinais com a aplicação de um \textit{delay} em apenas um dos sinais.
-Com dois sinais diferentes em EEG e ET, Bækgaard et al. (2015) opta por correlacionar as funções de probabilidade do evento observado em 
+
+
+\section{Métodos para Sincronização}
+Existem diferentes métodos para calculo de sincronização entre séries temporais. 
+A forma mais simples é por \textbf{correlação de Pearson}, que mede como dois sinais mudam ao longo do tempo em valores que vão de -1 a 1;
+com -1 indicando uma correlação perfeita e negativa, 1 uma correlação perfeita e 0, sem correlação. 
+É importante notar que anomalias vão impactar significativamente a correlação, e que os dados assumem que a variância é homogênea. 
+
+Outro método de sincronização entre séries temporais é o \textit{\textbf{lag cross-correlation}}, onde é possível identificar
+qual sinal vem primeiro. A correlação é calculada através da mudança gradual de um vetor de série temporal e subsequente cálculo 
+de correlação. A correlação cruzada procura calcular a similaridade entre dois sinais com a aplicação de um \textit{delay} em apenas um dos sinais.
+
+Um exemplo de seu uso é no trabalho de Com dois sinais diferentes em EEG e ET, Bækgaard et al. (2015) opta por correlacionar as funções de probabilidade do evento observado em 
 ambos os equipamentos, ser uma piscada. 
 Para correlacionar assinaturas diferentes, as probabilidades de ocorrencia de um evento (piscada) em duas séries temporais são convertidas em uma mesma frequência amostral (Bækgaard et al., 2014).
 A similatidade entre sinais é medida na amplitude do sinal da correlação. A correlação cruzada é definida como:
@@ -78,7 +88,11 @@ A similatidade entre sinais é medida na amplitude do sinal da correlação. A c
 onde * significa convolução e f(-t) é o conjugado complexo de f(t).
 
 
-\section{Códigos para Sincronização}
+
+
+
+
+\subsection{Códigos para Sincronização}
 Alguns equipamentos podem se beneficiar da existencia de \textit{toolboxes} ou bibliotecas direcionadas à sincronização. É o caso 
 dos equipamentos Tobii na solução de EEG-Eye para a linguagem MATLAB. Uma forma de se fazer sincdronização é através 
 
@@ -132,4 +146,6 @@ Note:The current Beta version of the toolbox does not yet implement low-pass fil
 
 If synchronization method 2 (messages plus trigger) is used, synchronization messages sent to the eye tracker need to have a specified format. This format consists of an arbitrary user-defined keyword (e.g., "MYKEYWORD") followed by an integer value ("MYKEYWORD 100"). The integer value needs to be the same as that of the corresponding trigger pulse sent to the EEG (usually an 8-bit number between 1 and 255). An example is given in the code below. The EYE-EEG parser (Step 2: Preprocess eye track and store as MATLAB) will recognize messages with the keyword and treat them as synchronization events. A keyword-synchronization messages should be sent together with every trigger sent to the EEG, so intermediate events in-between start-event and end-event can be used to assses synchronization quality. Additional messages (that do not contain the keyword) may be sent to code other aspects of the experimental design. They are ignored by the toolbox.
 
-The following code is an example for an experimental runtime file containing the necessary synchronization signals. The example is for the software Presentation™, but similar commands exist in other software (e.g., Psychtoolbox, EPrime™):
+The following code is an example for an experimental runtime file containing the necessary synchronization signals. The example is for the software Presentation™, but similar commands exist in other software (e.g., Psychtoolbox, EPrime™):++
+
+
