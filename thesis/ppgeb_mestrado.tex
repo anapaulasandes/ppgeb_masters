@@ -196,7 +196,21 @@ urlcolor = blue
 \acresetall % Manter essa linha!
 \vspace{12pt}
 
-O eletroencefalograma (EEG) e o rastreamento ocular (ET) oferecem formas não-invasivas de se observar o comportamento do sistema nervoso e são importantes ferramentas na construção de bases de dados fisiológicos. O custo dos equipamentos de coleta e a sincronização dos dados coletados constituem gargalos na construção de datasets multimodais. Diferentes estudos relacionam a integração de dados fisiológicos a um maior poder classificatório em algoritmos de aprendizado supervisionado. O presente estudo observa os mais recentes métodos de sincronização de equipamentos de coleta e dados para a construção de datasets multimodas de EEG e ET, além de propor uma ferramenta de coleta simultânea de baixo custo que auxilie na construção de bases de dados fisiológicos. É esperado que uma forma acessível de construção de bases de dados multimodais incentive o desenvolvimento de novos algoritmos de aprendizado de máquina, e auxilie na criação de uma maior quantidade de datasets fisiológicos disponíveis para estudos futuros. 
+O eletroencefalograma (EEG) e o rastreamento ocular (ET - \textit{Eye Tracking}) são 
+formas não-invasivas de se observar o comportamento do sistema nervoso através da coleta da atividade
+neural e posicionamento ocular ao longo do tempo. Desta forma, são importantes ferramentas na construção de bases de dados fisiológicos. 
+Bases de dados com mais de um tipo de dado fisiológico conferem vantagens a respeito
+do uso em algoritmos classificatórios, apresentando uma maior acurácia do que algortimos treinados
+com datasets unimodais.
+Apesar das vantagens de uso, o acesso a estes datasets ainda é restrito devido ao custo
+dos equipamentos e a complexidade da sincronização entre diferentes sensores.
+O presente estudo tem por objetivo apresentar uma ferramenta construída a partir de equipamentos
+comerciais que tem como \textit{output} um dataset multimodal de EEG e ET coletados simultaneamente.
+É esperado que a ferramenta promova acessibilidade a datasets multimodais ao gerar uma coleta com 
+equipamentos de baixo custo (relativo a equipamentos clínicos) e incentive o desenvolvimento de diferentes áreas de pesquisa que possam se beneficiar do acesso facilitado da coleta de dados fisiológicos. A ferramenta será 
+avaliada a respeito de sua capacidade de sincronização de EEG e ET, e o dataset multimodal será utilizado para treinar algoritmos 
+classificatórios no software Orange em um estudo de caso com apresentação de estímulos emocionais durante o momento de coleta.
+A performance dos algortimos será utilizada para argumentar sobre a possível aplicabilidade da ferramenta em estudos futuros.
 
 \vspace{14pt}
 
