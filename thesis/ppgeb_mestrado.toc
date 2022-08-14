@@ -12,41 +12,42 @@
 \contentsline {section}{\numberline {2.3}Eletroencefalograma}{8}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Sistema Internacional 10/20 de Posicionamento de Eletrodos}{8}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Tipos de Eletrodos para Captura de EEG}{8}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Rastreamento Ocular}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Anatomia Ocular}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Equipamentos de Rastreamento}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Eletrooculograma}{10}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Sincronização}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Frequência de Coleta}{11}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Frequência Nyquist}{11}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Sincronização com Timecode}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Sincronização com Piscadas}{12}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Identificação no Sinal do EEG}{12}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Identificação no Sinal de ET}{13}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Métodos para Sincronização}{13}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Códigos para Sincronização}{14}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Correlação EEG e ET}{14}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Aquisição de Dados Fisiológicos}{17}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Além da Coleta: A Fusão de Dados}{18}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Uso e Avaliação de Algortimos}{19}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Algortimos Classificatórios}{19}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}Equipamentos Comerciais na Pesquisa}{21}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Considerações Finais}{24}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Materiais e Métodos}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Construção da Ferramenta}{25}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Mindwave Mobile II}{25}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Gazepoint GP3}{26}{subsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.2.1}Calibração GP3}{26}{subsubsection.6.1.2.1}%
-\contentsline {subsubsection}{\numberline {6.1.2.2}Dados Capturados pelo GP3}{27}{subsubsection.6.1.2.2}%
-\contentsline {section}{\numberline {6.2}Coleta}{27}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Código}{28}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Criação do Dataset}{28}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Observações Sobre Quadros e Tabelas}{29}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Resultados e Discussões}{31}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusão}{32}{chapter.8}%
-\contentsline {chapter}{\bf Lista de Referências}{32}{chapter.8}%
-\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{34}{apendice.1}%
-\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{35}{apendice.2}%
-\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{36}{anexo.1}%
-\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{37}{anexo.2}%
+\contentsline {chapter}{\numberline {3}Rastreamento Ocular}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Anatomia Ocular}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Equipamentos de Rastreamento}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Eletrooculograma}{11}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Sincronização}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sinal Elétrico}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Frequência de Coleta}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Sincronização com Timecode}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Sincronização com Piscadas}{13}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Identificação no Sinal do EEG}{14}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Identificação no Sinal de ET}{14}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Métodos para Sincronização}{14}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Códigos para Sincronização}{15}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Correlação EEG e ET}{15}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Aquisição de Dados Fisiológicos}{18}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Além da Coleta: A Fusão de Dados}{19}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Uso e Avaliação de Algortimos}{20}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Algortimos Classificatórios}{20}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Equipamentos Comerciais na Pesquisa}{22}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Considerações Finais}{25}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Materiais e Métodos}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Construção da Ferramenta}{26}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Mindwave Mobile II}{26}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Gazepoint GP3}{27}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}Calibração GP3}{27}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}Dados Capturados pelo GP3}{28}{subsubsection.6.1.2.2}%
+\contentsline {section}{\numberline {6.2}Coleta}{28}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Código}{29}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Criação do Dataset}{29}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Observações Sobre Quadros e Tabelas}{30}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Resultados e Discussões}{32}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusão}{33}{chapter.8}%
+\contentsline {chapter}{\bf Lista de Referências}{33}{chapter.8}%
+\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{35}{apendice.1}%
+\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{36}{apendice.2}%
+\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{37}{anexo.1}%
+\contentsline {section}{\numberline {8.1}Dados do Mindwave Mobile II}{37}{section.8.1}%
+\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{39}{anexo.2}%

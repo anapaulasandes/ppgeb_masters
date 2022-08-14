@@ -5,19 +5,38 @@ A proposta de oferecer maior acessibilidade através da redução de custo e des
 de como realizar a sincronização dos dados fisiológicos sem abrir mão da praticidade e custo dos equiapementos desenvolvidos. 
 Algumas propostas já foram exploradas a respeito, como o uso de piscadas e código temporal para garantir a sincronização de EEG e ET (Bækgaard et al. 2015, Notaro et al. 2018).
 
+\section{Sinal Elétrico}
+
+
+
 \section{Frequência de Coleta}
 Como os sinais análogos são convertidos para sinais digitais, existe uma perda de informação por esta conversão. 
-A \textbf{resolução de frequência} mede o espaço entre duas frequências. 
-
-$$srate/N$$
-
-Srate = sampling rate 
-N = Número de amostras
-
-\subsection{Frequência Nyquist}
-É a frequência mais rápida onde o sinal pode ser medido, onde é estabelecido que a maior frequência que podemos medir é a metade 
-da frequência de coleta.s
-
+A \textbf{resolução de frequência} mede o espaço entre duas frequências. A \textbf{frequência Nyquist} corresponde a maior frequência que os dados amostrados podem apresentar
+sem erro e é definida como duas vezes o tamanho de banda do sinal (Leis, 2011). A formula de Nyquist é a seguinte
+(desconsiderando ruído):
+% John W. Leis (2011). Digital Signal Processing Using MATLAB for Students and Researchers. John Wiley & Sons. p. 82. ISBN 9781118033807.
+\begin{equation}
+    C(\text{bps}) = 2B * \log_2 \text{M},
+\end{equation}
+onde C corresponde a capacidade do sinal medida em bits por segundo (bps), B é a frequência em Hertz, e M é o 
+número de níveis que o sinal pode ter. 
+Isto apresenta que a frequência dos dados é proporcional a duas vezes a
+ frequência de banda e logaricamente proporcional a M. 
+%http://mason.gmu.edu/~rmorika2/Noise__Data_Rate_and_Frequency_Bandwidth.htm
+Outra fórmula foi proposta por Shannon-Hartley, levando em consideração a proporção 
+\textit{signal-to-noise} (SNR), ou relação sinal-ruído, que descreve a capacidade máxima de um sinal dado sua frequencia 
+de banda. 
+\begin{equation}
+    C(\text{bps}) = B * \log_2 (1 + \text{SNR})
+\end{equation}
+A relação sinal-ruido compara a quantidade de ruído na quantidade de sinal desejado, onde um valor acima de 1 para 1
+indica mais sinal que ruído. 
+\begin{equation}
+    \text{SNR} = \frac {P_{signal}}{P_{noise}},
+\end{equation}
+onde $P$ = ao poder médio. A proporção precisa ser medida dentro de uma mesma banda de frequência 
+e entre mesmos pontos de um sistema. Quando o sinal é digital, o número de bits representa 
+a medida e deremina o máximo do SNR. 
 
 \section{Sincronização com Timecode}
 Notaro et al. (2018) faz uso do código temporal, ou \textit{timecode}, para sincronizar dados de EEG, ET e dados comportamentais 
