@@ -300,47 +300,53 @@ No recente estudo sobre a análise conjunta de dados de EEG e ET por Dimigen e E
     Ehinger (2020).}\label{fig:acelerador}
     \end{figure}
 
-Para resolver os problemas levantados, a solução dos autores consistiu na construção de códigos especializados (no pacote EYE-EEG),
-que trabalham de forma integrada a uma \textit{toolbox} já consolidada em estudos de EEG, o EEGLAB (Delorme e Makeig, 2014), que será explorada adiante.
-
- A redução do custo das coletas fisiológicas já vem sido abordada através de equipamentos comercialmente disponíveis. 
-Um exemplo é o desenvolvimento de “smart watches”, pequenos computadores de pulso que permitem o acompanhamento da
-frequência cardíaca do usuário, além do monitoramento de outras atividades fisiológicas, como o sono. O Mindwave Mobile 2,
-do fabricante Neurosky®, é um exemplo de equipamento comercial que possibilita a captura de ondas cerebrais e métricas 
-próprias do fabricante utilizadas para estimar medidas de atenção, meditação e a captura de piscadas dos usuários.
-Este equipamento permite o desenvolvimento de aplicações na forma de jogos interativos, neurofeedback e 
-utras aplicações lúdicas (Neurosky).
-
-A respeito de seu uso em pesquisas científicas, ele já foi utilizado para estimar quais métodos de ensino 
- despertavam maior atenção em alunos do ensino fundamental, estimar personalidade de participantes através
- da apresentação de vídeo clips eleitos para instigar um determinado 
- traço de personalidade, e classificação de emoções. Além deste equipamento para coleta de EEG, 
- também existem equipamentos disponíveis comercialmente para a coleta de ET, como o GP3 (Gazepoint®). 
+Para auxiliar nos problemas levantados, a solução dos autores consistiu na construção de códigos especializados (o pacote EYE-EEG),
+que trabalham de forma integrada a uma \textit{toolbox} já consolidada em estudos de EEG, o EEGLAB (Delorme e Makeig, 2014) - a ser explorada adiante. A redução do custo das coletas fisiológicas já vem sido abordada através de equipamentos comercialmente disponíveis. 
+Um exemplo é o desenvolvimento de \textit{“smart watches”}, pequenos computadores de pulso que permitem o acompanhamento da
+frequência cardíaca do usuário, além do monitoramento de outras atividades fisiológicas, como o sono (Canaltech, 2022).
+O Mindwave Mobile II (Neurosky, Vale do Silício, CA, Estados Unidos), é um exemplo de equipamento comercial que possibilita a captura de ondas cerebrais, além de métricas 
+próprias do fabricante utilizadas para estimar atenção, meditação e a captura de piscadas dos usuários. Atualmente também 
+existem equipamentos disponíveis comercialmente para a coleta de ET, como o GP3 (Gazepoint, Vancouver, BC, Estados Unidos). 
 
 
-Com o propósito de aumentar a acessibilidade aos datasets multimodais e suas amplas vantagens de uso, o presente projeto tem por objetivo a criação de uma ferramenta de coleta simultânea de EEG e RO acessível a partir da coleta de dados de dois equipamentos comerciais – GP3 para a coleta de RO, e Mindwave Mobile 2 para a coleta de dados de ativação neuronal. A ferramenta terá como output um dataset constituído de dados de EEG e RO coletados simultaneamente. O output será testado em um estudo de caso através da análise de performance de quatro diferentes algoritmos classificatórios treinados com o output para classificar entre duas possíveis atividades. 
+Com o propósito de aumentar a acessibilidade aos datasets multimodais e suas amplas vantagens de uso, 
+o presente projeto tem por objetivo a criação de uma ferramenta de coleta simultânea de EEG e ET acessível a 
+partir da coleta de dados de dois equipamentos comerciais – GP3 e Mindwave Mobile II. A ferramenta construída tem como \textit{output} uma base de dados multimodal
+ utilizada para treinamento de algoritmos classificatórios com o auxílio do software de mineração de dados Orange (Demsar et al., 2013), e terão seus resultados apresentados
+ adiante no texto.
 
 
 \section{Objetivos}
 
-Criar uma ferramenta capaz de gerar um dataset de EEG e ET coletado de forma síncrona e validar o dataset através da performance de algoritmos de aprendizado supervisionado treinados com ele.
+Criar uma ferramenta a partir de equipamentos comerciais que gere um dataset fisiológico multimodal com dados de EEG e ET.
 
 \subsection{Objetivos Específicos}
 
-\begin{enumerate}
-    \item Criar código para coleta simultânea de EEG e RO;
-    \item Criar dataset multimodal a partir da fusão de dados de EEG e RO coletados pela ferramenta e classificado de acordo com o estímulo apresentado ao participante;
-    \item Treinar diferentes algoritmos supervisionados com o dataset multimodal gerado;
-\end{enumerate}
+\begin{itemize}
+    \item Criar código para coleta simultânea de EEG e ET;
+    \item Criar dataset multimodal a partir da fusão de dados de EEG e ET coletados pela ferramenta;
+    \item Avaliar o erro de sincronização, precisão e acurácia da ferramenta;
+    \item Realizar um estudo de caso com a aplicação do dataset gerado pela ferramenta para treinar algortimos classificatórios;
+    \item Avaliar a performance dos algortimos treinados para discutir a usabilidade da ferramenta em estudos futuros;
+\end{itemize}
 
 \section{Justificativa}
-Apesar da existência de técnicas que permitam a extração de mais de um modo de dados fisiológicos a partir de um equipamento apenas - como a extração da posição ocular a partir de assinaturas elétricas em dados de EEG, estes métodos necessitam de um grande volume de dados, o que exige equipamentos mais refinados e, por vezes, uma grande disponibilidade de tempo para criação dos datasets e deslocamento de participantes até a estação de coleta. A coleta de ET e EEG por equipamento comercial e acessível, seria, portanto, uma alternativa que permite um maior controle no desenvolvimento de estudos com algoritmos de aprendizado de máquina, sem depender de equipamentos de alto custo ou deslocamento de participantes até a estação. 
+A capacidade de coletar dados de forma simplificada e de baixo custo pode abrir espaço para novas investigações 
+científicas e também favorecer uma maior e mais representativa volumetria da população de estudo por eliminar a necessidade
+de deslocamento do participante à centros com os equipamentos (Brand el al., 2020). Ferramentas que gerem
+datasets multimodais também podem conferir vantagens na aplicação de iniciativas de aprendizado de máquina, \textit{Brain Computer Interface} (BCI) 
+e efomentar avanços na área de Inteligencia Artificial (IA) por promover bases de dados onde os algortimos possam ser treinados. 
+
+De forma geral, os benefícios da solução se concentram em:
+\begin{itemize}
+    \item Aumento da acessibilidade à estação de coleta, tanto por participantes quanto por pesquisadores;
+    \item Aumento da volumetria de dados;
+    \item Maior disponibilidade de bases de dados fisiológicos para incentivar o desenvolvimento de outras frentes de estudo;
+\end{itemize}
 
 
-É argumentado que um maior acesso a construção de bases de dados multimodais poderá expandir e aprofundar os avanços em neurociência e estudos comportamentais, ao proporcionar um maior controle do design de experimento e expandir a quantidade de datasets fisiológicos gerados. 
-
-\section{Organização do Documento}
-O presente texto tem nove capítulos. O primeiro capítulo trata da contextualização do problema, objetivos gerais e específicos, e a justificativa para a abordagem selecionada. 
+\section{[REFAZER] Organização do Documento}
+O presente texto tem  capítulos. O primeiro capítulo trata da contextualização do problema, objetivos gerais e específicos, e a justificativa para a abordagem selecionada. 
 
 O segundo capítulo trata do referencial teórico, levantando pontos históricos importantes ao desenvolvimento desta pesquisa, uma introdução ao que seriam os sinais capturados pelos dois equipamentos de EEG e ET, características dos diferentes tipos de equipamento de captura e aborda a conversão de sinais analógicos para digital. 
 
@@ -354,7 +360,7 @@ O sexto capítulo introduz a proposta de ferramenta de coleta simultânea elabor
 
 O sétimo capítulo aborda o cronograma.
 
-O oitavo capítulo aborda os resultados esperados do estudo.
+O oitavo capítulo aborda os resultados esperados do estudo.s
 
 
 O nono capítulo apresenta as referencias do estudo.
@@ -373,13 +379,7 @@ O nono capítulo apresenta as referencias do estudo.
 
 \include{fundamentacao_teorica/chap_materiais_e_métodos.tex}
 
-\section{Dicas para o capítulo}
-Dicas importantes que devem ser contempladas neste capítulo, segundo~\cite{marconi.lakatos:2003}:
-\begin{itemize}
-\item Verificar se o capítulo responde as seguintes questões: Como? Com quê? Onde? Quanto?
-\item A linguagem do projeto deve ser escrita com tempo verbal no futuro e da dissertação no passado.
-\item É importante mencionar sobre: tipo de pesquisa (bibliográfica, descritiva, documental, experimental etc), dados (fonte de dados, forma de obtenção), população e amostra, tratamento e análise dos dados (descrição mais detalhada do método -- ou métodos -- que serão utilizados), limitações da pesquisa.
-\end{itemize}
+
 
 \section{Observações Sobre Quadros e Tabelas}
 
