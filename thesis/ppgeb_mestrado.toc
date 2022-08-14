@@ -28,21 +28,24 @@
 \contentsline {section}{\numberline {4.5}Correlação EEG e ET}{14}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Trabalhos Relacionados}{17}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Aquisição de Dados Fisiológicos}{17}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Uso e Avaliação de Algortimos}{18}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Materiais e Métodos}{22}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Construção da Ferramenta}{22}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Mindwave Mobile II}{22}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Gazepoint GP3}{23}{subsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.2.1}Calibração GP3}{23}{subsubsection.6.1.2.1}%
-\contentsline {subsubsection}{\numberline {6.1.2.2}Dados Capturados pelo GP3}{24}{subsubsection.6.1.2.2}%
-\contentsline {subsection}{\numberline {6.1.3}Avaliação da Qualidade dos Dados}{24}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Coleta}{24}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Criação do Dataset}{25}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Observações Sobre Quadros e Tabelas}{27}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Resultados e Discussões}{29}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusão}{30}{chapter.8}%
-\contentsline {chapter}{\bf Lista de Referências}{30}{chapter.8}%
-\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{32}{apendice.1}%
-\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{33}{apendice.2}%
-\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{34}{anexo.1}%
-\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{35}{anexo.2}%
+\contentsline {subsection}{\numberline {5.1.1}Além da Coleta: A Fusão de Dados}{18}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Uso e Avaliação de Algortimos}{19}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Algortimos Classificatórios}{19}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Equipamentos Comerciais na Pesquisa}{21}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Considerações Finais}{22}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Materiais e Métodos}{24}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Construção da Ferramenta}{24}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Mindwave Mobile II}{24}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Gazepoint GP3}{25}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}Calibração GP3}{25}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}Dados Capturados pelo GP3}{26}{subsubsection.6.1.2.2}%
+\contentsline {section}{\numberline {6.2}Coleta}{26}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Criação do Dataset}{26}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Observações Sobre Quadros e Tabelas}{28}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Resultados e Discussões}{30}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusão}{31}{chapter.8}%
+\contentsline {chapter}{\bf Lista de Referências}{31}{chapter.8}%
+\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{33}{apendice.1}%
+\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{34}{apendice.2}%
+\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{35}{anexo.1}%
+\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{36}{anexo.2}%
