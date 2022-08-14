@@ -53,22 +53,18 @@ Para poder realizar a coleta dos dados, é necessário manter o Gazepoint Contro
 \subsubsection{Calibração GP3}
 Uma calibração é realizada pela própria API do equipamento, afim de estabelecer qual o apontamento ocular do participante. 
 A calibração pode ser feita em 5 pontos ou 9 pontos no monitor de exibição de estímulo. Os pontos na tela são apresentados
-em sequencia e o participante deve acompanha-los com o olhar até a finalização da calibração. 
-
-Após a calibração ser concluída, a API calcula o erro do sistema em relação ao olhar para o olho esquerdo (em verde) 
+em sequencia e o participante deve acompanha-los com o olhar até a finalização da calibração. Após a calibração ser concluída, a API calcula o erro do sistema em relação ao olhar para o olho esquerdo (em verde) 
 e direito (vermelho). 
 
 \subsubsection{Dados Capturados pelo GP3}
 
-\textbf{Fixação:} É um agrupamento de pontos focais do olhar que duram entre 20-300 ms (Brand, 2020).
-
-\textbf{Gaze Point:} Gaze point é o ponto focal do usuário em um dado momento. No equipamento GP3 é gravado um ponto focal a cada aproximadamente 17 milisegundos.
+\textbf{Fixação:} É um agrupamento de pontos focais do olhar que duram entre 20-300 ms (Brand, 2020). \textbf{Gaze Point:} Gaze point é o ponto focal do usuário em um dado momento. No equipamento GP3 é gravado um ponto focal a cada aproximadamente 17 milisegundos.
 O ponto de gaze é gravado em relação as coordenadas x e y, que servem para identificar a posição do olhar na tela de experimento. 
-
-%Anjith George and Aurobinda Routray, “A score level fusion method for eye movement biometrics,” Pattern Recognition Letters, vol. 82, pp. 207–215, 2016
 \textbf{Sacada:} Compreende a um movimento rápido dos olhos após a fixação, e pode ser medida através de pixels por segundo.
 O valor limite entre sacada e fixação é a velocidade de 1.8 pixels por segundo (George e Routray, 2016), onde acima
 é uma sacada e abaixo, uma fixação.
+%Anjith George and Aurobinda Routray, “A score level fusion method for eye movement biometrics,” Pattern Recognition Letters, vol. 82, pp. 207–215, 2016
+
 
 
 
@@ -76,28 +72,34 @@ O valor limite entre sacada e fixação é a velocidade de 1.8 pixels por segund
 \section{Coleta}
 Para a coleta simultânea, duas linguagens de programação foram utilizadas: MATLAB e Python. 
 A montagem do \textit{setup} foi feita com base nas coletas realizadas para a construção dos datasets EEGEyeNet e 
- ZuCO. 
-
-Inicialmente, o software Gazepoint Control foi ligado para rodar em \textit{background} no computador. 
+ ZuCO. Inicialmente, o software Gazepoint Control foi ligado para rodar em \textit{background} no computador. 
 Em seguida, o MindWave mobile II foi ligado e teve sua conexão \textit{bluetooth} estabelecida e verificada.
 A porta de conexão (porta COM) PC-Mindwave pode mudar, então foi verificado em qual porta foi estabelecida a conexão 
 em todo início de nova coleta. Após a verificação da porta, foi observado se houve necessidade ou não de alterar
-este valor na variável do código. 
-    
- 
- 
- O Gazepoint
+este valor na variável do código. O Gazepoint
   ficou distante do participante até o software próprio acusar distância ideal
    (sinalizado por um sinal verde no topo do software de regulação do equipamento). 
    Para teste de coleta foram utilizados dois monitores: um para calibração e apresentação de imagens, 
-   e outro para o desenvolvimento de código e testagem (figura 8.1) 
+   e outro para o desenvolvimento de código e testagem (figura 6.1) 
 
+
+   \begin{figure}
+    \centering
+    \includegraphics[width=80mm]{Screen Shot 2022-08-14 at 00.54.17.png}
+    \caption{Montagem de Estudo de Caso da Ferramenta de Coleta EEG-ET.}
+\end{figure}
+
+
+\section{Código}
 
 \begin{figure}
     \centering
-    \includegraphics[width=130mm]{Screen Shot 2022-08-14 at 00.54.17.png}
+    \includegraphics[width=150mm]{code_work.png}
     \caption{Montagem de Estudo de Caso da Ferramenta de Coleta EEG-ET.}
 \end{figure}
+
+
+
 
 
 %Tabela 6.1 Caracteristicas Montior utilizado na Coleta de Eye Tracking 

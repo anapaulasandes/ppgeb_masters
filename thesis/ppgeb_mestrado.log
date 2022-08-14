@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.14)  14 AUG 2022 02:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.14)  14 AUG 2022 02:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -696,7 +696,7 @@ LaTeX Info: Redefining \nameref on input line 148.
  (./ppgeb_mestrado.glsdefs)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<figuras/capa.pdf, id=195, 597.23125pt x 845.1575pt>
+<figuras/capa.pdf, id=199, 597.23125pt x 845.1575pt>
 File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf>
 Package pdftex.def Info: figuras/capa.pdf  used on input line 151.
@@ -705,7 +705,7 @@ File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf>
 Package pdftex.def Info: figuras/capa.pdf  used on input line 151.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<figuras/capa.pdf, id=198, page=1, 597.23125pt x 845.1575pt>
+<figuras/capa.pdf, id=202, page=1, 597.23125pt x 845.1575pt>
 File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf, page 1>
 Package pdftex.def Info: figuras/capa.pdf , page1 used on input line 151.
@@ -736,7 +736,7 @@ Package pdftex.def Info: figuras/capa.pdf , page1 used on input line 151.
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figuras/capa.pdf>]
-<figuras//ppgeb.png, id=214, 817.1328pt x 335.5737pt>
+<figuras//ppgeb.png, id=218, 817.1328pt x 335.5737pt>
 File: figuras//ppgeb.png Graphic file (type png)
 <use figuras//ppgeb.png>
 Package pdftex.def Info: figuras//ppgeb.png  used on input line 151.
@@ -900,7 +900,7 @@ LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <17.28> not available
 
 
 ]
-<figuras//problemas_eeget.jpg, id=380, 469.755pt x 143.53625pt>
+<figuras//problemas_eeget.jpg, id=387, 469.755pt x 143.53625pt>
 File: figuras//problemas_eeget.jpg Graphic file (type jpg)
 <use figuras//problemas_eeget.jpg>
 Package pdftex.def Info: figuras//problemas_eeget.jpg  used on input line 297.
@@ -910,7 +910,7 @@ Package pdftex.def Info: figuras//problemas_eeget.jpg  used on input line 297.
 
  (./fundamentacao_teorica/chap_eletricidade_cerebral.tex
 Cap\'{\i }tulo 2.
-<figuras//corpo_celular.jpg, id=396, 156.585pt x 277.035pt>
+<figuras//corpo_celular.jpg, id=403, 156.585pt x 277.035pt>
 File: figuras//corpo_celular.jpg Graphic file (type jpg)
 <use figuras//corpo_celular.jpg>
 Package pdftex.def Info: figuras//corpo_celular.jpg  used on input line 32.
@@ -919,19 +919,19 @@ Package pdftex.def Info: figuras//corpo_celular.jpg  used on input line 32.
 
 
 ]
-<figuras//modeloHH.jpg, id=403, 469.755pt x 171.64125pt>
+<figuras//modeloHH.jpg, id=410, 469.755pt x 171.64125pt>
 File: figuras//modeloHH.jpg Graphic file (type jpg)
 <use figuras//modeloHH.jpg>
 Package pdftex.def Info: figuras//modeloHH.jpg  used on input line 59.
 (pdftex.def)             Requested size: 284.52756pt x 103.96242pt.
  [6 <./figuras//corpo_celular.jpg>]
-<figuras//potencial_de_membrana_bear.jpg, id=413, 469.755pt x 219.82124pt>
+<figuras//potencial_de_membrana_bear.jpg, id=420, 469.755pt x 219.82124pt>
 File: figuras//potencial_de_membrana_bear.jpg Graphic file (type jpg)
 <use figuras//potencial_de_membrana_bear.jpg>
 Package pdftex.def Info: figuras//potencial_de_membrana_bear.jpg  used on input line 87.
 (pdftex.def)             Requested size: 341.43306pt x 159.77383pt.
  [7 <./figuras//modeloHH.jpg> <./figuras//potencial_de_membrana_bear.jpg>]
-<figuras//serie_temporal_EEG.png, id=418, 336.25626pt x 133.49875pt>
+<figuras//serie_temporal_EEG.png, id=425, 336.25626pt x 133.49875pt>
 File: figuras//serie_temporal_EEG.png Graphic file (type png)
 <use figuras//serie_temporal_EEG.png>
 Package pdftex.def Info: figuras//serie_temporal_EEG.png  used on input line 106.
@@ -941,7 +941,7 @@ Package pdftex.def Info: figuras//serie_temporal_EEG.png  used on input line 106
 
  (./fundamentacao_teorica/chap_rastreamento_ocular.tex
 Cap\'{\i }tulo 3.
-<figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg, id=425, 187.902pt x 139.83405pt>
+<figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg, id=432, 187.902pt x 139.83405pt>
 File: figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg Graphic file (type jpg)
 <use figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg>
 Package pdftex.def Info: figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg  used on input line 17.
@@ -952,7 +952,7 @@ Package pdftex.def Info: figuras//Eyeball-modelled-as-a-dipole-and-angular-devia
 
 
  <./figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg>]
-<figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg, id=431, 215.1293pt x 94.79135pt>
+<figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg, id=438, 215.1293pt x 94.79135pt>
 File: figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg Graphic file (type jpg)
 <use figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg>
 Package pdftex.def Info: figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg  used on input line 54.
@@ -977,7 +977,7 @@ Overfull \hbox (0.92769pt too wide) in paragraph at lines 3--7
 
  (./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
 Cap\'{\i }tulo 5.
-<figuras//setup.png, id=464, 410.53375pt x 281.05pt>
+<figuras//setup.png, id=471, 410.53375pt x 281.05pt>
 File: figuras//setup.png Graphic file (type png)
 <use figuras//setup.png>
 Package pdftex.def Info: figuras//setup.png  used on input line 15.
@@ -988,45 +988,52 @@ Package pdftex.def Info: figuras//setup.png  used on input line 15.
 
 
  <./figuras//setup.png>]
-<figuras//fusao_decisao.png, id=470, 645.41125pt x 344.28625pt>
+<figuras//fusao_decisao.png, id=477, 645.41125pt x 344.28625pt>
 File: figuras//fusao_decisao.png Graphic file (type png)
 <use figuras//fusao_decisao.png>
 Package pdftex.def Info: figuras//fusao_decisao.png  used on input line 37.
 (pdftex.def)             Requested size: 227.62204pt x 121.42133pt.
  [18 <./figuras//fusao_decisao.png>] [19]
-<figuras//estimulo_e_coleta.png, id=485, 806.01125pt x 566.115pt>
+<figuras//estimulo_e_coleta.png, id=492, 806.01125pt x 566.115pt>
 File: figuras//estimulo_e_coleta.png Graphic file (type png)
 <use figuras//estimulo_e_coleta.png>
 Package pdftex.def Info: figuras//estimulo_e_coleta.png  used on input line 119.
 (pdftex.def)             Requested size: 426.79134pt x 299.76309pt.
-<figuras//lu.png, id=486, 547.04375pt x 435.6275pt>
+<figuras//lu.png, id=493, 547.04375pt x 435.6275pt>
 File: figuras//lu.png Graphic file (type png)
 <use figuras//lu.png>
 Package pdftex.def Info: figuras//lu.png  used on input line 133.
 (pdftex.def)             Requested size: 284.52756pt x 226.58078pt.
  [20 <./figuras//estimulo_e_coleta.png>] [21 <./figuras//lu.png>]
-<figuras//thapalya.png, id=497, 557.08125pt x 429.605pt>
+<figuras//thapalya.png, id=504, 557.08125pt x 429.605pt>
 File: figuras//thapalya.png Graphic file (type png)
 <use figuras//thapalya.png>
-Package pdftex.def Info: figuras//thapalya.png  used on input line 197.
+Package pdftex.def Info: figuras//thapalya.png  used on input line 198.
 (pdftex.def)             Requested size: 284.52756pt x 219.4234pt.
- [22]) [23 <./figuras//thapalya.png>]
+ [22] [23 <./figuras//thapalya.png>]) [24
+
+]
 \openout2 = `fundamentacao_teorica/chap_materiais_e_métodos.aux'.
 
  (./fundamentacao_teorica/chap_materiais_e_métodos.tex
 Cap\'{\i }tulo 6.
-[24
+[25
 
 
 
 
-] [25]
-<figuras//Screen Shot 2022-08-14 at 00.54.17.png, id=518, 732.7375pt x 513.92pt>
+] [26]
+<figuras//Screen Shot 2022-08-14 at 00.54.17.png, id=529, 732.7375pt x 513.92pt>
 File: figuras//Screen Shot 2022-08-14 at 00.54.17.png Graphic file (type png)
 <use figuras//Screen Shot 2022-08-14 at 00.54.17.png>
-Package pdftex.def Info: figuras//Screen Shot 2022-08-14 at 00.54.17.png  used on input line 98.
-(pdftex.def)             Requested size: 369.88582pt x 259.42952pt.
- [26]) [27 <./figuras//Screen Shot 2022-08-14 at 00.54.17.png>]
+Package pdftex.def Info: figuras//Screen Shot 2022-08-14 at 00.54.17.png  used on input line 88.
+(pdftex.def)             Requested size: 227.62204pt x 159.6429pt.
+<figuras//code_work.png, id=530, 890.32625pt x 228.855pt>
+File: figuras//code_work.png Graphic file (type png)
+<use figuras//code_work.png>
+Package pdftex.def Info: figuras//code_work.png  used on input line 97.
+(pdftex.def)             Requested size: 426.79134pt x 109.70596pt.
+ [27 <./figuras//Screen Shot 2022-08-14 at 00.54.17.png>]) [28 <./figuras//code_work.png>]
 Package hyperref Info: bookmark level for unknown quadro defaults to 0 on input line 406.
 
 
@@ -1054,32 +1061,32 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.46002> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.23001> not available
 (Font)              size <5> substituted on input line 409.
 
-[28
+[29
 
 
-] [29]
+] [30]
 Cap\'{\i }tulo 7.
-[30
+[31
 
 ]
 Cap\'{\i }tulo 8.
-(./ppgeb_mestrado.bbl [31
+(./ppgeb_mestrado.bbl [32
 
 ])
 \c@apendice=\count343
- [32
+ [33
 
-] [33
+] [34
 
 ]
 \c@anexo=\count344
- [34
+ [35
 
-] [35
+] [36
 
 ] 
 AED: lastpage setting LastPage
-[36
+[37
 
 ] (./ppgeb_mestrado.aux (./fundamentacao_teorica/chap_eletricidade_cerebral.aux) (./fundamentacao_teorica/chap_rastreamento_ocular.aux) (./fundamentacao_teorica/chap_sincronization.aux) (./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux) (./fundamentacao_teorica/chap_materiais_e_métodos.aux))
 
@@ -1090,21 +1097,21 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ppgeb_mestrado.out' has not changed.
-(rerunfilecheck)             Checksum: 14F712225946C1758096DC2B1E490EFA;8202.
+(rerunfilecheck)             Checksum: 00C3E148E93E3D32951FAFA7E2757ED8;8290.
  ) 
 Here is how much of TeX's memory you used:
- 22495 strings out of 478268
- 406056 string characters out of 5846347
+ 22507 strings out of 478268
+ 406305 string characters out of 5846347
  749061 words of memory out of 5000000
- 40103 multiletter control sequences out of 15000+600000
+ 40111 multiletter control sequences out of 15000+600000
  485532 words of font info for 89 fonts, out of 8000000 for 9000
  1150 hyphenation exceptions out of 8191
  91i,18n,117p,1172b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.1037pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.720pk></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on ppgeb_mestrado.pdf (49 pages, 2415460 bytes).
+Output written on ppgeb_mestrado.pdf (50 pages, 2455931 bytes).
 PDF statistics:
- 844 PDF objects out of 1000 (max. 8388607)
- 583 compressed objects within 6 object streams
- 130 named destinations out of 1000 (max. 500000)
- 475 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 858 PDF objects out of 1000 (max. 8388607)
+ 594 compressed objects within 6 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 488 words of extra memory for PDF output out of 10000 (max. 10000000)
 
