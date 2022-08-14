@@ -8,45 +8,45 @@
 \contentsline {chapter}{\numberline {2}Eletricidade Cerebral}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Correntes Elétricas}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Neurônios}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Impulsos Nervosos e Potencial de Ação}{6}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Eletroencefalograma}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Tipos de Eletrodos para Captura de EEG}{8}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Sistema Internacional 10/20 de Posicionamento de Eletrodos}{8}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Rastreamento Ocular}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Anatomia Ocular}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Equipamentos de Rastreamento}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Eletrooculograma}{10}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Artefatos em EEG por Movimentação Ocular}{12}{subsection.3.3.1}%
-\contentsline {chapter}{\numberline {4}Séries Temporais}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Sincronização}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Frequência de Coleta}{19}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Frequência Nyquist}{19}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Sincronização com Timecode}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Sincronização com Piscadas}{20}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Identificação no Sinal do EEG}{20}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Identificação no Sinal de ET}{21}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Métodos para Sincronização}{21}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Códigos para Sincronização}{22}{subsection.5.4.1}%
-\contentsline {section}{\numberline {5.5}Correlação EEG e ET}{22}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Acesso a Datasets Fisiológicos}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Aquisição de Dados Fisiológicos}{25}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Aplicação de Datasets Fisiológicos}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Avaliação de Algortimos}{27}{section.7.1}%
-\contentsline {chapter}{\numberline {8}Materiais e Métodos}{31}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Proposta de Ferramenta}{31}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Mindwave Mobile II}{31}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Gazepoint GP3}{32}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Especificações GP3}{32}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Calibração GP3}{32}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Dados Capturados pelo GP3}{33}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Avaliação da Qualidade dos Dados}{33}{subsection.8.3.4}%
-\contentsline {section}{\numberline {8.4}Montagem}{33}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}}{35}{subsection.8.4.1}%
-\contentsline {section}{\numberline {8.5}Observações Sobre Quadros e Tabelas}{36}{section.8.5}%
-\contentsline {chapter}{\numberline {9}Resultados e Discussões}{38}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Conclusão}{39}{chapter.10}%
-\contentsline {chapter}{\bf Lista de Referências}{39}{chapter.10}%
-\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{41}{apendice.1}%
-\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{42}{apendice.2}%
-\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{43}{anexo.1}%
-\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{44}{anexo.2}%
+\contentsline {subsection}{\numberline {2.2.1}Impulsos Nervosos e Potencial de Ação}{7}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Eletroencefalograma}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Tipos de Eletrodos para Captura de EEG}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Sistema Internacional 10/20 de Posicionamento de Eletrodos}{9}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Rastreamento Ocular}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Anatomia Ocular}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Equipamentos de Rastreamento}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Eletrooculograma}{12}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Artefatos em EEG por Movimentação Ocular}{14}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Séries Temporais}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Sincronização}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Frequência de Coleta}{21}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Frequência Nyquist}{21}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Sincronização com Timecode}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Sincronização com Piscadas}{22}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Identificação no Sinal do EEG}{22}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Identificação no Sinal de ET}{23}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Métodos para Sincronização}{23}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Códigos para Sincronização}{24}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}Correlação EEG e ET}{24}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Acesso a Datasets Fisiológicos}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Aquisição de Dados Fisiológicos}{27}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Aplicação de Datasets Fisiológicos}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Avaliação de Algortimos}{29}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Materiais e Métodos}{33}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Proposta de Ferramenta}{33}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Mindwave Mobile II}{33}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Gazepoint GP3}{34}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Especificações GP3}{34}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Calibração GP3}{34}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Dados Capturados pelo GP3}{35}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Avaliação da Qualidade dos Dados}{35}{subsection.8.3.4}%
+\contentsline {section}{\numberline {8.4}Montagem}{35}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}}{37}{subsection.8.4.1}%
+\contentsline {section}{\numberline {8.5}Observações Sobre Quadros e Tabelas}{38}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Resultados e Discussões}{40}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Conclusão}{41}{chapter.10}%
+\contentsline {chapter}{\bf Lista de Referências}{41}{chapter.10}%
+\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{43}{apendice.1}%
+\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{44}{apendice.2}%
+\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{45}{anexo.1}%
+\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{46}{anexo.2}%

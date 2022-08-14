@@ -3,11 +3,14 @@
 
 
 \section{Correntes Elétricas}
-A diferença de potencial elétrico entre um material condutor gera ium fluxo de 
+%Gaspar, Alberto (2005). Física:Volume único. São Paulo: Editora Ática. 496 páginas. ISBN 9788508078837. Consultado em 12 de janeiro de 2012
+A eletricidade é o nome dado a uma série de fenômenos que envolvem o fluxo de cargas elétricas (Gaspar, 2005). 
+O potencial elétrico (também conhecido como tensão), é a quantidade de energia precisa para deslocar uma carga elétrica (Matias e Fratezzi, 2008). 
+A diferença de potencial elétrico entre um material condutor gera um fluxo de 
 cargas nomeado de \textbf{corrente elétrica} (Creder, 1989).
 A intensidade do fluxo é medida em ampère (A) e determinada pela quantiadade de partículas que atravessam o seguimento
-do condutor pelo tempo. As correntes podem ser contínuas ou alternadas, a depender se o sentido da corrente varia ou não. Enquanto a corrente contínua 
-é composta de polos (positivo e negativo), a alternada é composta de fases (Bhargava e Kulshreshtha, 1983). O calculo de corrente elétrica é 
+do condutor pelo tempo. As correntes podem ser contínuas ou alternadas, a depender se o sentido da corrente varia ou não; enquanto a corrente contínua 
+é composta de polos, a alternada é composta de fases (Bhargava e Kulshreshtha, 1983). O calculo de corrente elétrica é 
 dado pela seguinte equação:
 
 \begin{equation}
@@ -20,18 +23,56 @@ onde $\Delta Q$ é a quantidade de particulas que passam em um seguimento do con
 Os neurônios são células responsáveis pela condução de impulsos nervosos e se comportam como um “cabo eletrificado” - analogia
 levantada a respeito da condução de impulsos elétricos, como apresentado no clássico estudo de Hodgkin e Huxley (1952), 
 que teve como resultado uma modelagem dos potenciais de ação emitidos pelas células 
-nervosas através de equações diferenciais não-lineares 
-para o calculo da corrente elétrica da membrana celular. 
+nervosas através de equações diferenciais não-lineares (figura 2.2). 
+Os neurônios comunicam-se uns com os outros através das \textbf{sinapses}, onde ocorre a transmissão dos impulsos nervosos. 
+É possível distinguir três partes anatomicas no neurônio: o corpo celular, o axônio e os dendrito (figura 2.1). 
 
-Existem aproximadamente 86 bilhões de neurônios no cérebro (Caire et al., 2022). Os neurônios comunicam-se uns com os outros através das \textbf{sinapses}, onde ocorre a transmissão dos impulsos nervosos. 
-É possível distinguir três partes anatomicas no neurônio: o corpo celular, o axônio e os dendrito (figura 2.1).
-
-%https://www.ncbi.nlm.nih.gov/books/NBK441977/
-\begin{figure}[h]
+\begin{figure}
     \centering
-    \includegraphics[width=100mm]{Aubrey__Synapse__Figure__1.jpeg}
-    \caption[Impulsos nervosos conduzidos em neurônios]{Impulsos nervosos conduzidos em neurônios. Fonte: Ludwig et al. (2021).}.\label{fig:potencial}
-    \end{figure}
+    \includegraphics[width=40mm]{corpo_celular.jpg}
+    \caption{Anatomia de um neurônio com destaque para área de sinapse entre neurônios. Fonte: Bear (2015)}
+\end{figure}
+
+% Serway, R.A.; Jewett Jr., J.W (2008). Princípios de Física. 3. São Paulo: Cengage Learning. p. 909-910. ISBN 85-221-0414-X
+A membrana celular permite a passagem de cargas elétricas através de canais, que podem ou não necessitar de energia para a movimentação
+das cargas. \textbf{Capacitores} são dispositivos de polaridades diferentes nas extremidades, que armazenam
+cargas elétricas num campo elétrico (Serway, 2008). Por sua capacidade de separar cargas elétricas entre o ambiente interno e externo, 
+a membrana celular age como os capacitadores, com sua capacitância (habilidade de armazenar cargas elétricas), definida pela seguinte equação:
+
+\begin{equation}
+    C = \frac{Q}{\Delta V},
+\end{equation}
+
+onde $C$ é a capacitância, $Q$ é a quantidade de carga armazenada e $\Delta V$ é a tensão elétrica, medida em farad (F). 
+\textbf{Resistência elétrica} diz respeito a capacidade de oposição a passagem de corrente elétrica e é medido em
+ ohms ($\Omega$). Os canais da membrana podem se comportar como resistores, se opondo a passagem da corrente elétrica, e sua 
+ resistencia pode variar dependendo das condições celulares, como por exemplo se o canal está abero ou  não. Na figura 2.2, $E$ representa
+ \textbf{bateria} pois a concentração de ions (particulas elétricas) é diferente no meio intra e extracelular, graças ao trabalho de canais ativos (com custo de energia
+ para manter esse diferencial). De forma simplificada, a corrente aplicada no neurônio pode injetar corrente no capacitor e também 
+ ser distribuída pelos canais. Dado a definição de um capacitor, $I_c = d u /d t$, é possível definir a corrente elétrica em uma seção da 
+ membrana como:
+
+
+%https://neuronaldynamics.epfl.ch/online/Ch2.S2.html#Ch2.F2
+\begin{figure}
+    \centering
+    \includegraphics[width=100mm]{modeloHH.jpg}
+    \caption{Esquema Modelo Hodgkin-Huxley. 
+    Dentro: indicando espaço intracelular; fora: indicando espaço extracelular (imagem a esquerda). Direita: 
+    C = capacitor, R = resistor, E = Baterias. Na = Sódio, K = Potássio  Fonte: Neuromal Dynamcs (2014)} 
+\end{figure}
+
+\begin{equation}
+    C \frac{d u }{ d t} =  - \sum_{k} I_k (t) + I (t),
+\end{equation}
+
+onde $u$ = voltagem ao longo da membrana e $t$ = tempo. 
+
+
+
+
+
+
 
 
 \subsection{Impulsos Nervosos e Potencial de Ação}
@@ -39,13 +80,19 @@ Para passar informações, os neurônios geram \textbf{impulsos nervosos}, ou al
 ocorre quando o estímulo recebido pelo neurônio ultrapassa um limiar de ativação, que desencadeia uma série de respostas celulares. A célula pode 
 estar em repouso (com valor do interior celular em cerca de -70mV), passando por despolarização (quando ocorre um fluxo de cargas elétricas que faz com 
 que o meio intracelular passe a ser positivo em relação ao meio extracelular), e em repolarização, quando a célula está retornando ao potencial de repouso,
-como representado na figura 2.1. 
+como representado na figura 2.3. 
 
-\begin{figure}[h]
+O aumento do inicial da voltagem é causado pela entrada de sódio através de canais dependentes de voltagem, que se segue 
+pela perda de potássio e fechamento dos canais de sódio. 
+
+
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=100mm]{Action_Potential.jpeg}
-    \caption[Impulsos nervosos conduzidos em neurônios]{Impulsos nervosos conduzidos em neurônios. Fonte: Chen e Lui (2021).}.\label{fig:potencial}
+    \includegraphics[width=90mm]{bear_potencial.jpg}
+    \caption[Impulsos nervosos conduzidos em neurônios]{Resumo do potencial de ação. Fonte: Bear (2015).}.\label{fig:potencial}
     \end{figure}
+
+\clearpage
 
 \section{Eletroencefalograma}
 O conjunto de impulsos nervosos de grupos de neurônios geram campos magnéticos
