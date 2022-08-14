@@ -1259,15 +1259,9 @@ INPUT fundamentacao_teorica/chap_eletricidade_cerebral.aux
 INPUT ./fundamentacao_teorica/chap_rastreamento_ocular.aux
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.aux
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.aux
-INPUT ./fundamentacao_teorica/chap_series_temporais.aux
-INPUT fundamentacao_teorica/chap_series_temporais.aux
-INPUT fundamentacao_teorica/chap_series_temporais.aux
 INPUT ./fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
-INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.aux
-INPUT fundamentacao_teorica/chap_acesso_a_datasets.aux
-INPUT fundamentacao_teorica/chap_acesso_a_datasets.aux
 INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
@@ -1506,11 +1500,11 @@ INPUT ./figuras//modeloHH.jpg
 INPUT figuras//modeloHH.jpg
 INPUT ./figuras//modeloHH.jpg
 INPUT ./figuras//modeloHH.jpg
-INPUT ./figuras//bear_potencial.jpg
-INPUT ./figuras//bear_potencial.jpg
-INPUT figuras//bear_potencial.jpg
-INPUT ./figuras//bear_potencial.jpg
-INPUT ./figuras//bear_potencial.jpg
+INPUT ./figuras//potencial_de_membrana_bear.jpg
+INPUT ./figuras//potencial_de_membrana_bear.jpg
+INPUT figuras//potencial_de_membrana_bear.jpg
+INPUT ./figuras//potencial_de_membrana_bear.jpg
+INPUT ./figuras//potencial_de_membrana_bear.jpg
 INPUT ./figuras//serie_temporal_EEG.png
 INPUT figuras//serie_temporal_EEG.png
 INPUT ./figuras//serie_temporal_EEG.png
@@ -1524,25 +1518,16 @@ INPUT ./fundamentacao_teorica/chap_rastreamento_ocular.tex
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.tex
 INPUT ./fundamentacao_teorica/chap_rastreamento_ocular.tex
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.tex
-INPUT ./figuras//anatomy.jpeg
-INPUT ./figuras//anatomy.jpeg
-INPUT figuras//anatomy.jpeg
-INPUT ./figuras//anatomy.jpeg
-INPUT ./figuras//anatomy.jpeg
-INPUT ./figuras//artefatos_oculares_EEG.jpeg
-INPUT ./figuras//artefatos_oculares_EEG.jpeg
-INPUT figuras//artefatos_oculares_EEG.jpeg
-INPUT ./figuras//artefatos_oculares_EEG.jpeg
-INPUT ./figuras//artefatos_oculares_EEG.jpeg
-INPUT ./fundamentacao_teorica/chap_series_temporais.tex
-OUTPUT fundamentacao_teorica/chap_series_temporais.aux
-INPUT ./fundamentacao_teorica/chap_series_temporais.tex
-INPUT ./fundamentacao_teorica/chap_series_temporais.tex
-INPUT ./fundamentacao_teorica/chap_series_temporais.tex
-INPUT ./fundamentacao_teorica/chap_series_temporais.tex
-INPUT fundamentacao_teorica/chap_series_temporais.tex
-INPUT ./fundamentacao_teorica/chap_series_temporais.tex
-INPUT fundamentacao_teorica/chap_series_temporais.tex
+INPUT ./figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg
+INPUT ./figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg
+INPUT figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg
+INPUT ./figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg
+INPUT ./figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg
+INPUT ./figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg
+INPUT ./figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg
+INPUT figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg
+INPUT ./figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg
+INPUT ./figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg
 INPUT ./fundamentacao_teorica/chap_sincronization.tex
 OUTPUT fundamentacao_teorica/chap_sincronization.aux
 INPUT ./fundamentacao_teorica/chap_sincronization.tex
@@ -1552,15 +1537,6 @@ INPUT ./fundamentacao_teorica/chap_sincronization.tex
 INPUT fundamentacao_teorica/chap_sincronization.tex
 INPUT ./fundamentacao_teorica/chap_sincronization.tex
 INPUT fundamentacao_teorica/chap_sincronization.tex
-INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.tex
-OUTPUT fundamentacao_teorica/chap_acesso_a_datasets.aux
-INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.tex
-INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.tex
-INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.tex
-INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.tex
-INPUT fundamentacao_teorica/chap_acesso_a_datasets.tex
-INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.tex
-INPUT fundamentacao_teorica/chap_acesso_a_datasets.tex
 INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
 OUTPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
@@ -1579,6 +1555,11 @@ INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.tex
 INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -1603,15 +1584,9 @@ INPUT fundamentacao_teorica/chap_eletricidade_cerebral.aux
 INPUT ./fundamentacao_teorica/chap_rastreamento_ocular.aux
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.aux
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.aux
-INPUT ./fundamentacao_teorica/chap_series_temporais.aux
-INPUT fundamentacao_teorica/chap_series_temporais.aux
-INPUT fundamentacao_teorica/chap_series_temporais.aux
 INPUT ./fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
-INPUT ./fundamentacao_teorica/chap_acesso_a_datasets.aux
-INPUT fundamentacao_teorica/chap_acesso_a_datasets.aux
-INPUT fundamentacao_teorica/chap_acesso_a_datasets.aux
 INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
