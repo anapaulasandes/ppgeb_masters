@@ -69,7 +69,7 @@ O valor limite entre sacada e fixação é a velocidade de 1.8 pixels por segund
 
 
 
-\section{Coleta}
+\section{Montagem de Coleta}
 Para a coleta simultânea, duas linguagens de programação foram utilizadas: MATLAB e Python. 
 A montagem do \textit{setup} foi feita com base nas coletas realizadas para a construção dos datasets EEGEyeNet e 
  ZuCO. Inicialmente, o software Gazepoint Control foi ligado para rodar em \textit{background} no computador. 
@@ -88,17 +88,6 @@ este valor na variável do código. O Gazepoint
     \includegraphics[width=80mm]{Screen Shot 2022-08-14 at 00.54.17.png}
     \caption{Montagem de Estudo de Caso da Ferramenta de Coleta EEG-ET.}
 \end{figure}
-
-
-\section{Código}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1mm]{code_work.png}
-    \caption{Montagem de Estudo de Caso da Ferramenta de Coleta EEG-ET.}
-\end{figure}
-
-
 
 
 
@@ -132,8 +121,9 @@ Os CAL são gerados com bases nas calibrações e REC serve para os dados gravad
 Estas regras de escrita são utilizadas pelo codigo em Python para estabelecer o controle do GP3,
  permitindo que o código calibre o equipamento e estabeleça definições de variáveis.
 
-Para o funcionamento adequado do Mindwave, é necessário instalar uma tecnologia chamada \textit{ThinkGear} (TG), 
-que permite a troca de informações entre o equipamento e os softwares compativeis e processa o 
-sinal detectado pelo eletrodo. O TG também é responsável pelo cálculo dos chamados \textbf{eSense Meteres}, 
+Para o funcionamento adequado do Mindwave, é necessário instalar uma tecnologia 
+chamada \textit{ThinkGear} (TG), que permite a troca de informações entre o equipamento 
+e os softwares compativeis e processa o sinal detectado pelo eletrodo. 
+O TG também é responsável pelo cálculo dos chamados \textbf{eSense Meteres}, 
 correspondendo aos dados de Atenção e Meditação em uma escalda de 0 a 100 (Neurosky, 2018). 
 

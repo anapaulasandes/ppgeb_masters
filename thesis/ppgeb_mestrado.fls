@@ -1269,6 +1269,9 @@ INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT ./fundamentacao_teorica/resultados_e_discussões.aux
+INPUT fundamentacao_teorica/resultados_e_discussões.aux
+INPUT fundamentacao_teorica/resultados_e_discussões.aux
 OUTPUT ppgeb_mestrado.aux
 INPUT /usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1510,6 +1513,16 @@ INPUT ./figuras//serie_temporal_EEG.png
 INPUT figuras//serie_temporal_EEG.png
 INPUT ./figuras//serie_temporal_EEG.png
 INPUT ./figuras//serie_temporal_EEG.png
+INPUT ./propriedades de onda.png
+INPUT ./propriedades de onda.png
+INPUT propriedades de onda.png
+INPUT ./propriedades de onda.png
+INPUT ./propriedades de onda.png
+INPUT ./figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg
+INPUT ./figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg
+INPUT figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg
+INPUT ./figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg
+INPUT ./figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg
 INPUT ./figuras//21_electrodes_of_International_10-20_system_for_EEG.png
 INPUT ./figuras//21_electrodes_of_International_10-20_system_for_EEG.png
 INPUT figuras//21_electrodes_of_International_10-20_system_for_EEG.png
@@ -1602,23 +1615,15 @@ INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
 INPUT figuras//Screen Shot 2022-08-14 at 00.54.17.png
 INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
 INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
-INPUT ./figuras//code_work.png
-INPUT ./figuras//code_work.png
-INPUT figuras//code_work.png
-INPUT ./figuras//code_work.png
-INPUT ./figuras//code_work.png
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
+INPUT ./fundamentacao_teorica/resultados_e_discussões.tex
+OUTPUT fundamentacao_teorica/resultados_e_discussões.aux
+INPUT ./fundamentacao_teorica/resultados_e_discussões.tex
+INPUT ./fundamentacao_teorica/resultados_e_discussões.tex
+INPUT ./fundamentacao_teorica/resultados_e_discussões.tex
+INPUT ./fundamentacao_teorica/resultados_e_discussões.tex
+INPUT fundamentacao_teorica/resultados_e_discussões.tex
+INPUT ./fundamentacao_teorica/resultados_e_discussões.tex
+INPUT fundamentacao_teorica/resultados_e_discussões.tex
 INPUT ./ppgeb_mestrado.bbl
 INPUT ppgeb_mestrado.bbl
 INPUT ./ppgeb_mestrado.bbl
@@ -1640,6 +1645,9 @@ INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT ./fundamentacao_teorica/resultados_e_discussões.aux
+INPUT fundamentacao_teorica/resultados_e_discussões.aux
+INPUT fundamentacao_teorica/resultados_e_discussões.aux
 INPUT ./ppgeb_mestrado.out
 INPUT ./ppgeb_mestrado.out
 INPUT /Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.1037pk
@@ -1660,9 +1668,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb

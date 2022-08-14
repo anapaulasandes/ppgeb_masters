@@ -381,84 +381,8 @@ O nono capítulo apresenta as referencias do estudo.
 \include{fundamentacao_teorica/chap_materiais_e_métodos.tex}
 
 
+\include{fundamentacao_teorica/resultados_e_discussões.tex}
 
-\section{Observações Sobre Quadros e Tabelas}
-
-Quadros e tabelas são de uso semelhante às figuras, no que diz respeito à numeração, uso de legenda, e necessidade de citar ao menos uma vez antes da ocorrência. No entanto, no caso dos quadros e tabelas a legenda deve ser colocada acima, e não abaixo como nas figuras.
-
-A Tabela~\ref{tab:exemplo} ilustra esse uso. Observe que a citação de uma tabela específica (pelo número) é com a palavra ``tabela'' em maiúscula, ao contrário da referência a tabelas em geral. Note que em uma tabela as bordas são horizontais (não use bordas verticais para separar colunas), e não são necessárias bordas para separar cada linha. Separe apenas as linhas do início, fim, e dos indicadores dos campos presentes, como no exemplo. Podem ser usadas bordas horizontais para separar regiões distintas de dados (seções de dados), se necessário.
-
-\begin{table}[h]
-\centering
-\caption{Parâmetros utilizados na implementação do método de deteção de bordas proposto, em cada configuração considerada.}\label{tab:exemplo}
-\begin{tabular}{ccllll}
-\cline{1-5}
-\multirow{2}{*}{Configuração} && \multicolumn{3}{l}{\hspace*{12pt}Parâmetro}&  \\
-&& \hspace{4pt}A\hspace{4pt} & \hspace{4pt}B\hspace{4pt} & \hspace{4pt}C\hspace{4pt} & \\ \cline{1-5}
-1                             && \hspace{4pt}10\hspace{4pt}        & \hspace{4pt}5\hspace{4pt}       & \hspace{4pt}2\hspace{4pt}       &  \\
-2                             && \hspace{4pt}20\hspace{4pt}        & \hspace{4pt}5\hspace{4pt}       & \hspace{4pt}3\hspace{4pt}       &  \\
-3                             && \hspace{4pt}30\hspace{4pt}        & \hspace{4pt}8\hspace{4pt}       & \hspace{4pt}5\hspace{4pt}       &  \\ \cline{1-5}
-\end{tabular}
-\end{table}
-
-O Quadro~\ref{quadro:exemplo} é um outro exemplo. Note que um quadro se diferencia de uma tabela pelo uso de campos fechados, por meio de linhas horizontais e verticais. As tabelas são mais usadas para dados quantitativos, enquanto quadrados são mais usados quando há descrições textuais (mesmo que haja dados quantitativos também).
-
-\begin{quadro}
-\caption{Exemplo de um quadro (retirado de~\cite{Gomes2011}): \emph{Variáveis explicativas que representam características socioeconômicas dos idosos.} Fonte:~\cite{Gomes2011}}\label{quadro:exemplo}
-\begin{center}
-\scalefont{0.705}
-\begin{tabular}{|l|l|l|}
-\hline
-\hfill Variável\hfill\hspace{1mm} & \hfill Descrição${^{*}}$\hfill\hspace{1mm} & \hfill Categorização\hfill\hspace{1mm}\\
-\hline
-Nível de escolaridade & Número de anos de estudo (A5a, A5b, A6) & \begin{tabular}{l}Nenhum\\1 a 7 anos\\8 anos e mais\end{tabular}\\
-\hline
-Tem seguro/plano privado de saúde?&\hspace{-06pt}\begin{tabular}{l}Que tipo de seguro de saúde o(a) Sr.(a)\\ tem? (F1)\end{tabular} & \begin{tabular}{l}Sim\\Não\end{tabular}\\
-\hline
-Tem casa própria?&Esta casa é: (J2) & \begin{tabular}{l}Sim\\Não\end{tabular}\\
-\hline
-Uso de serviços de saúde&\hspace{-06pt}\begin{tabular}{l}Durante os últimos 12 meses, aonde o(a)\\ Sr.(a) foi quando se sentiu doente ou quando\\ precisou fazer uma consulta de saúde? (F3)\end{tabular} & \begin{tabular}{l}Usou\\Não usou\end{tabular}\\
-\hline
-Estado nutricional&\hspace{-06pt}\begin{tabular}{l}Com relação a seu estado nutricional o(a) \\Sr.(a) se considera bem nutrido? (C22i)\end{tabular} & \begin{tabular}{l}Bem nutrido\\Não está bem nutrido\end{tabular}\\
-\hline
-\end{tabular}
-\scalefont{1.4184}
-\end{center}
-\vspace{-12pt}
-Fonte: Estudo SABE.\\
-\emph{${^{\textrm{*} }}$Os códigos em parênteses na descrição das variáveis se referem à identificação da variável no banco de dados do Estudo SABE.}~\cite{Gomes2011}
-\end{quadro}
-
-\chapter{Resultados e Discussões}\label{chap:RD}
-
-\begin{table}[h]
-\centering
-\caption{Fatores de qualidades medidos em função do número de amostras, nos testes de reconstrução realizados.}\label{tab:qualidade}
-\begin{tabular}{cc}
-\toprule
-Número de amostras & Fator de qualidade\\
-\midrule
-10 & 0.30\\
-20 & 0.45\\
-30 & 0.60\\
-40 & 0.90\\
-50 & 0.93\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\centering
-\caption{Outro exemplo de tabela.}\label{tab:outroexemplo}
-\begin{tabular}{ccccc}
-    \toprule
-    a     & b     & c     & d     & e \\
-    \midrule
-    10    & 20    & 30    & 40    & 50 \\
-    100   & 200   & 300   & 400   & 500 \\
-    \bottomrule
-    \end{tabular}%
-\end{table}
 
 \chapter{Conclusão}\label{chap:Conclusao}
 
@@ -557,20 +481,7 @@ Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anex
 
 Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
 
-% Exemplo 2
-\clearpage
-\begin{flushright}
-\novoanexo{anexo_outro_exemplo}
-\scalebox{1.3}{\bfseries\scshape Anexo~\ref{anexo_outro_exemplo}}
-\addcontentsline{toc}{chapter}{Anexo~\ref{anexo_outro_exemplo}}
-\end{flushright}
 
-\noindent\begin{large}{\bfseries\scshape Outro Exemplo de Anexo}\end{large} \label{sec:anexo2}
-
-\vspace{24pt}
-
-Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
-%---}}}
 
 \end{document} 
 %---}}}
