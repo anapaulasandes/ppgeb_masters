@@ -1,65 +1,53 @@
 \chapter{Sincronização}
 
-O uso de equipamentos com função exclusiva de sincronização para coletas simultâneas é comum em pesquisas ambientes academicos e clínicos.
-A proposta de oferecer maior acessibilidade através da redução de custo e desenvolvimento de novas tecnologias encontra, portanto, um desafio a respeito 
-de como realizar a sincronização dos dados fisiológicos sem abrir mão da praticidade e custo dos equiapementos desenvolvidos. 
-Algumas propostas já foram exploradas a respeito, como o uso de piscadas e código temporal para garantir a sincronização de EEG e ET (Bækgaard et al. 2015, Notaro et al. 2018).
+Pode ser desafiador realizar a sincronização de equipamentos
+de forma custo-eficiente e prática. Algumas propostas já foram exploradas a respeito, 
+como o uso de piscadas e código temporal para garantir a sincronização de EEG e ET 
+(Bækgaard et al. 2015, Notaro et al. 2018). Outra solução
+conta com o disparo de pulsos para os equipamentos de coleta fisiológica 
+(Baccino e Manunta, 2005) e posterior sincronização. Todos os métodos citados necessitam de um
+sinal comum entre os equipamentos, seja a \textbf{piscada}, o \textbf{tempo de coleta} ou
+ o \textbf{envio de sinal externo}.
 
-\section{Sinal Elétrico}
-
-
-
-\section{Frequência de Coleta}
-Como os sinais análogos são convertidos para sinais digitais, existe uma perda de informação por esta conversão. 
-A \textbf{resolução de frequência} mede o espaço entre duas frequências. A \textbf{frequência Nyquist} corresponde a maior frequência que os dados amostrados podem apresentar
-sem erro e é definida como duas vezes o tamanho de banda do sinal (Leis, 2011). A formula de Nyquist é a seguinte
-(desconsiderando ruído):
-% John W. Leis (2011). Digital Signal Processing Using MATLAB for Students and Researchers. John Wiley & Sons. p. 82. ISBN 9781118033807.
-\begin{equation}
-    C(\text{bps}) = 2B * \log_2 \text{M},
-\end{equation}
-onde C corresponde a capacidade do sinal medida em bits por segundo (bps), B é a frequência em Hertz, e M é o 
-número de níveis que o sinal pode ter. 
-Isto apresenta que a frequência dos dados é proporcional a duas vezes a
- frequência de banda e logaricamente proporcional a M. 
-%http://mason.gmu.edu/~rmorika2/Noise__Data_Rate_and_Frequency_Bandwidth.htm
-Outra fórmula foi proposta por Shannon-Hartley, levando em consideração a proporção 
-\textit{signal-to-noise} (SNR), ou relação sinal-ruído, que descreve a capacidade máxima de um sinal dado sua frequencia 
-de banda. 
-\begin{equation}
-    C(\text{bps}) = B * \log_2 (1 + \text{SNR})
-\end{equation}
-A relação sinal-ruido compara a quantidade de ruído na quantidade de sinal desejado, onde um valor acima de 1 para 1
-indica mais sinal que ruído. 
-\begin{equation}
-    \text{SNR} = \frac {P_{signal}}{P_{noise}},
-\end{equation}
-onde $P$ = ao poder médio. A proporção precisa ser medida dentro de uma mesma banda de frequência 
-e entre mesmos pontos de um sistema. Quando o sinal é digital, o número de bits representa 
-a medida e deremina o máximo do SNR. 
 
 \section{Sincronização com Timecode}
-Notaro et al. (2018) faz uso do código temporal, ou \textit{timecode}, para sincronizar dados de EEG, ET e dados comportamentais 
-coletados de participantes enquanto estes faziam atividades de um site de aprendizagem de linguas. O driver
-do fabricante do equipamento comercial de EEG utilizado permite alteração da latência da coleta de dados, que
-foi modificada do valor padrão de 16 milissegundos para 1 millisegundo, afim de aumentar a precisão do equipamento.
-A informação da ocorrência de clicks no site foi retina na forma de milissegundos (HH:MM:SS:MsMsMs), e esta informação foi utilizada 
-para sincronizar dados de ET, EEG e movimentação de mouse. 
+Notaro et al. (2018) fez uma integração de equipamentos de coleta fisiológica e comportamental de 
+baixo custo, através do equipamento OpenBCI para captura de EEG; GP3 para ET e dados 
+de movimentação do mouse em tela. Os dados foram coletados enquanto os partipantes realizavam atividades em um 
+site de línguas. Os dados de EEG foram coletados em frequencia de 250Hz e dados de ET e deslocamento
+do mouse foram gravados em 60 Hz. Em sua pesquisa, Norato et al.  faz uso uso do código temporal, ou \textit{timecode}, 
+para sincronizar as diferentes modalidades. 
+
+O driver do fabricante do equipamento 
+comercial de EEG utilizado permite alteração da latência da coleta de dados, que
+foi modificada do valor padrão de 16 milissegundos para 1 millisegundo, afim de aumentar a precisão do 
+equipamento. A granularidade do \textit{timecode} foi de milissegundos (HH:MM:SS:MsMsMs), informação posteriormente utilizada
+para montar uma base de dados onde é possível identificar ondas cerebrais e coordenada do foco ocular em tela (figura 6.1). 
+A calibração do GP3 e coleta de dados de ET foi realizada através de código desenvolvido em Python, enquanto a
+coleta de EEG é realizada por software próprio do OpenBCI e posteriormente unida em código em MATLAB, onde os dados são
+sincronizados para poder gerar imagens como a do exemplo abaixo. 
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=180mm]{Screen Shot 2022-08-15 at 22.11.48.png}
+    \caption{Dados de EEG, ET (eye gaze) e posição de cursor (cursor position) 2 segundos antes da resposta de um participante em atividades de um site de línguas. 
+    Fonte: Notaro et al. (2018).}
+\end{figure}
+
 
 \section{Sincronização com Piscadas}
-Piscadas duram cerca de 200 milissegundos em média e podem indicar estados de alerta (Caffier, 2013). Piscadas também aparecem 
-em dados de EEG de forma característica, podendo alcançar uma amplitude de sinal acima de 200 microvolts em eletrodos próximos a órbita ocular (Hoffmann e Falkenstein, 2008). Assim sendo, é possível realizar uma sincronização por piscadas ao se detectar 
-o movimento em ambos os equiapmentos de coleta. No caso do EEG, as piscadas são comumente descartadas como artefatos indesejáveis. Já no estudo de 
-Bækgaard et al. (2015), elas são a assinatura de sincronização entre os equipamentos de coleta de EEG e ET em função de sua onda característica (geralmente muitos milivolts acima do sinal do EEG), e de também 
-ser detectdo através dos equipamentos de rastreamento ocular.
+Piscadas duram cerca de 200 milissegundos em média e podem indicar estados de alerta (Caffier, 2013). 
+Piscadas também aparecem em dados de EEG de forma característica, 
+podendo alcançar uma amplitude de sinal acima de 200 microvolts em eletrodos próximos a 
+órbita ocular (Hoffmann e Falkenstein, 2008). Assim sendo, é possível realizar uma sincronização 
+por piscadas ao se detectar o movimento em ambos os equipamentos de coleta. 
+No caso do EEG, as piscadas são comumente descartadas como artefatos indesejáveis. 
+Já no estudo de Bækgaard et al. (2015), elas são a assinatura de sincronização 
+entre os equipamentos de coleta de EEG e ET em função de sua onda característica
+ (geralmente muitos milivolts acima do sinal do EEG), e de também 
+ser detectada através dos equipamentos de rastreamento ocular.
 
-O desafio da sincronização de EEG e ET se dá em função de serem séries temporais muito distintas e 
-de frequências de amostra diferentes. No caso dos equipamentos comerciais de interesse desta pesquisa,
-a coleta de EEG pode ser realizada em até 512 Hz, enquanto a frequencia de coleta de ET chega num máximo de 60 Hz. 
-Além disso, o sinal de EEG pode apresentar mais de um canal, enquanto dados de ET podem ser representados
-na forma de coordenadas. Desta forma, Bækgaard et al. (2015) propõe uma sincronização por assinaturas dentro de cada um dos tipos de dados
-coletados. Piscadas ocorrem com frequencia e de forma expontanea, além de ser uma informação capturada em 
-equipamentos de EEG e ET.
 
 
 
@@ -77,6 +65,18 @@ o começo da atividade de piscada (com o fechamento das pálpebras) foi eleito c
 Para se detectar a piscada através de um sinal, é possível tentar realizar o método de \textit{Independent Component Analysis}, ou análise de 
 componente independente, mas as características do sinal de piscada também permite outras abordagens, como a identificação por função de probabilidade.
 
+EEG-Blinks é uma \textit{toolbox} feita para MATLAB que possibilita a coleta de piscadas em dados de EEG, que 
+funciona primeiramente extraindo possíveis sinais de piscadas do sinal de EEG, calculando pontos de interesse (figura 6.1) 
+nos sinais potenciais sinais de piscadas, rejeitando sinais com baixo SNR, e calculando o melhor sinal de piscada
+para ser utilizado. A partir disso, ele calcula as propriedades do sinal de piscada e seus índices (Blinker, 2022).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=100mm]{blink.png}
+    \caption{Assinatura de piscada em microvolts. Fonte: Blinker (2022)}
+\end{figure}
+ 
+
 
 \subsection{Identificação no Sinal de ET}
 Como o equipamento de rastreamento procura encontrar sinais da movimentação ocular, ele também detecta a ausencia desse sinal. No estudo 
@@ -87,7 +87,7 @@ onde o blink rate foi validado e sincronizado com o vídeo do próprio equipamen
 
 
 
-\section{Métodos para Sincronização}
+\section{Calcular a Sincronização}
 Existem diferentes métodos para calculo de sincronização entre séries temporais. 
 A forma mais simples é por \textbf{correlação de Pearson}, que mede como dois sinais mudam ao longo do tempo em valores que vão de -1 a 1;
 com -1 indicando uma correlação perfeita e negativa, 1 uma correlação perfeita e 0, sem correlação. 
@@ -105,66 +105,4 @@ A similatidade entre sinais é medida na amplitude do sinal da correlação. A c
     (f * g) = f(-t)*g(t), 
     \end{equation}
 onde * significa convolução e f(-t) é o conjugado complexo de f(t).
-
-
-
-
-
-
-\subsection{Códigos para Sincronização}
-Alguns equipamentos podem se beneficiar da existencia de \textit{toolboxes} ou bibliotecas direcionadas à sincronização. É o caso 
-dos equipamentos Tobii na solução de EEG-Eye para a linguagem MATLAB. Uma forma de se fazer sincdronização é através 
-
-\section{Correlação EEG e ET}
-
- Shared triggers
-Common trigger pulses ("triggers") are sent frequently from the 
-stimulation computer to both ET computer and EEG recording computer. 
-This is achieved via a Y-shaped cable that is attached to the parallel 
-port of the stimulation computer and splits up the pulse so it is looped through 
-to EEG and ET. We recommend to send triggers with a sufficient duration 
-(e.g. at least 5 ms at 500 Hz sampling rate) to avoid the loss of some of the triggers.
- The advantage of this method is that the same physical signal is used for 
- synchronization (although this does not guarantee that the trigger is
-  inserted into the ET and EEG data streams without delays). The disadvantage
-   is the need for an extra cable.
-
-Messages+triggers
-Messages are short text strings that can be inserted into the eye tracking data.
- While triggers are still sent to the EEG, messages are used as the corresponding 
- events for the ET. Here, the ET computer is given a command to insert an ASCII text 
- message (containing a keyword and the value of the corresponding EEG trigger) 
- into the eye tracking data. In the stimulation software, the commands to send a trigger
-  (to the EEG) and a message (to the ET) are given in immediate succession. 
-
-  Analogue output
-  A copy of the eye track is fed directly into the EEG. A digital-to-analogue 
-  converter card in the ET outputs (some of) the data as an analogue signal.
-   With SMI, this signal can be fed directly into the EEG headbox. 
-   This requires a custom cable and resistors to scale the output voltage 
-   of the D/A converter to the EEG amplifier's recording range. While this
-    method affords easy synchronisation, there are disadvantages: First, 
-    voltages need to be rescaled to pixels for analysis. Second, the ET 
-    signal may exceed the amplifier’s recording range and electrical 
-    interference with the EEG is possible. 
-    Third, additional information from the ET 
-    (messages, eye movements detected online) is 
-    not available. Fourth, quality of the ET signal 
-    suffers considerably from the D/A and subsequent 
-    A/D conversion. Finally, fewer channels remain to record
-     the EEG (recording binocular gaze position and pupil diameter occupies six channels).
-
-     Basics: Synchronization signals
-
-     Send triggers and/or messages to align the recordings
-The toolbox requires that there are at least two shared events present in the ET and EEG: One near the beginning and one near the end of the recording. These events will be called start-event and end-event in the following. Eye tracking data in between the start-event and end-event will be linearly interpolated to match the sampling frequency of the EEG. We recommend to use a unique event value (e.g. "100") to mark the start-event and another unique event-value (e.g., "200") for the end-event. The remaining shared events (triggers or messages) sent during the experiment (between start-event and end-event) are used to evaluate the quality of synchronization. Synchronization is possible even if some intermediate events were lost during transmission.
-
-Original sampling rates of EEG and ET do not need to be the same. The ET will be resampled to the sampling frequency of the EEG. For example, if the EEG was sampled at 500 Hz, and eye movements were recorded at 1000 Hz, the toolbox will downsample the eye track to 500 Hz. Since ET data outside of the synchronization range (before start-event, after end-event) cannot be interpolated, it is replaced by zeros. Please note that the EEG recording should not be paused during the experiment. [Clarification, April 2013: It is not a problem to pause the eye tracker recording, e.g. for recalibrations, because the time stamp assigned to each ET sample continues to increase even during the pause. However, the toolbox currently cannot recognize and handle pauses in the EEG recording. Therefore, the EEG recording should be continuous and must not be paused.]
-
-Note:The current Beta version of the toolbox does not yet implement low-pass filtering of the eye track to prevent aliasing in case that the eye track is downsampled to a much lower EEG sampling rate. We plan to add this in the future.
-
-If synchronization method 2 (messages plus trigger) is used, synchronization messages sent to the eye tracker need to have a specified format. This format consists of an arbitrary user-defined keyword (e.g., "MYKEYWORD") followed by an integer value ("MYKEYWORD 100"). The integer value needs to be the same as that of the corresponding trigger pulse sent to the EEG (usually an 8-bit number between 1 and 255). An example is given in the code below. The EYE-EEG parser (Step 2: Preprocess eye track and store as MATLAB) will recognize messages with the keyword and treat them as synchronization events. A keyword-synchronization messages should be sent together with every trigger sent to the EEG, so intermediate events in-between start-event and end-event can be used to assses synchronization quality. Additional messages (that do not contain the keyword) may be sent to code other aspects of the experimental design. They are ignored by the toolbox.
-
-The following code is an example for an experimental runtime file containing the necessary synchronization signals. The example is for the software Presentation™, but similar commands exist in other software (e.g., Psychtoolbox, EPrime™):++
-
 

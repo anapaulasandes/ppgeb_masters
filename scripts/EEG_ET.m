@@ -98,18 +98,6 @@ end
 raw = total; %return value of data
 
 
-
-
-
-%for trial_num=1:5
-    % Start of new trial here
-    %SendMsgToGP3(session1_client,['trial_start' num2str(trial_num)]); %send msg trigger for start of the trial
-    %pause(10);
-    % Present a stimuli here
-    %SendMsgToGP3(session1_client, num2str(calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW))); %send msg trigger for onset of new stimuli
-    %pause(2); 
-    %pause(10)
-%end
 %% close mindwave connection
 
 calllib('thinkgear', 'TG_FreeConnection', connectionId1 );

@@ -142,7 +142,7 @@ urlcolor = blue
 %---}}}
 
 % |--- Lista de palavras que não podem ser separadas em sílabas ---|------------------{{{
-\hyphenation{development results Commissioning possibility Philadelphia Devic Calculations Calculation Language}
+\hyphenation{}
 %---}}}
 
 % |--- Texto principal ---|----------------------{{{
@@ -196,7 +196,7 @@ urlcolor = blue
 \newgeometry{bottom=0.8in, top=0.9in, left=0.9in, right=0.9in}
 
 \noindent{\bfseries{\maiusc{\large Resumo}} }
-\acresetall % Manter essa linha!
+\acresetall 
 \vspace{12pt}
 
 O eletroencefalograma (EEG) e o rastreamento ocular (ET - \textit{Eye Tracking}) são 
@@ -346,39 +346,44 @@ De forma geral, os benefícios da solução se concentram em:
 \end{itemize}
 
 
-\section{[REFAZER] Organização do Documento}
-O presente texto tem  capítulos. O primeiro capítulo trata da contextualização do problema, objetivos gerais e específicos, e a justificativa para a abordagem selecionada. 
+\section{Organização do Documento}
+O presente texto tem nove capítulos. 
+O primeiro capítulo trata da contextualização do problema, 
+objetivos gerais e específicos, e a justificativa para a abordagem selecionada. 
 
-O segundo capítulo trata do referencial teórico, levantando pontos históricos importantes ao desenvolvimento desta pesquisa, uma introdução ao que seriam os sinais capturados pelos dois equipamentos de EEG e ET, características dos diferentes tipos de equipamento de captura e aborda a conversão de sinais analógicos para digital. 
+O segundo capítulo trata do das características da eletricidade cerebral, dando base para entendimento do que é o sinal de onda
+cerebral. 
 
-O terceiro capítulo trata do processo da aquisição e do tratamento de sinais fisiológicos a serem classificados por algoritmos de aprendizado de máquina supervisionado – processos como remoção de ruído e seleção de características. Também aborda métodos de fusão de bases de dados de diferentes fontes - a nível de característica e a nível de decisão. 
+O terceiro capítulo trata do 
+Rastreamento ocular, com os principais tipos de equipamento e abordagem de eletrooculograma.
 
-O quarto capítulo apresenta os métodos de avaliação dos algoritmos classificatórios. 
+O quarto capítulo aborda a acessibilidade à datasets fisiológicos e geração de bases. 
 
-O quinto capítulo aprofunda nos possíveis métodos de sincronização de coleta e de bases de dados.
+O quinto capítulo trata do uso do dataset multimodal em algortimos classificatórios.
 
-O sexto capítulo introduz a proposta de ferramenta de coleta simultânea elaborada por código e aborda o método de sincronização off-line, com sincronização por código temporal. 
+O sexto capítulo aborda a questão da sincronização de dados de múltiplos sensores. 
 
-O sétimo capítulo aborda o cronograma.
+O sétimo capítulo aborda os materias e métodos para construção da ferramenta e estudo de caso.
 
-O oitavo capítulo aborda os resultados esperados do estudo.s
+O oitavo capítulo aborda os resultados e discussões.
 
-
-O nono capítulo apresenta as referencias do estudo.
+O nono capítulo apresenta a conclusão deste estudo. 
 
 \include{fundamentacao_teorica/chap_eletricidade_cerebral.tex}
 
 \include{fundamentacao_teorica/chap_rastreamento_ocular.tex}
 
 %\include{fundamentacao_teorica/chap_series_temporais.tex}
+\include{fundamentacao_teorica/chap_trabalhos_relacionados.tex}
+
+\include{fundamentacao_teorica/chap_uso_em_algortimos.tex}
 
 \include{fundamentacao_teorica/chap_sincronization.tex}
 
 %\include{fundamentacao_teorica/chap_acesso_a_datasets.tex}
 
-\include{fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex}
-
 \include{fundamentacao_teorica/chap_materiais_e_métodos.tex}
+
 
 
 \include{fundamentacao_teorica/resultados_e_discussões.tex}
@@ -388,100 +393,9 @@ O nono capítulo apresenta as referencias do estudo.
 
 \renewcommand\bibname{\Large\scshape Lista de Referências}
 \addcontentsline{toc}{chapter}{\bf Lista de Referências}
-\bibliography{referencias}
+\bibliography{referencias_2}
 
-% |--- Exemplos de Apêndices ---|----------------------{{{
-% Início do Apêndice
-\newcounter{apendice}
-\counterwithin{figure}{apendice}
-\counterwithin{table}{apendice}
-\renewcommand{\theapendice}{\Alph{apendice}}
-\DeclareRobustCommand{\novoapendice}[1]{%
-    \refstepcounter{apendice}%
-    \phantom{\theapendice}\label{#1}}
-
-% Exemplo 1
-\clearpage
-\begin{flushright}
-\novoapendice{apendice_exemplo}
-\scalebox{1.3}{\bfseries\scshape Apêndice~\ref{apendice_exemplo}}
-\addcontentsline{toc}{chapter}{Apêndice~\ref{apendice_exemplo}}
-\end{flushright}
-
-\noindent\begin{large}{\bfseries\scshape Exemplo de Apêndice}\end{large} \label{sec:apendice1}
-
-\vspace{24pt}
-
-Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
-
-% Exemplo 2
-\clearpage
-\begin{flushright}
-\novoapendice{apendice_outro_exemplo}
-\scalebox{1.3}{\bfseries\scshape Apêndice~\ref{apendice_outro_exemplo}}
-\addcontentsline{toc}{chapter}{Apêndice~\ref{apendice_outro_exemplo}}
-\end{flushright}
-
-\noindent\begin{large}{\bfseries\scshape Outro Exemplo de Apêndice}\end{large} \label{sec:apendice2}
-
-\vspace{24pt}
-
-Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
-%---}}}
-
-% |--- Exemplos de Anexos ---|----------------------{{{
-% Início do anexos
-\newcounter{anexo}
-\counterwithin{figure}{anexo}
-\counterwithin{table}{anexo}
-\renewcommand{\theanexo}{\Alph{anexo}}
-\DeclareRobustCommand{\novoanexo}[1]{%
-    \refstepcounter{anexo}%
-    \phantom{\theanexo}\label{#1}}
-
-% Exemplo 1
-\clearpage
-\begin{flushright}
-\novoanexo{}
-\scalebox{1.3}{\bfseries\scshape Anexo~\ref{anexo_exemplo}}
-\addcontentsline{toc}{chapter}{Anexo~\ref{anexo_exemplo}}
-
-\section{Dados do Mindwave Mobile II}
-\begin{quadro}
-    \caption{Tipos de Eletrodos para coleta de EEG (adaptado de Brain Support Inc. (2019)):}\label{quadro:exemplo}
-    \begin{center}
-    \scalefont{0.905}
-    \begin{tabular}{|l|l|l|}
-    \hline
-        \hfill Feature\hfill\hspace{1mm} & \hfill Definição\hfill\hspace{1mm} & \hfill Tipo de Dado\hfill\hspace{1mm}\\
-        \hline Attention &  \hspace{-06pt}\begin{tabular}{l}Métrica definida pelo eSense\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-100)\end{tabular}\\
-        \hline Meditation & \hspace{-06pt}\begin{tabular}{l}Métrica definida pelo eSense\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-100)\end{tabular}\\
-        \hline rawValue & \hspace{-06pt}\begin{tabular}{l}Amostra de onda sem tratamento; \\ necessita de operação para devolver valor completo\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (-32768-32767)\end{tabular}\\
-        \hline delta & \hspace{-06pt}\begin{tabular}{l}Poder de Banda Relativo de onda após a remoção de artefatos\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-100)\end{tabular}\\
-        \hline tetha & \hspace{-06pt}\begin{tabular}{l}Poder de Banda Relativo de onda após a remoção de artefatos\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-100)\end{tabular}\\
-        \hline lowAlpha & \hspace{-06pt}\begin{tabular}{l}Poder de Banda Relativo de onda após a remoção de artefatos\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-100)\end{tabular}\\
-        \hline highAlpha & \hspace{-06pt}\begin{tabular}{l}Poder de Banda Relativo de onda após a remoção de artefatos\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-100)\end{tabular}\\
-        \hline lowBeta & \hspace{-06pt}\begin{tabular}{l}Poder de Banda Relativo de onda após a remoção de artefatos\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-100)\end{tabular}\\
-        \hline highBeta & \hspace{-06pt}\begin{tabular}{l}Poder de Banda Relativo de onda após a remoção de artefatos\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-100)\end{tabular}\\
-        \hline poorSignal & \hspace{-06pt}\begin{tabular}{l}Poder de Banda Relativo de onda após a remoção de artefatos\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-200)\end{tabular}\\
-        \hline blinkStrength & \hspace{-06pt}\begin{tabular}{l}Sem unidades. Representa força relativa de uma piscada.\end{tabular} &  \hspace{-06pt}\begin{tabular}{l}int (0-255)\end{tabular}\\
-    \hline
-    \end{tabular}
-    \scalefont{1.4184}
-    \end{center}
-    \vspace{-12pt}
-    Fonte: Brain Support Inc. (2019).\\
-    \end{quadro}
-
-\end{flushright}
-
-\noindent\begin{large}{\bfseries\scshape Exemplo de Anexo}\end{large} \label{sec:anexo1}
-
-\vspace{24pt}
-
-Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
 
 
 
 \end{document} 
-%---}}}

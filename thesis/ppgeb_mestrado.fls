@@ -1260,12 +1260,15 @@ INPUT fundamentacao_teorica/chap_eletricidade_cerebral.aux
 INPUT ./fundamentacao_teorica/chap_rastreamento_ocular.aux
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.aux
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.aux
+INPUT ./fundamentacao_teorica/chap_trabalhos_relacionados.aux
+INPUT fundamentacao_teorica/chap_trabalhos_relacionados.aux
+INPUT fundamentacao_teorica/chap_trabalhos_relacionados.aux
+INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.aux
+INPUT fundamentacao_teorica/chap_uso_em_algortimos.aux
+INPUT fundamentacao_teorica/chap_uso_em_algortimos.aux
 INPUT ./fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
-INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
-INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
-INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
@@ -1513,11 +1516,6 @@ INPUT ./figuras//serie_temporal_EEG.png
 INPUT figuras//serie_temporal_EEG.png
 INPUT ./figuras//serie_temporal_EEG.png
 INPUT ./figuras//serie_temporal_EEG.png
-INPUT ./propriedades de onda.png
-INPUT ./propriedades de onda.png
-INPUT propriedades de onda.png
-INPUT ./propriedades de onda.png
-INPUT ./propriedades de onda.png
 INPUT ./figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg
 INPUT ./figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg
 INPUT figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg
@@ -1558,34 +1556,44 @@ INPUT ./figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blin
 INPUT figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg
 INPUT ./figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg
 INPUT ./figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg
-INPUT ./fundamentacao_teorica/chap_sincronization.tex
-OUTPUT fundamentacao_teorica/chap_sincronization.aux
-INPUT ./fundamentacao_teorica/chap_sincronization.tex
-INPUT ./fundamentacao_teorica/chap_sincronization.tex
-INPUT ./fundamentacao_teorica/chap_sincronization.tex
-INPUT ./fundamentacao_teorica/chap_sincronization.tex
-INPUT fundamentacao_teorica/chap_sincronization.tex
-INPUT ./fundamentacao_teorica/chap_sincronization.tex
-INPUT fundamentacao_teorica/chap_sincronization.tex
-INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
-OUTPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
-INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
-INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
-INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
-INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
-INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
-INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
-INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.tex
+INPUT ./fundamentacao_teorica/chap_trabalhos_relacionados.tex
+OUTPUT fundamentacao_teorica/chap_trabalhos_relacionados.aux
+INPUT ./fundamentacao_teorica/chap_trabalhos_relacionados.tex
+INPUT ./fundamentacao_teorica/chap_trabalhos_relacionados.tex
+INPUT ./fundamentacao_teorica/chap_trabalhos_relacionados.tex
+INPUT ./fundamentacao_teorica/chap_trabalhos_relacionados.tex
+INPUT fundamentacao_teorica/chap_trabalhos_relacionados.tex
+INPUT ./fundamentacao_teorica/chap_trabalhos_relacionados.tex
+INPUT fundamentacao_teorica/chap_trabalhos_relacionados.tex
+INPUT ./figuras//numero_datasets.png
+INPUT ./figuras//numero_datasets.png
+INPUT figuras//numero_datasets.png
+INPUT ./figuras//numero_datasets.png
+INPUT ./figuras//numero_datasets.png
 INPUT ./figuras//setup.png
 INPUT ./figuras//setup.png
 INPUT figuras//setup.png
 INPUT ./figuras//setup.png
 INPUT ./figuras//setup.png
+INPUT ./figuras//pipeline_eeg.png
+INPUT ./figuras//pipeline_eeg.png
+INPUT figuras//pipeline_eeg.png
+INPUT ./figuras//pipeline_eeg.png
+INPUT ./figuras//pipeline_eeg.png
 INPUT ./figuras//fusao_decisao.png
 INPUT ./figuras//fusao_decisao.png
 INPUT figuras//fusao_decisao.png
 INPUT ./figuras//fusao_decisao.png
 INPUT ./figuras//fusao_decisao.png
+INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.tex
+OUTPUT fundamentacao_teorica/chap_uso_em_algortimos.aux
+INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.tex
+INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.tex
+INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.tex
+INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.tex
+INPUT fundamentacao_teorica/chap_uso_em_algortimos.tex
+INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.tex
+INPUT fundamentacao_teorica/chap_uso_em_algortimos.tex
 INPUT ./figuras//estimulo_e_coleta.png
 INPUT ./figuras//estimulo_e_coleta.png
 INPUT figuras//estimulo_e_coleta.png
@@ -1601,6 +1609,25 @@ INPUT ./figuras//thapalya.png
 INPUT figuras//thapalya.png
 INPUT ./figuras//thapalya.png
 INPUT ./figuras//thapalya.png
+INPUT ./fundamentacao_teorica/chap_sincronization.tex
+OUTPUT fundamentacao_teorica/chap_sincronization.aux
+INPUT ./fundamentacao_teorica/chap_sincronization.tex
+INPUT ./fundamentacao_teorica/chap_sincronization.tex
+INPUT ./fundamentacao_teorica/chap_sincronization.tex
+INPUT ./fundamentacao_teorica/chap_sincronization.tex
+INPUT fundamentacao_teorica/chap_sincronization.tex
+INPUT ./fundamentacao_teorica/chap_sincronization.tex
+INPUT fundamentacao_teorica/chap_sincronization.tex
+INPUT ./figuras//Screen Shot 2022-08-15 at 22.11.48.png
+INPUT ./figuras//Screen Shot 2022-08-15 at 22.11.48.png
+INPUT figuras//Screen Shot 2022-08-15 at 22.11.48.png
+INPUT ./figuras//Screen Shot 2022-08-15 at 22.11.48.png
+INPUT ./figuras//Screen Shot 2022-08-15 at 22.11.48.png
+INPUT ./figuras//blink.png
+INPUT ./figuras//blink.png
+INPUT figuras//blink.png
+INPUT ./figuras//blink.png
+INPUT ./figuras//blink.png
 INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
 OUTPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
@@ -1610,6 +1637,21 @@ INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.tex
 INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT ./figuras//mindwave_II.jpg
+INPUT ./figuras//mindwave_II.jpg
+INPUT figuras//mindwave_II.jpg
+INPUT ./figuras//mindwave_II.jpg
+INPUT ./figuras//mindwave_II.jpg
+INPUT ./figuras//gp3.png
+INPUT ./figuras//gp3.png
+INPUT figuras//gp3.png
+INPUT ./figuras//gp3.png
+INPUT ./figuras//gp3.png
+INPUT ./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT ./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT ./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT ./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
 INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
 INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
 INPUT figuras//Screen Shot 2022-08-14 at 00.54.17.png
@@ -1624,11 +1666,20 @@ INPUT ./fundamentacao_teorica/resultados_e_discussões.tex
 INPUT fundamentacao_teorica/resultados_e_discussões.tex
 INPUT ./fundamentacao_teorica/resultados_e_discussões.tex
 INPUT fundamentacao_teorica/resultados_e_discussões.tex
+INPUT ./figuras//example_dataset.jpeg
+INPUT ./figuras//example_dataset.jpeg
+INPUT figuras//example_dataset.jpeg
+INPUT ./figuras//example_dataset.jpeg
+INPUT ./figuras//example_dataset.jpeg
+INPUT ./figuras//real-time-plot-and-et.png
+INPUT ./figuras//real-time-plot-and-et.png
+INPUT figuras//real-time-plot-and-et.png
+INPUT ./figuras//real-time-plot-and-et.png
+INPUT ./figuras//real-time-plot-and-et.png
 INPUT ./ppgeb_mestrado.bbl
 INPUT ppgeb_mestrado.bbl
 INPUT ./ppgeb_mestrado.bbl
 INPUT ppgeb_mestrado.bbl
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT ppgeb_mestrado.aux
 INPUT ./fundamentacao_teorica/chap_eletricidade_cerebral.aux
 INPUT fundamentacao_teorica/chap_eletricidade_cerebral.aux
@@ -1636,12 +1687,15 @@ INPUT fundamentacao_teorica/chap_eletricidade_cerebral.aux
 INPUT ./fundamentacao_teorica/chap_rastreamento_ocular.aux
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.aux
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.aux
+INPUT ./fundamentacao_teorica/chap_trabalhos_relacionados.aux
+INPUT fundamentacao_teorica/chap_trabalhos_relacionados.aux
+INPUT fundamentacao_teorica/chap_trabalhos_relacionados.aux
+INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.aux
+INPUT fundamentacao_teorica/chap_uso_em_algortimos.aux
+INPUT fundamentacao_teorica/chap_uso_em_algortimos.aux
 INPUT ./fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
-INPUT ./fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
-INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
-INPUT fundamentacao_teorica/chap_uso_datasets_em_aprendizado_maquina.aux
 INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
 INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
@@ -1664,10 +1718,8 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
