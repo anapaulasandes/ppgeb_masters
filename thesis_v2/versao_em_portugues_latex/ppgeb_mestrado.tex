@@ -1,0 +1,482 @@
+\documentclass[a4paper, 12pt]{ppgeb}
+
+% |--- Títulos, autor, banca ---|----------------------{{{
+% Autor:
+% Substituta  as informações nos comandos a seguir, até a linha começando
+% com \membrobancaexterno.
+% Em \title: título na forma principal, como aparecerá em algumas páginas
+% Em \tituloficha: título como aparecerá na ficha catalográfica; idêntico
+% ao anterior, mas com possíveis quebras manuais de linha (usar \\ quando
+% necessário, para ajustar as mudanças de linha na ficha catalográfica).
+% Em   \titulocapaA,   \titulocapaB,   \titulocapaC:  título para a capa,
+% dividido em no  máximo 3  linhas (coloque uma  linha em  cada  comando,
+% dividindo como ficar melhor esteticamente).
+% Remova  o  símbolo  de  comentário  (%)  de  \coorientador,  se  houver
+% coorientador.
+%  Em  \publicacao{011A/2019}:  o  número  final  será   fornecido   pela
+
+\title{Coleta Simultânea de Eletroencefalograma \\ e Rastreamento Ocular: Ferramenta e Estudo de Caso}
+\tituloficha{Coleta Simultânea de Eletroencefalograma e Rastreamento Ocular: Ferramenta e Estudo de Caso\\\phantom{}[Distrito Federal], 2019.} 
+\titulocapaA{Coleta Simultânea de Eletroencefalograma e}
+\titulocapaB{e Rastreamento Ocular: Ferramenta e Estudo de Caso}
+\titulocapaC{}
+\titulofichadois{Coleta Simultânea de Eletroencefalograma e Rastreamento Ocular: Ferramenta e Estudo de Caso}
+\author{Ana Paula Sandes de Souza}
+\nomeinvertido{Souza, Ana}
+\orientador{Dr. Gerardo Antonio Idrobo Pizo}
+%\coorientador{Nome do Coorientador}
+\publicacao{011A/2022}
+\data{Agosto de 2022}
+\ano{2022}
+\areaum{Neurociência Computacional} % Preencher com termos escolhidos para identificar a área
+\areadois{Eletroencefalograma}
+\areatres{Rastreamento Ocular}
+\areaquatro{Sincronização de Sinais}
+\endereco{anapaulasandes.s@gmail.com}
+\cep{CEP 73105-904}
+
+\membrobancainterno{DRª. Marília Miranda Forte Gomes}
+\membrobancaexterno{Dr. Membro Externo}
+%---}}}
+%|--- Bibliotecas utilizadas ---|----------------------{{{
+    \usepackage[margin=1in]{geometry}
+    \usepackage{setspace}
+    \usepackage{multirow}
+    \usepackage{booktabs}
+     \usepackage[brazil]{babel}
+    \usepackage{xfrac}
+    \usepackage{hyperref}
+    \usepackage[printonlyused]{acronym}
+    \usepackage[acronym]{glossaries}
+    \usepackage{array}
+    \hypersetup{
+    colorlinks = true,
+    linkcolor = black,
+    anchorcolor = blue,
+    citecolor = blue,
+    filecolor = blue,
+    urlcolor = blue
+    }
+    \usepackage{rotating}
+    \usepackage[margin=0.40in,font=small,labelfont=bf,labelsep=period]{caption}
+    %---}}}
+    
+
+% |- Formato de referências (use apenas uma das 2 linhas seguintes; comente a outra) -|-{{{
+\newcommand{\formatobibliografia}{numero}
+%\newcommand{\formatobibliografia}{autorano}
+
+\ifthenelse{\equal{\formatobibliografia}{numero}}{
+\bibliographystyle{plain}
+}
+{}
+
+\ifthenelse{\equal{\formatobibliografia}{autorano}}{
+\usepackage{apalike}
+\bibliographystyle{apalike}
+}
+{}
+%---}}}
+
+% |--- Espaçamento, configuração de título de seções ---|----------------------{{{
+\onehalfspacing
+
+\makeatletter
+\renewcommand{\section}{\@startsection
+{section}
+{1}
+{0mm}
+{-\baselineskip}
+{0.5\baselineskip}
+{\large\bfseries\scshape}}
+\makeatother
+
+\makeatletter
+\renewcommand{\subsection}{\@startsection
+{subsection}
+{2}
+{0mm}
+{-\baselineskip}
+{0.5\baselineskip}
+{\bf\sffamily}}
+\makeatother
+
+\makeatletter
+\renewcommand{\subsubsection}{\@startsection
+{subsubsection}
+{3}
+{0mm}
+{-\baselineskip}
+{0.5\baselineskip}
+{\bf\sffamily}}
+\makeatother
+
+\setlength{\parindent}{20pt}
+\setlength{\parskip}{06pt}
+\newcommand{\spaceinitialsname}{0.4mm}
+\newcommand{\porcento}{\scalebox{0.5}{~}\scalebox{0.9}{\%}}
+\newcommand{\scanner}{\emph{scanner}}
+\newcommand{\scanners}{\emph{scanners}}
+\newcommand{\cmcubico}{${\textrm{cm}^{\scalebox{0.7}{3} }}$}
+\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+%---}}}
+
+% |--- Comandos especiais ---|----------------------{{{
+\newcommand{\cmquad}{${\textrm{cm}^{\scalebox{0.7}{2}} }$}
+\newcommand{\mmquad}{${\textrm{mm}^{\scalebox{0.7}{2}} }$}
+\newcommand{\gcmquad}{${\textrm{g}}/{\textrm{cm}^{\scalebox{0.7}{2}} }$}
+\newcommand{\subsecref}[1]{Seção~\ref{#1}}
+\newcommand{\figref}[1]{Figura~\ref{#1}}
+\newcommand{\etal}{\emph{et~al.}}
+\newcommand{\Jawsonly}{{\emph{Jaws-Only}} }
+\newcommand{\jawsonly}{{\emph{jaws-only}} }
+\newcommand{\software}{\emph{software}}
+\newcommand{\percentagesignscale}{0.8}
+\newcommand{\percent}{\scalebox{\percentagesignscale}{~\%}}
+\newcommand{\subsubsubsection}[1]{\vspace{16pt}\noindent\textbf{#1}\\[12pt]}
+%---}}}
+
+% |--- Diretório(s) com figuras (se desejar, inclua subdiretórios) ---|-------------{{{
+\graphicspath{{figuras/}}
+%---}}}
+
+% |--- Lista de palavras que não podem ser separadas em sílabas ---|------------------{{{
+\hyphenation{development results Commissioning possibility Philadelphia Devic Calculations Calculation Language}
+%---}}}
+
+% |--- Texto principal ---|----------------------{{{
+\begin{document}
+
+\maketitle
+
+% Se desejar uma epígrafe, remova o % do início das próximas linhas (até ==============)
+%\clearpage
+%\hspace{1mm}
+%
+%\vfill
+%
+%\hspace{1mm}
+%
+%\begin{center}
+%\emph{Epígrafe} \\
+%Autor da epígrafe
+%\end{center}
+%
+%\hspace{1mm}
+%
+%\vfill
+%
+%\hspace{1mm} 
+% ==============
+
+% Se desejar uma dedicatória, remova o % do início das próximas linhas (até ==============)
+%\clearpage
+%\hspace{1mm}
+%
+%\vfill
+%
+%\begin{flushright}
+%\begin{itshape}
+%Texto da dedicatória.
+%\end{itshape}
+%\end{flushright}
+% ==============
+
+% Se desejar incluir agradecimentos, remova o % do início das próximas linhas (até ==============)
+% \clearpage
+%\noindent{\bfseries{\maiusc{\large Agradecimentos}} }
+%
+%\vspace{24pt} Agradecimentos
+%
+%\noindent 
+%\clearpage
+% ==============
+
+\newgeometry{bottom=0.8in, top=0.9in, left=0.9in, right=0.9in}
+
+\noindent{\bfseries{\maiusc{\large Resumo}} }
+\acresetall % Manter essa linha!
+\vspace{12pt}
+
+O eletroencefalograma (EEG) e o rastreamento ocular (ET - \textit{Eye Tracking}) são 
+formas não-invasivas de se observar o comportamento do sistema nervoso através da coleta da atividade
+neural e posicionamento ocular ao longo do tempo. Desta forma, são importantes ferramentas na construção de bases de dados fisiológicos. 
+Bases de dados com mais de um tipo de dado fisiológico conferem vantagens a respeito
+do uso em algoritmos classificatórios, apresentando uma maior acurácia do que algortimos treinados
+com datasets unimodais.
+Apesar das vantagens de uso, o acesso a estes datasets ainda é restrito devido ao custo
+dos equipamentos e a complexidade da sincronização entre diferentes sensores.
+O presente estudo tem por objetivo apresentar uma ferramenta construída a partir de equipamentos
+comerciais que tem como \textit{output} um dataset multimodal de EEG e ET coletados simultaneamente.
+É esperado que a ferramenta promova acessibilidade a datasets multimodais ao gerar uma coleta com 
+equipamentos de baixo custo (relativo a equipamentos clínicos) e incentive o desenvolvimento de diferentes áreas de pesquisa que possam se beneficiar do acesso facilitado da coleta de dados fisiológicos. A ferramenta será 
+avaliada a respeito de sua capacidade de sincronização de EEG e ET, e o dataset multimodal será utilizado para treinar algoritmos 
+classificatórios no software Orange em um estudo de caso com apresentação de estímulos emocionais durante o momento de coleta.
+A performance dos algortimos será utilizada para argumentar sobre a possível aplicabilidade da ferramenta em estudos futuros.
+
+\vspace{14pt}
+
+\noindent{\textbf{Palavras-chave: }} EEG; ET; Sincronização; Base de Dados Fisiológicos;
+\acresetall % Manter essa linha!
+\clearpage
+\restoregeometry
+% \chapter{Abstract}
+\noindent{\bfseries{\maiusc{\large Abstract}} }
+\acresetall % Manter essa linha!
+\vspace{24pt}
+
+Electroencephalogram (EEG) and Eye Tracking (ET) are non-invasive methods of observing the nervous system behavior 
+by monitoring neural activity and ocular positioning over time. They are important tools in the construction of physiological 
+databases. Databases with more than one type of physiological data confer advantages in classification algorithms, 
+presenting a greater accuracy than algorithms trained with unimodal datasets. However, access to these datasets is still restricted
+ due to the equipment cost and synchronization complexity between different sensors. The present study aims to present a tool built 
+ from commercially available devices whose output is a multimodal dataset of EEG and ET collected simultaneously. 
+ The tool is expected to promote accessibility to multimodal datasets by generating a database from
+low-cost equipment (in comparison to clinical equipment) and encourage the development of different areas of research 
+that can benefit from easier access to physiological data acquisition. The tool will be evaluated regarding its ability 
+to synchronize EEG and ET, and the multimodal dataset will be evaluated in a case study with the participant being submited to emotional 
+stimuli to be classified by the trained algorithms in Orange software. The algorithms performance will be used to discuss about the 
+tool applicability in future studies.
+
+\vspace{14pt}
+
+\noindent{\textbf{Keywords: }} EEG; ET; Synchronization; Physiological Dataset;
+\acresetall % Manter essa linha!
+
+\indice
+
+\begin{center}
+
+{\bfseries{\maiusc{\large Lista de Nomenclaturas e Abreviações}} }%
+\end{center}
+
+\acrodef{3DCRT}[3DCRT]{Radioterapia Conformacional 3D, do inglês \emph{3D Conformal Radiotherapy}}
+\acrodef{AAPM}[AAPM]{Associação Americana de Física na Medicina, do inglês \emph{American Association of Physics in Medicine}}
+\acrodef{CQ}[CQ]{Controle de Qualidade}
+\acrodef{SPT}[SPT]{Sistema de Planejamento de Tratamento}
+
+\begin{acronym}
+\acro{3DCRT}{Radioterapia Conformacional 3D, do inglês \emph{3D Conformal Radiotherapy}}
+\acro{AAPM}{Associação Americana de Física na Medicina, do inglês \emph{American Association of Physics in Medicine}}
+\acro{CQ}{Controle de Qualidade}
+\acro{SPT}{Sistema de Planejamento de Tratamento}
+\end{acronym}
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\acresetall % Manter essa linha!
+
+\chapter{Introdução}
+
+Existe uma importante vantagem advinda do uso de bases fisiológicas chamadas multimodais, 
+ou de mais de um tipo de dado fisiológico em algoritmos supervisionados: a possibilidade de conferir 
+um maior poder classificatório em relação aos datasets unimodais (Kang et al., 2020; Thapaliya et al., 2019). 
+Sobre os benefícios já alcançados com estes datasets, é possível citar: melhora de diagnóstico de transtornos 
+neurológicos, como depressão e autismo (Kang et al., 2020; Thapaliya et al., 2019; Wu et al., 2021), 
+maior poder de classificação de emoções (Guo et al., 2019; Zheng et al., 2019;  Lu et al, 2015; Zheng et al., 2014), 
+e uma maior compreensão da ativação de mecanismos nervosos durante atividades de rotina, como leitura (Hollenstein et al., 2018). 
+Um modelo específico de dataset fisiológico multimodal é constituído do eletroencefalograma (EEG) e
+ rastreamento ocular (RO ou ET, da palavra em inglês \textit{Eye Tracking}), já tendo sido utilizado em diferentes estudos
+ de aprendizado supervisionado e estudos de \textit{Brain Computer Interface}, ou BCI; onde a integração homem-máquina é aprofundada
+ (Xu et al., 2022; Kim et al., 2015; Lee et al., 2010).
+
+%Se você deseja que o primeiro parágrafo de cada seção também tenha indentação, inclua no preâmbulo o comando \verb,\usepackage{indentfirst},.
+
+\section{Contextualização de Problema}
+
+Apesar das múltiplas vantagens, o acesso a estes datasets ainda é restrito. Sobre a coleta de EEG e ET, 
+Kastrati et al. comenta:
+
+\textit{“Coletar e classificar dados simultâneos de EEG e de rastreamento ocular é \textbf{demorado e caro},
+ pois requer equipamento e experiência [...]. 
+ Portanto, o acesso a dados de EEG-ET gravados simultaneamente é \textbf{altamente restrito}, o que retarda significativamente o progresso neste campo”. – Kastrati et al. (2021).}
+
+No recente estudo sobre a análise conjunta de dados de EEG e ET por Dimigen e Ehinger (2020) foram levantados
+ quatro principais problemas com este tipo de coleta (figura 1.1):
+
+
+\begin{itemize}
+    \item Integração de dados
+    \item A remoção de artefatos
+    \item Controle de sobreposição temporal de respostas cerebrais
+    \item Controle de influências de baixo-nível
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=130mm]{problemas_eeget.jpg}
+    \caption[Exemplo de um acelerador linear utilizado no Hospital Universitário de Brasília.]
+    {Principais problemas de integração em datasets de EEG e ET. Fonte: Dimigen e
+    Ehinger (2020).}\label{fig:acelerador}
+    \end{figure}
+
+Para auxiliar nos problemas levantados, a solução dos autores consistiu na construção de códigos especializados (o pacote EYE-EEG),
+que trabalham de forma integrada a uma \textit{toolbox} já consolidada em estudos de EEG, o EEGLAB (Delorme e Makeig, 2014) - a ser explorada adiante. A redução do custo das coletas fisiológicas já vem sido abordada através de equipamentos comercialmente disponíveis. 
+Um exemplo é o desenvolvimento de \textit{“smart watches”}, pequenos computadores de pulso que permitem o acompanhamento da
+frequência cardíaca do usuário, além do monitoramento de outras atividades fisiológicas, como o sono (Canaltech, 2022).
+O Mindwave Mobile II (Neurosky, Vale do Silício, CA, Estados Unidos), é um exemplo de equipamento comercial que possibilita a captura de ondas cerebrais, além de métricas 
+próprias do fabricante utilizadas para estimar atenção, meditação e a captura de piscadas dos usuários. Atualmente também 
+existem equipamentos disponíveis comercialmente para a coleta de ET, como o GP3 (Gazepoint, Vancouver, BC, Estados Unidos). 
+
+
+Com o propósito de aumentar a acessibilidade aos datasets multimodais e suas amplas vantagens de uso, 
+o presente projeto tem por objetivo a criação de uma ferramenta de coleta simultânea de EEG e ET acessível a 
+partir da coleta de dados de dois equipamentos comerciais – GP3 e Mindwave Mobile II. A ferramenta construída tem como \textit{output} uma base de dados multimodal
+ utilizada para treinamento de algoritmos classificatórios com o auxílio do software de mineração de dados Orange (Demsar et al., 2013), e terão seus resultados apresentados
+ adiante no texto.
+
+
+\section{Objetivos}
+
+Criar uma ferramenta a partir de equipamentos comerciais que gere um dataset fisiológico multimodal com dados de EEG e ET.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Criar código para coleta simultânea de EEG e ET;
+    \item Criar dataset multimodal a partir da fusão de dados de EEG e ET coletados pela ferramenta;
+    \item Avaliar o erro de sincronização, precisão e acurácia da ferramenta;
+    \item Realizar um estudo de caso com a aplicação do dataset gerado pela ferramenta para treinar algortimos classificatórios;
+    \item Avaliar a performance dos algortimos treinados para discutir a usabilidade da ferramenta em estudos futuros;
+\end{itemize}
+
+
+\section{Justificativa}
+A capacidade de coletar dados de forma simplificada e de baixo custo pode abrir espaço para novas investigações 
+científicas e também favorecer uma maior e mais representativa volumetria da população de estudo por eliminar a necessidade
+de deslocamento do participante à centros com os equipamentos (Brand el al., 2020). Ferramentas que gerem
+datasets multimodais também podem conferir vantagens na aplicação de iniciativas de aprendizado de máquina, \textit{Brain Computer Interface} (BCI) 
+e efomentar avanços na área de Inteligencia Artificial (IA) por promover bases de dados onde os algortimos possam ser treinados. 
+
+De forma geral, os benefícios da solução se concentram em:
+\begin{itemize}
+    \item Aumento da acessibilidade à estação de coleta, tanto por participantes quanto por pesquisadores;
+    \item Aumento da volumetria de dados;
+    \item Maior disponibilidade de bases de dados fisiológicos para incentivar o desenvolvimento de outras frentes de estudo;
+\end{itemize}
+
+
+\section{Organização do Documento}
+O presente texto tem nove capítulos. 
+O primeiro capítulo trata da contextualização do problema, 
+objetivos gerais e específicos, e a justificativa para a abordagem selecionada. 
+
+O segundo capítulo trata do das características da eletricidade cerebral, dando base para entendimento do que é o sinal de onda
+cerebral. 
+
+O terceiro capítulo trata do 
+Rastreamento ocular, com os principais tipos de equipamento e abordagem de eletrooculograma.
+
+O quarto capítulo aborda a acessibilidade à datasets fisiológicos e geração de bases. 
+
+O quinto capítulo trata do uso do dataset multimodal em algortimos classificatórios.
+
+O sexto capítulo aborda a questão da sincronização de dados de múltiplos sensores. 
+
+O sétimo capítulo aborda os materias e métodos para construção da ferramenta e estudo de caso.
+
+O oitavo capítulo aborda os resultados e discussões.
+
+O nono capítulo apresenta a conclusão deste estudo. 
+
+
+\include{fundamentacao_teorica/chap_eletricidade_cerebral.tex}
+
+\include{fundamentacao_teorica/chap_rastreamento_ocular.tex}
+
+%\include{fundamentacao_teorica/chap_series_temporais.tex}
+\include{fundamentacao_teorica/chap_trabalhos_relacionados.tex}
+
+\include{fundamentacao_teorica/chap_uso_em_algortimos.tex}
+
+\include{fundamentacao_teorica/chap_sincronization.tex}
+
+\chapter{Conclusão}\label{chap:Conclusao}
+
+\renewcommand\bibname{\Large\scshape Lista de Referências}
+\addcontentsline{toc}{chapter}{\bf Lista de Referências}
+\bibliography{referencias}
+
+% |--- Exemplos de Apêndices ---|----------------------{{{
+% Início do Apêndice
+\newcounter{apendice}
+\counterwithin{figure}{apendice}
+\counterwithin{table}{apendice}
+\renewcommand{\theapendice}{\Alph{apendice}}
+\DeclareRobustCommand{\novoapendice}[1]{%
+    \refstepcounter{apendice}%
+    \phantom{\theapendice}\label{#1}}
+
+% Exemplo 1
+\clearpage
+\begin{flushright}
+\novoapendice{apendice_exemplo}
+\scalebox{1.3}{\bfseries\scshape Apêndice~\ref{apendice_exemplo}}
+\addcontentsline{toc}{chapter}{Apêndice~\ref{apendice_exemplo}}
+\end{flushright}
+
+\noindent\begin{large}{\bfseries\scshape Exemplo de Apêndice}\end{large} \label{sec:apendice1}
+
+\vspace{24pt}
+
+Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
+
+% Exemplo 2
+\clearpage
+\begin{flushright}
+\novoapendice{apendice_outro_exemplo}
+\scalebox{1.3}{\bfseries\scshape Apêndice~\ref{apendice_outro_exemplo}}
+\addcontentsline{toc}{chapter}{Apêndice~\ref{apendice_outro_exemplo}}
+\end{flushright}
+
+\noindent\begin{large}{\bfseries\scshape Outro Exemplo de Apêndice}\end{large} \label{sec:apendice2}
+
+\vspace{24pt}
+
+Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
+%---}}}
+
+% |--- Exemplos de Anexos ---|----------------------{{{
+% Início do anexos
+\newcounter{anexo}
+\counterwithin{figure}{anexo}
+\counterwithin{table}{anexo}
+\renewcommand{\theanexo}{\Alph{anexo}}
+\DeclareRobustCommand{\novoanexo}[1]{%
+    \refstepcounter{anexo}%
+    \phantom{\theanexo}\label{#1}}
+
+% Exemplo 1
+\clearpage
+\begin{flushright}
+\novoanexo{anexo_exemplo}
+\scalebox{1.3}{\bfseries\scshape Anexo~\ref{anexo_exemplo}}
+\addcontentsline{toc}{chapter}{Anexo~\ref{anexo_exemplo}}
+\end{flushright}
+
+\noindent\begin{large}{\bfseries\scshape Exemplo de Anexo}\end{large} \label{sec:anexo1}
+
+\vspace{24pt}
+
+Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
+
+% Exemplo 2
+\clearpage
+\begin{flushright}
+\novoanexo{anexo_outro_exemplo}
+\scalebox{1.3}{\bfseries\scshape Anexo~\ref{anexo_outro_exemplo}}
+\addcontentsline{toc}{chapter}{Anexo~\ref{anexo_outro_exemplo}}
+\end{flushright}
+
+\noindent\begin{large}{\bfseries\scshape Outro Exemplo de Anexo}\end{large} \label{sec:anexo2}
+
+\vspace{24pt}
+
+Se você desejar, pode incluir ao final um ou mais apêndices, e um ou mais anexos. Caso não queira, é só remover todo o conteúdo começando na linha marcada por ``\%~Início~do~Apêndice'', até a linha anterior a ``\verb|\end{document}|''.
+%---}}}
+
+\end{document} 
+%---}}}

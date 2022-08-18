@@ -1,0 +1,40 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contextualização de Problema}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivos Específicos}{3}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Justificativa}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Organização do Documento}{3}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Eletricidade Cerebral}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Correntes Elétricas}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Neurônios}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Impulsos Nervosos e Potencial de Ação}{7}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Eletroencefalograma}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Ondas Cerebrais}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Sistema Internacional 10/20 de Posicionamento de Eletrodos}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Tipos de Eletrodos para Captura de EEG}{9}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}Rastreamento Ocular}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Anatomia Ocular}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Equipamentos de Rastreamento}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Eletrooculograma}{12}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Datasets Fisiológicos}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Aquisição de EEG e ET}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Pré-processamento de EEG}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}A Fusão de Dados}{15}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Uso em Algortimos}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Algortimos Classificatórios}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Uso de Datasets Multimodais de EEG e ET na Pesquisa}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Equipamentos Comerciais na Pesquisa}{19}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Considerações Finais}{20}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Sincronização}{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Sincronização com Timecode}{21}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Sincronização com Piscadas}{22}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Identificação no Sinal do EEG}{23}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Identificação no Sinal de ET}{24}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Calcular a Sincronização}{24}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusão}{25}{chapter.7}%
+\contentsline {chapter}{\bf Lista de Referências}{25}{chapter.7}%
+\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{27}{apendice.1}%
+\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{28}{apendice.2}%
+\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{29}{anexo.1}%
+\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{30}{anexo.2}%

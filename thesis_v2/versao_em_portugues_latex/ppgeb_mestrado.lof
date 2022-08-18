@@ -1,0 +1,21 @@
+\babel@toc {brazil}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Exemplo de um acelerador linear utilizado no Hospital Universitário de Brasília.}}{2}{figure.caption.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Anatomia de um neurônio com destaque para área de sinapse entre neurônios. Fonte: Bear (2015)\relax }}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema Modelo Hodgkin-Huxley. Dentro: indicando espaço intracelular; fora: indicando espaço extracelular (imagem a esquerda). Direita: C = capacitor, R = resistor, E = Baterias. Na = Sódio, K = Potássio Fonte: Neuromal Dynamcs (2014)\relax }}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Impulsos nervosos conduzidos em neurônios}}{7}{figure.caption.8}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Número de datasets disponíveis publicamente para estudos de sono por tipo de sinal. Fonte: Rim et al. (2020). \relax }}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Setup de coleta de EEG e ET. Fonte: Kastrati et al. (2021)\relax }}{14}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Exemplo de pipeline para processamento de EEG. Fonte: Neuroeletrics (2022)\relax }}{15}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Exemplo de Fluxo para Fusão de Dados de Sensores. Fonte: Mendes et al. (2016)\relax }}{15}{figure.caption.17}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Design de Experimento para Coleta de EEG e ET. Fonte: Zheng et al. (2014)\relax }}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Acurácia por Método de Fusão de Modalidade e Modalidade Única em Algoritmo Supervisionado. Fonte: Lu et. al. (2015)\relax }}{19}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces União de dados de EEG e ET. Fonte: Thapaliya et al. (2019)\relax }}{20}{figure.caption.20}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Dados de EEG, ET (eye gaze) e posição de cursor (cursor position) 2 segundos antes da resposta de um participante em atividades de um site de línguas. Fonte: Notaro et al. (2018).\relax }}{22}{figure.caption.21}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Assinatura de piscada em microvolts. Fonte: Blinker (2022)\relax }}{23}{figure.caption.22}%
+\addvspace {10\p@ }
