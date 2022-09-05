@@ -1,0 +1,61 @@
+\chapter{Algortimos de Classificação}
+
+A variável de interesse no aprendizado de máquina pode ser categórica, também chamada de qualitativa. 
+No aprendizado supervisionado, o dataset previamente classificado é normalmente dividido entre
+dataset de treinamento e teste. Esta divisão permite que a avaliação do algoritmo seja feita em dados 
+não utilizados anteriormente, evitando um viés durante a avaliação do poder classificartório. Existem 
+diferentes métodos de classificação em aprendizado de máquina. Alguns dos principais métodos
+serão apresentados a seguir.
+
+\section{Regressão Logística}
+A regressão logistica utiliza uma função de ativação para determinar a probabilidade 
+das características do dataset serem representantes de uma dada categoria e todas as 
+probabilidades ficam entre valores de zero ou um (equação 7.1).
+
+\begin{equation}
+      p(X) = \beta_{0} + \beta_{1}X,
+\end{equation}
+onde $p(X)$ é a probabilidade da categoria. Para que o valor da probabilidade 
+permaneça entre 0 e 1, a função logística é utilizada (equação 7.2).
+
+\begin{equation}
+      p(X) = \frac{e^{\beta_{0} + \beta_{1}X}}{1 + e^{\beta_{0} + \beta_{1}X}},
+\end{equation}
+onde a probabilidade resultante sempre estará entre 0 e 1. 
+
+
+
+
+
+\section{Avaliação de Algoritmos Classificatórios}
+
+A acurácia e precisão oferecem métricas para avaliar o erro observado do output (ou resultado) do modelo. 
+Para isso, é necessário saber o valor real e o valor estimado pelo algoritmo classificatório. 
+A acurácia mede a proximidade de um determinado valor e o valor de referência (ou valor real) (equação 7.1). 
+A precisão mede a dispersão dos valores obtidos pelo modelo (equação 7.2). 
+Um bom algoritmo é preciso e possui alta acurácia. 
+
+\begin{equation}
+      Accuracy = \frac{TP+TN}{TP+TN+FP+FN}
+\end{equation}
+
+\begin{equation}
+      Precision = \frac{TP}{TP+FP}
+\end{equation}
+
+\begin{equation}
+      Recall = \frac{TP}{TP+FN}
+\end{equation}
+
+\begin{equation}
+      F1 = \frac{2*Precision*Recall}{Precision+Recall} = \frac{2*TP}{2*TP+FP+FN}\text{,}
+\end{equation}
+
+onde TP = verdadeiros positivos, ou onde a previsão do valor tido com verdadeiro estava correta; TN = verdadeiros negativos;
+FP e FN onde o modelo errou e em qual modalidade (se na classificação dos positivos ou dos falsos, respectivamente).
+Por este motivo, existe a necessidade de separar o dataset em dataset de treino e dataset de teste. De forma habitual, o dataset
+de teste é 20\% do dataset total, selecionado de forma aleatória. Ao final do momento de treinamento, onde o algoritmo 
+tenta encontrar padrões nas diferentes classes do dataset, o dataset de teste é classificado pelo algortimo de acordo 
+com o que foi aprendido e então as métricas de performance são calculadas.
+
+

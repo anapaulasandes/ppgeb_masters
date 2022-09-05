@@ -1,13 +1,11 @@
 \chapter{Sincronização}
 
-Pode ser desafiador realizar a sincronização de equipamentos
-de forma custo-eficiente e prática. Algumas propostas já foram exploradas a respeito, 
-como o uso de piscadas e código temporal para garantir a sincronização de EEG e ET 
-(Bækgaard et al. 2015, Notaro et al. 2018). Outra solução
+A sincronização do sinal adquirido de diferentes equipamentos pode ser um desafio 
+(Tu et al., 2020). Algumas propostas já foram exploradas a respeito, 
+como o uso sincronização temporal e sincronização por piscadas (Xiao et al., 2022, 
+Bækgaard et al. 2015, Notaro et al. 2018). Outra solução
 conta com o disparo de pulsos para os equipamentos de coleta fisiológica 
-(Baccino e Manunta, 2005) e posterior sincronização. Todos os métodos citados necessitam de um
-sinal comum entre os equipamentos, seja a \textbf{piscada}, o \textbf{tempo de coleta} ou
- o \textbf{envio de sinal externo}.
+(Baccino e Manunta, 2005) e posterior sincronização. 
 
 
 \section{Sincronização com Timecode}
@@ -35,10 +33,19 @@ sincronizados para poder gerar imagens como a do exemplo abaixo.
     Fonte: Notaro et al. (2018).}
 \end{figure}
 
+\clearpage
 
 \section{Sincronização com Piscadas}
-Piscadas duram cerca de 200 milissegundos em média e podem indicar estados de alerta (Caffier, 2013). 
-Piscadas também aparecem em dados de EEG de forma característica, 
+Piscadas duram cerca de 200 milissegundos em média, com o tempo de abertura 
+das pálpebras sendo cerca de duas vezes mais longo que a duração 
+do fechar das pálpebras (Caffier et al., 2013). O comportamento de piscar também tende a 
+ser relaicionado a condições de alerta e a depender se 
+o participante está engajado de forma ativa ou assistindo de forma 
+passiva a determinada atividade  (Caffier et al., 2013; Skotte et al. 2007). 
+
+
+e aparecem em 
+sinais de EEG de forma característica, 
 podendo alcançar uma amplitude de sinal acima de 200 microvolts em eletrodos próximos a 
 órbita ocular (Hoffmann e Falkenstein, 2008). Assim sendo, é possível realizar uma sincronização 
 por piscadas ao se detectar o movimento em ambos os equipamentos de coleta. 
@@ -52,7 +59,6 @@ ser detectada através dos equipamentos de rastreamento ocular.
 
 
 
-\subsection{Identificação no Sinal do EEG}
 
 A piscada envolve ativação muscular, e o dipolo ocular também influencia na captura de alterações de voltagem em eletrodos próximos aos olhos
 (Croft e Barry, 2000). Seu reflexo no EEG pode ser facilmente identificado pois tente a ter uma amplitude e forma de sinal característicos. 
@@ -78,7 +84,6 @@ para ser utilizado. A partir disso, ele calcula as propriedades do sinal de pisc
  
 
 
-\subsection{Identificação no Sinal de ET}
 Como o equipamento de rastreamento procura encontrar sinais da movimentação ocular, ele também detecta a ausencia desse sinal. No estudo 
 de Bækgaard et al. (2015), uma perda de até 500 milissegundos foi considerada como indicador da ocorrência de uma piscada. No equipamento de coleta de ET GP3, 
 o fabricante oferece uma forma de identificar a existencia de uma piscada. Ela ocorre através da propriedade Blinking Validation Flag, ou BKID, onde qualquer 

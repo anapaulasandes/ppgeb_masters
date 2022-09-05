@@ -178,7 +178,7 @@ Depois de adicionar a pasta com o código no \textit{path} do MATLAB, o código 
 iniciado. O código foi construído com base na \textit{toolkit} Gazepoint, da EmotionCognitionLab. 
 Ele age da seguinte forma:
 
-\b egin{enumerate}
+\begin{enumerate}
     \item Fecha todas as variáveis pré existentes;
     \item Estabelece conexão com o GP3;
     \item Executa a calibração do GP3 com 5 pontos em tela;
@@ -195,3 +195,102 @@ Ele age da seguinte forma:
  usada para armazenar as informações RAW do Mindwave mobile. As informações são escritas 
  pelo segundo terminal para o arquivo .txt (previamente definido no código). A captura de informações 
  do GP3 e Mindwave acontecem de forma imediatamente sucessiva. 
+
+ \textbf{2. Validando o Dataset}
+
+A validação do uso do dataset foi realizado de acordo com o método indicado pelo 
+desenvolvedor do software orange para classificação com cross-validação (figura 9.5). 
+
+ \begin{figure}[!h]
+    \centering
+    \includegraphics[width=150mm]{Screen Shot 2022-09-05 at 19.25.37.png}
+    \caption{Workflow Orange para Algortimos de Classificação. (Orange, 2022).}
+\end{figure}
+
+Quatro algortimos de classificação foram
+analisados: Rede Neural (Neural Network), Regressão Logistica (Logistic Regression), Floresta aleatória (Random Forest)
+e Support Vector Machine (SVM). (Figura 9.6). 
+
+ \begin{figure}[!h]
+    \centering
+    \includegraphics[width=100mm]{Screen Shot 2022-08-31 at 22.30.08.png}
+    \caption{Workflow Utilizado no Projeto para Validar o Dataset Gerado pela Ferramenta Proposta.}
+\end{figure}
+
+O processo de classificação é feito da seguinte forma:
+
+\begin{enumerate}
+    \item Recebe o dataset dividido aleatóriamente entre treino (80\%) e teste (20\%);
+    \item Separa a coluna com a classificação, também chamada de \textit{target}, e as colunas de características ou \textit{features};
+    \item Treina quatro modelos com os mesmos dados de treino;
+    \item Testa com o dataset de teste;
+    \item Plota a curva ROC;
+    \item Calcula a Matriz de Confusão;
+\end{enumerate}
+
+
+
+\subsection{Regressão Logística}
+A regressão logística é uma técnica estatística que tem como objetivo produzir, a partir de um conjunto de observações, um modelo que permita a predição de valores tomados por uma variável categórica, 
+frequentemente binária, em função de uma ou mais variáveis independentes contínuas.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=100mm]{4-1.png}
+    \caption{Regressão Logística}
+\end{figure}
+
+\subsection{Floresta Aleatória}
+Florestas aleatórias são uma combinação de preditores de árvores de tal forma que cada árvore depende dos valores de um
+vetor aleatório amostrado independentemente e com a mesma distribuição para todas as árvores da floresta. A generalização
+erro para florestas converge a.s. até um limite à medida que o número de árvores na floresta se torna grande. 
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=100mm]{0_tG-IWcxL1jg7RkT0.png}
+    \caption{Floresta Aleatória}
+\end{figure}
+
+\subsection{Support Vector Machine - SVM}
+É um método de classificação não probabilístico linear que
+procura maximizar a distância entre as categorias após mapear 
+as observações no espaço. Podem performar uma classificação linear e não 
+linear, através de colocar as observações em espaços multidimensionais. 
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=80mm]{SVM_margin.png}
+    \caption{SVM Linear}
+\end{figure}
+
+\clearpage
+
+
+\subsection{Rede Neural}
+ma rede neural é um método de inteligência artificial que ensina 
+computadores a processar dados de uma forma inspirada pelo cérebro humano. 
+É um tipo de processo de machine learning, chamado aprendizado profundo, 
+que usa nós ou neurônios interconectados em uma estrutura em camadas, semelhante ao cérebro humano.
+
+\subsection{Curva ROC}
+As curvas ROC (receiver operator characteristic curve) são uma forma de representar a relação, 
+normalmente antagónica, entre a sensibilidade e a especificidade 
+de um teste diagnóstico quantitativo, ao longo de um contínuo de valores de "cutoff point".
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=110mm]{curvaROC.jpeg}
+    \caption{SVM Linear}
+\end{figure}
+
+
+\subsection{Matriz de Confusão}
+A Matriz de Confusão é calculada pela função de pesquisa Classificação. 
+Ela exibe a distribuição dos registros em termos de suas classes atuais e de suas classes previstas. 
+Isso indica a qualidade do modelo atual. Um modelo pode conter duas ou mais classes previstas.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=100mm]{matrizConfusao-600x381.png}
+    \caption{Matriz de Confusão}
+\end{figure}
