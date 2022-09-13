@@ -199,20 +199,26 @@
 \acresetall % Manter essa linha!
 \vspace{12pt}
 
-O eletroencefalograma (EEG) e o rastreamento ocular (ET - \textit{Eye Tracking}) são 
-formas não-invasivas de se observar o comportamento do sistema nervoso através da coleta da atividade
-neural e posicionamento ocular ao longo do tempo. Desta forma, são importantes ferramentas na construção de bases de dados fisiológicos. 
-Bases de dados com mais de um tipo de dado fisiológico conferem vantagens a respeito
-do uso em algoritmos classificatórios, apresentando uma maior acurácia do que algortimos treinados
-com datasets unimodais.
-Apesar das vantagens de uso, o acesso a estes datasets ainda é restrito devido ao custo
-dos equipamentos e a complexidade da sincronização entre diferentes sensores.
-O presente estudo tem por objetivo apresentar uma ferramenta construída a partir de equipamentos
-comerciais que tem como \textit{output} um dataset multimodal de EEG e ET coletados simultaneamente.
-É esperado que a ferramenta promova acessibilidade a datasets multimodais ao gerar uma coleta com 
-equipamentos de baixo custo (relativo a equipamentos clínicos) e incentive o desenvolvimento de diferentes áreas de pesquisa que possam se beneficiar do acesso facilitado da coleta de dados fisiológicos. A ferramenta será 
-avaliada a respeito de sua capacidade de sincronização de EEG e ET, e o dataset multimodal será utilizado para treinar algoritmos 
-classificatórios no software Orange em um estudo de caso com apresentação de estímulos emocionais durante o momento de coleta.
+O eletroencefalograma (EEG) e o rastreamento ocular (ET - \textit{Eye Tracking}) 
+são 
+formas não-invasivas de se observar o comportamento do sistema nervoso. 
+Algoritmos classificatórios treinados com bases de dados com 
+mais um tipo de dado fisiológico 
+tendem a apresentar uma maior performance do que algortimos treinados
+com datasets unimodais. Apesar das vantagens, o acesso aos datasets fisológicos
+ainda é restrito. O custo dos equipamentos e a complexidade da 
+sincronização entre diferentes sensores são alguns 
+fatores de limitação de acesso. 
+O presente estudo tem por objetivo
+propor uma ferramenta construída a partir de 
+equipamentos comerciais, 
+capaz de gerar um dataset multimodal com dados de EEG 
+e ET coletados simultaneamente. A ferramenta será avaliada a 
+respeito de sua capacidade de sincronização, dada através 
+da identidicação de piscadas em ambos os equipamentos.
+Após a avaliação de sincronização, o dataset multimodal gerado 
+será utilizado para treinar quatro diferentes 
+algoritmos classificatórios. 
 A performance dos algortimos será utilizada para argumentar sobre a possível aplicabilidade da ferramenta em estudos futuros.
 
 \vspace{14pt}
@@ -387,12 +393,35 @@ O nono capítulo apresenta a conclusão deste estudo.
 
 \include{fundamentacao_teorica/chap_rastreamento_ocular.tex}
 
-%\include{fundamentacao_teorica/chap_series_temporais.tex}
 \include{fundamentacao_teorica/chap_trabalhos_relacionados.tex}
 
 \include{fundamentacao_teorica/chap_uso_em_algortimos.tex}
 
 \include{fundamentacao_teorica/chap_sincronization.tex}
+
+%\include{fundamentacao_teorica/chap_classification.tex}
+
+\include{fundamentacao_teorica/chap_materiais_e_métodos.tex}
+
+\include{fundamentacao_teorica/chap_resultados.tex}
+
+\chapter{Discussão}\label{chap:Discussao}
+Durante a análise de performance do equipamento GP3, a métrica USER 
+foi utilizada por Brand et al. (2020) para identificar o estímulo apresentando
+no dado timecode e também a captura de clicks no mouse. Segundo o fabricante, 
+a coluna USER é utilizada para que o usuário possa enviar mensagens ao equipamento. 
+O Código que gera os dados multimodais utiliza da mesma via disponibilizada pelo 
+fabricante do equipamento para indicação de estímulos apresentados. Entretanto,
+ao invés da identificação de estímulo apresentado, o código captura o dado de EEG 
+no determinado momento, possibilitando que o dataset gerado tenha informações de ambos, EEG e ET, 
+para cada momento de coleta. Como no estudo apresentado sobre a qualidade dos dados do GP3, realizado por Brand et al. (2020),
+a coleta com a ferramenta multimodal também deverá considerar os principais fatores que impedem uma coleta de 
+qualidade, sendo estes: distancia do equipamento, reflexos no olho e calibração adequada. 
+
+O código possibilitou a geração de um datasetmultimodal coletado em um reduzido espaço de tempo. 
+Para atestar a sincronização dos equipamentos, a presença de curvas típicas de piscadas foram 
+identificadas em conjunto com a identificação de piscadas pelo equipamento GP3. Além da calibração
+realizada desta forma, 
 
 \chapter{Conclusão}\label{chap:Conclusao}
 

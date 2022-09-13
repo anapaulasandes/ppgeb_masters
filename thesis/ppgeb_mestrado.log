@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.14)  17 AUG 2022 07:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.14)  31 AUG 2022 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -587,7 +587,11 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
-) (./ppgeb_mestrado.aux)
+) (./ppgeb_mestrado.aux (./fundamentacao_teorica/chap_eletricidade_cerebral.aux) (./fundamentacao_teorica/chap_rastreamento_ocular.aux
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+) (./fundamentacao_teorica/chap_trabalhos_relacionados.aux) (./fundamentacao_teorica/chap_uso_em_algortimos.aux) (./fundamentacao_teorica/chap_sincronization.aux) (./fundamentacao_teorica/chap_acesso_a_datasets.aux) (./fundamentacao_teorica/chap_materiais_e_métodos.aux) (./fundamentacao_teorica/resultados_e_discussões.aux))
 \openout1 = `ppgeb_mestrado.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
@@ -685,13 +689,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 149.
 LaTeX Info: Redefining \pageref on input line 149.
 LaTeX Info: Redefining \nameref on input line 149.
+ (./ppgeb_mestrado.out) (./ppgeb_mestrado.out)
 \@outlinefile=\write3
 \openout3 = `ppgeb_mestrado.out'.
 
  (./ppgeb_mestrado.glsdefs)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<figuras/capa.pdf, id=4, 597.23125pt x 845.1575pt>
+<figuras/capa.pdf, id=191, 597.23125pt x 845.1575pt>
 File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf>
 Package pdftex.def Info: figuras/capa.pdf  used on input line 152.
@@ -700,7 +705,7 @@ File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf>
 Package pdftex.def Info: figuras/capa.pdf  used on input line 152.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<figuras/capa.pdf, id=7, page=1, 597.23125pt x 845.1575pt>
+<figuras/capa.pdf, id=194, page=1, 597.23125pt x 845.1575pt>
 File: figuras/capa.pdf Graphic file (type pdf)
 <use figuras/capa.pdf, page 1>
 Package pdftex.def Info: figuras/capa.pdf , page1 used on input line 152.
@@ -731,7 +736,7 @@ Package pdftex.def Info: figuras/capa.pdf , page1 used on input line 152.
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figuras/capa.pdf>]
-<figuras//ppgeb.png, id=22, 817.1328pt x 335.5737pt>
+<figuras//ppgeb.png, id=210, 817.1328pt x 335.5737pt>
 File: figuras//ppgeb.png Graphic file (type png)
 <use figuras//ppgeb.png>
 Package pdftex.def Info: figuras//ppgeb.png  used on input line 152.
@@ -803,15 +808,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--152
  []
 
 
-LaTeX Warning: Reference `LastPage' on page iv undefined on input line 152.
-
-
 Overfull \hbox (61.67415pt too wide) in paragraph at lines 152--152
 [] 
  []
-
-
-LaTeX Warning: Reference `LastPage' on page iv undefined on input line 152.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 152--152
@@ -862,33 +861,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--152
 ]
 LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <24.88> not available
 (Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 246.
+ (./ppgeb_mestrado.toc [7
+
+])
 \tf@toc=\write4
 \openout4 = `ppgeb_mestrado.toc'.
 
- [7
-
-]
+ [8] (./ppgeb_mestrado.lot)
 \tf@lot=\write5
 \openout5 = `ppgeb_mestrado.lot'.
 
- [8
+ [9
 
-]
-
-Package hyperref Warning: old loa file detected, not used; run LaTeX again.
-
+] (./ppgeb_mestrado.loa)
 \tf@loa=\write6
 \openout6 = `ppgeb_mestrado.loa'.
 
-[9
+ [10
 
-]
+] (./ppgeb_mestrado.lof
+Overfull \hbox (9.97319pt too wide) in paragraph at lines 5--5
+ [][] [][][]\OT1/cmr/m/n/12 Anatomia de um neur^onio com des-ta-que para ^^Sarea de si-napse en-tre neur^onios. 
+ []
+
+[11
+
+])
 \tf@lof=\write7
 \openout7 = `ppgeb_mestrado.lof'.
 
- [10
-
-] [11
+ [12] [13
 
 ]
 Cap\'{\i }tulo 1.
@@ -898,7 +900,7 @@ LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <17.28> not available
 
 
 ]
-<figuras//problemas_eeget.jpg, id=83, 469.755pt x 143.53625pt>
+<figuras//problemas_eeget.jpg, id=378, 469.755pt x 143.53625pt>
 File: figuras//problemas_eeget.jpg Graphic file (type jpg)
 <use figuras//problemas_eeget.jpg>
 Package pdftex.def Info: figuras//problemas_eeget.jpg  used on input line 298.
@@ -908,7 +910,7 @@ Package pdftex.def Info: figuras//problemas_eeget.jpg  used on input line 298.
 
  (./fundamentacao_teorica/chap_eletricidade_cerebral.tex
 Cap\'{\i }tulo 2.
-<figuras//corpo_celular.jpg, id=105, 156.585pt x 277.035pt>
+<figuras//corpo_celular.jpg, id=394, 156.585pt x 277.035pt>
 File: figuras//corpo_celular.jpg Graphic file (type jpg)
 <use figuras//corpo_celular.jpg>
 Package pdftex.def Info: figuras//corpo_celular.jpg  used on input line 32.
@@ -917,24 +919,24 @@ Package pdftex.def Info: figuras//corpo_celular.jpg  used on input line 32.
 
 
 ]
-<figuras//modeloHH.jpg, id=115, 469.755pt x 171.64125pt>
+<figuras//modeloHH.jpg, id=401, 469.755pt x 171.64125pt>
 File: figuras//modeloHH.jpg Graphic file (type jpg)
 <use figuras//modeloHH.jpg>
 Package pdftex.def Info: figuras//modeloHH.jpg  used on input line 59.
 (pdftex.def)             Requested size: 284.52756pt x 103.96242pt.
  [6 <./figuras//corpo_celular.jpg>]
-<figuras//potencial_de_membrana_bear.jpg, id=125, 469.755pt x 219.82124pt>
+<figuras//potencial_de_membrana_bear.jpg, id=411, 469.755pt x 219.82124pt>
 File: figuras//potencial_de_membrana_bear.jpg Graphic file (type jpg)
 <use figuras//potencial_de_membrana_bear.jpg>
 Package pdftex.def Info: figuras//potencial_de_membrana_bear.jpg  used on input line 87.
 (pdftex.def)             Requested size: 341.43306pt x 159.77383pt.
  [7 <./figuras//modeloHH.jpg> <./figuras//potencial_de_membrana_bear.jpg>]
-<figuras//serie_temporal_EEG.png, id=133, 336.25626pt x 133.49875pt>
+<figuras//serie_temporal_EEG.png, id=416, 336.25626pt x 133.49875pt>
 File: figuras//serie_temporal_EEG.png Graphic file (type png)
 <use figuras//serie_temporal_EEG.png>
 Package pdftex.def Info: figuras//serie_temporal_EEG.png  used on input line 106.
 (pdftex.def)             Requested size: 284.52756pt x 112.96315pt.
-<figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg, id=134, 803.0pt x 607.26875pt>
+<figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg, id=417, 803.0pt x 607.26875pt>
 File: figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg Graphic file (type jpg)
 <use figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg>
 Package pdftex.def Info: figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg  used on input line 130.
@@ -944,7 +946,7 @@ Package pdftex.def Info: figuras//1_smvgacGqEOqIoKmjhzbfPw.jpeg  used on input l
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8 <./figuras//serie_temporal_EEG.png>]
-<figuras//21_electrodes_of_International_10-20_system_for_EEG.png, id=145, 1027.84pt x 919.435pt>
+<figuras//21_electrodes_of_International_10-20_system_for_EEG.png, id=425, 1027.84pt x 919.435pt>
 File: figuras//21_electrodes_of_International_10-20_system_for_EEG.png Graphic file (type png)
 <use figuras//21_electrodes_of_International_10-20_system_for_EEG.png>
 Package pdftex.def Info: figuras//21_electrodes_of_International_10-20_system_for_EEG.png  used on input line 150.
@@ -981,7 +983,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  (./fundamentacao_teorica/chap_rastreamento_ocular.tex
 Cap\'{\i }tulo 3.
-<figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg, id=160, 187.902pt x 139.83405pt>
+<figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg, id=437, 187.902pt x 139.83405pt>
 File: figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg Graphic file (type jpg)
 <use figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg>
 Package pdftex.def Info: figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg  used on input line 15.
@@ -992,7 +994,7 @@ Package pdftex.def Info: figuras//Eyeball-modelled-as-a-dipole-and-angular-devia
 
 
  <./figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg>]
-<figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg, id=169, 215.1293pt x 94.79135pt>
+<figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg, id=443, 215.1293pt x 94.79135pt>
 File: figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg Graphic file (type jpg)
 <use figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg>
 Package pdftex.def Info: figuras//EOG-showing-saccadic-and-fixation-eye-movements-as-well-as-blinks-Red-and-blue-waveforms_W640.jpeg  used on input line 52.
@@ -1002,7 +1004,7 @@ Package pdftex.def Info: figuras//EOG-showing-saccadic-and-fixation-eye-movement
 
  (./fundamentacao_teorica/chap_trabalhos_relacionados.tex
 Cap\'{\i }tulo 4.
-<figuras//numero_datasets.png, id=177, 728.7225pt x 458.71375pt>
+<figuras//numero_datasets.png, id=450, 728.7225pt x 458.71375pt>
 File: figuras//numero_datasets.png Graphic file (type png)
 <use figuras//numero_datasets.png>
 Package pdftex.def Info: figuras//numero_datasets.png  used on input line 18.
@@ -1018,12 +1020,12 @@ Overfull \hbox (2.27618pt too wide) in paragraph at lines 18--19
 
 
  <./figuras//numero_datasets.png>]
-<figuras//setup.png, id=185, 410.53375pt x 281.05pt>
+<figuras//setup.png, id=456, 410.53375pt x 281.05pt>
 File: figuras//setup.png Graphic file (type png)
 <use figuras//setup.png>
 Package pdftex.def Info: figuras//setup.png  used on input line 32.
 (pdftex.def)             Requested size: 227.62204pt x 155.82591pt.
-<figuras//pipeline_eeg.png, id=186, 494.84875pt x 218.8175pt>
+<figuras//pipeline_eeg.png, id=457, 494.84875pt x 218.8175pt>
 File: figuras//pipeline_eeg.png Graphic file (type png)
 <use figuras//pipeline_eeg.png>
 Package pdftex.def Info: figuras//pipeline_eeg.png  used on input line 52.
@@ -1033,7 +1035,7 @@ Package pdftex.def Info: figuras//pipeline_eeg.png  used on input line 52.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14 <./figuras//setup.png>]
-<figuras//fusao_decisao.png, id=196, 645.41125pt x 344.28625pt>
+<figuras//fusao_decisao.png, id=464, 645.41125pt x 344.28625pt>
 File: figuras//fusao_decisao.png Graphic file (type png)
 <use figuras//fusao_decisao.png>
 Package pdftex.def Info: figuras//fusao_decisao.png  used on input line 72.
@@ -1049,7 +1051,7 @@ Cap\'{\i }tulo 5.
 
 
 ]
-<figuras//estimulo_e_coleta.png, id=216, 806.01125pt x 566.115pt>
+<figuras//estimulo_e_coleta.png, id=479, 806.01125pt x 566.115pt>
 File: figuras//estimulo_e_coleta.png Graphic file (type png)
 <use figuras//estimulo_e_coleta.png>
 Package pdftex.def Info: figuras//estimulo_e_coleta.png  used on input line 69.
@@ -1058,13 +1060,13 @@ Package pdftex.def Info: figuras//estimulo_e_coleta.png  used on input line 69.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figuras//lu.png, id=217, 547.04375pt x 435.6275pt>
+<figuras//lu.png, id=480, 547.04375pt x 435.6275pt>
 File: figuras//lu.png Graphic file (type png)
 <use figuras//lu.png>
 Package pdftex.def Info: figuras//lu.png  used on input line 83.
 (pdftex.def)             Requested size: 284.52756pt x 226.58078pt.
 [17] [18 <./figuras//estimulo_e_coleta.png>]
-<figuras//thapalya.png, id=229, 557.08125pt x 429.605pt>
+<figuras//thapalya.png, id=491, 557.08125pt x 429.605pt>
 File: figuras//thapalya.png Graphic file (type png)
 <use figuras//thapalya.png>
 Package pdftex.def Info: figuras//thapalya.png  used on input line 149.
@@ -1078,7 +1080,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (./fundamentacao_teorica/chap_sincronization.tex
 Cap\'{\i }tulo 6.
-<figuras//Screen Shot 2022-08-15 at 22.11.48.png, id=246, 728.7225pt x 546.04pt>
+<figuras//Screen Shot 2022-08-15 at 22.11.48.png, id=503, 728.7225pt x 546.04pt>
 File: figuras//Screen Shot 2022-08-15 at 22.11.48.png Graphic file (type png)
 <use figuras//Screen Shot 2022-08-15 at 22.11.48.png>
 Package pdftex.def Info: figuras//Screen Shot 2022-08-15 at 22.11.48.png  used on input line 33.
@@ -1097,299 +1099,102 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ] [22 <./figuras//Screen Shot 2022-08-15 at 22.11.48.png>]
-<figuras//blink.png, id=260, 736.7525pt x 566.115pt>
+<figuras//blink.png, id=513, 736.7525pt x 566.115pt>
 File: figuras//blink.png Graphic file (type png)
 <use figuras//blink.png>
 Package pdftex.def Info: figuras//blink.png  used on input line 75.
 (pdftex.def)             Requested size: 284.52756pt x 218.6244pt.
  [23 <./figuras//blink.png>]) [24]
-\openout2 = `fundamentacao_teorica/chap_materiais_e_métodos.aux'.
+\openout2 = `fundamentacao_teorica/chap_acesso_a_datasets.aux'.
 
- (./fundamentacao_teorica/chap_materiais_e_métodos.tex
+ (./fundamentacao_teorica/chap_acesso_a_datasets.tex
 Cap\'{\i }tulo 7.
-<figuras//mindwave_II.jpg, id=275, 1039.885pt x 1505.625pt>
-File: figuras//mindwave_II.jpg Graphic file (type jpg)
-<use figuras//mindwave_II.jpg>
-Package pdftex.def Info: figuras//mindwave_II.jpg  used on input line 29.
-(pdftex.def)             Requested size: 113.81102pt x 164.76923pt.
 [25
 
 
 
 
+]) [26]
+\openout2 = `fundamentacao_teorica/chap_materiais_e_métodos.aux'.
+
+ (./fundamentacao_teorica/chap_materiais_e_métodos.tex
+Cap\'{\i }tulo 8.
+<figuras//mindwave_II.jpg, id=533, 1039.885pt x 1505.625pt>
+File: figuras//mindwave_II.jpg Graphic file (type jpg)
+<use figuras//mindwave_II.jpg>
+Package pdftex.def Info: figuras//mindwave_II.jpg  used on input line 29.
+(pdftex.def)             Requested size: 113.81102pt x 164.76923pt.
+[27
+
+
+
+
 ]
-<figuras//gp3.png, id=283, 514.92375pt x 285.065pt>
+<figuras//gp3.png, id=538, 514.92375pt x 285.065pt>
 File: figuras//gp3.png Graphic file (type png)
 <use figuras//gp3.png>
 Package pdftex.def Info: figuras//gp3.png  used on input line 64.
 (pdftex.def)             Requested size: 284.52756pt x 157.51698pt.
- [26 <./figuras//mindwave_II.jpg>] [27 <./figuras//gp3.png>] [28]
-<figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png, id=306, 853.1875pt x 429.605pt>
+ [28 <./figuras//mindwave_II.jpg>] [29 <./figuras//gp3.png>] [30]
+<figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png, id=553, 853.1875pt x 429.605pt>
 File: figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png Graphic file (type png)
 <use figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png>
-Package pdftex.def Info: figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png  used on input line 148.
+Package pdftex.def Info: figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png  used on input line 152.
 (pdftex.def)             Requested size: 569.05511pt x 286.55557pt.
 
-Overfull \hbox (116.08722pt too wide) in paragraph at lines 148--149
+Overfull \hbox (116.08722pt too wide) in paragraph at lines 152--153
 [][] 
  []
 
-<figuras//Screen Shot 2022-08-14 at 00.54.17.png, id=307, 732.7375pt x 513.92pt>
+<figuras//Screen Shot 2022-08-14 at 00.54.17.png, id=554, 732.7375pt x 513.92pt>
 File: figuras//Screen Shot 2022-08-14 at 00.54.17.png Graphic file (type png)
 <use figuras//Screen Shot 2022-08-14 at 00.54.17.png>
-Package pdftex.def Info: figuras//Screen Shot 2022-08-14 at 00.54.17.png  used on input line 156.
+Package pdftex.def Info: figuras//Screen Shot 2022-08-14 at 00.54.17.png  used on input line 160.
 (pdftex.def)             Requested size: 426.79134pt x 299.34416pt.
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:182: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.182     \item F
-                 echa todas as variáveis pré existentes;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 182
-[][]
- []
-
-[29 <./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png>]
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:183: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.183     \item E
-                 stabelece conexão com o GP3;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 183
-[][]
- []
-
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:184: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184     \item E
-                 xecuta a calibração do GP3 com 5 pontos em tela;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 184
-[][]
- []
-
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:185: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185     \item E
-                 stabelece conexão com o TG do Mindwave Mobile II;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 185
-[][]
- []
-
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:186: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.186     \item I
-                 nstancia um segundo terminal para envio de mensagens ao GP3...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 186
-[][]
- []
-
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:187: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.187     \item P
-                 lota em tempo-real a visualização do plot de EEG;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 187
-[][]
- []
-
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:188: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.188     \item F
-                 echa o segundo terminal após termino da coleta em tempo pr...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 188
-[][]
- []
-
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:189: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189     \item D
-                 esconecta a conexão com ambos os equipamentos;
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 189
-[][]
- []
-
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:190: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.190     \item F
-                 echa o primeiro terminal instanciado.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 190
-[][]
- []
-
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:191: LaTeX Error: \begin{document} ended by \end{enumerate}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 \end{enumerate}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./fundamentacao_teorica/chap_materiais_e_métodos.tex:191: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.191 \end{enumerate}
-                     
-Things are pretty mixed up, but I think the worst is over.
-
-) [30 <./figuras//Screen Shot 2022-08-14 at 00.54.17.png>]
+[31 <./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png>]) [32 <./figuras//Screen Shot 2022-08-14 at 00.54.17.png>] [33]
 \openout2 = `fundamentacao_teorica/resultados_e_discussões.aux'.
 
- (./fundamentacao_teorica/resultados_e_discussões.tex
-Cap\'{\i }tulo 8.
-<figuras//example_dataset.jpeg, id=323, 1284.8pt x 235.88126pt>
-File: figuras//example_dataset.jpeg Graphic file (type jpg)
-<use figuras//example_dataset.jpeg>
-Package pdftex.def Info: figuras//example_dataset.jpeg  used on input line 10.
-(pdftex.def)             Requested size: 455.24408pt x 83.57826pt.
-
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 10--11
- [][] 
- []
-
-<figuras//real-time-plot-and-et.png, id=324, 742.775pt x 472.76625pt>
-File: figuras//real-time-plot-and-et.png Graphic file (type png)
-<use figuras//real-time-plot-and-et.png>
-Package pdftex.def Info: figuras//real-time-plot-and-et.png  used on input line 20.
-(pdftex.def)             Requested size: 569.05511pt x 362.20604pt.
-
-Overfull \hbox (116.08722pt too wide) in paragraph at lines 20--21
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[31
+ (./fundamentacao_teorica/resultados_e_discussões.tex)
+Cap\'{\i }tulo 9.
+(./ppgeb_mestrado.bbl [34
 
 
 
 
- <./figuras//example_dataset.jpeg>] [32 <./figuras//real-time-plot-and-et.png>]) [33
+
 
 ]
-Cap\'{\i }tulo 9.
-No file ppgeb_mestrado.bbl.
 
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) 
 AED: lastpage setting LastPage
-[34
+[35
 
-
-
-] (./ppgeb_mestrado.aux (./fundamentacao_teorica/chap_eletricidade_cerebral.aux) (./fundamentacao_teorica/chap_rastreamento_ocular.aux) (./fundamentacao_teorica/chap_trabalhos_relacionados.aux) (./fundamentacao_teorica/chap_uso_em_algortimos.aux) (./fundamentacao_teorica/chap_sincronization.aux) (./fundamentacao_teorica/chap_materiais_e_métodos.aux) (./fundamentacao_teorica/resultados_e_discussões.aux))
+] (./ppgeb_mestrado.aux (./fundamentacao_teorica/chap_eletricidade_cerebral.aux) (./fundamentacao_teorica/chap_rastreamento_ocular.aux) (./fundamentacao_teorica/chap_trabalhos_relacionados.aux) (./fundamentacao_teorica/chap_uso_em_algortimos.aux) (./fundamentacao_teorica/chap_sincronization.aux) (./fundamentacao_teorica/chap_acesso_a_datasets.aux) (./fundamentacao_teorica/chap_materiais_e_métodos.aux) (./fundamentacao_teorica/resultados_e_discussões.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.00375pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `ppgeb_mestrado.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ppgeb_mestrado.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  DA863913BB3A6378DE7639A1597CCFC7;8433.
+Package rerunfilecheck Info: File `ppgeb_mestrado.out' has not changed.
+(rerunfilecheck)             Checksum: 818240E7637CC370B4AF08DF391EC1F0;8112.
  ) 
 Here is how much of TeX's memory you used:
- 22495 strings out of 478268
- 410165 string characters out of 5846347
- 741906 words of memory out of 5000000
- 40117 multiletter control sequences out of 15000+600000
+ 22598 strings out of 478268
+ 413326 string characters out of 5846347
+ 748795 words of memory out of 5000000
+ 40178 multiletter control sequences out of 15000+600000
  484930 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,18n,117p,1178b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.1037pk>{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.864pk> </Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.720pk></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on ppgeb_mestrado.pdf (45 pages, 4443939 bytes).
+Output written on ppgeb_mestrado.pdf (48 pages, 3928489 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 132 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 566 compressed objects within 6 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 512 words of extra memory for PDF output out of 10000 (max. 10000000)
 

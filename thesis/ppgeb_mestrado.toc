@@ -32,19 +32,17 @@
 \contentsline {subsection}{\numberline {6.2.1}Identificação no Sinal do EEG}{23}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Identificação no Sinal de ET}{24}{subsection.6.2.2}%
 \contentsline {section}{\numberline {6.3}Calcular a Sincronização}{24}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Materiais e Métodos}{25}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Construção da Ferramenta}{25}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Mindwave Mobile II}{25}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Gazepoint GP3}{26}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Linguagens de Programação e Softwares}{27}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Orange}{28}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Python}{28}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}MATLAB}{28}{subsection.7.2.3}%
-\contentsline {section}{\numberline {7.3}Protocolo de Coleta}{28}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Preparo de Coleta}{29}{subsection.7.3.1}%
-\contentsline {chapter}{\numberline {8}Resultados e Discussões}{31}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Características da Ferramenta}{31}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Usabilidade: Resultados do Estudo de Caso}{33}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Discussão}{33}{section.8.3}%
+\contentsline {chapter}{\numberline {7}Acesso a Datasets Fisiológicos}{25}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Aquisição de Dados Fisiológicos}{25}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Materiais e Métodos}{27}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Construção da Ferramenta}{27}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Mindwave Mobile II}{27}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Gazepoint GP3}{28}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Linguagens de Programação e Softwares}{30}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Orange}{30}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Python}{30}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}MATLAB}{30}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}Protocolo de Coleta}{30}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Preparo de Coleta}{31}{subsection.8.3.1}%
 \contentsline {chapter}{\numberline {9}Conclusão}{34}{chapter.9}%
 \contentsline {chapter}{\bf Lista de Referências}{34}{chapter.9}%

@@ -68,7 +68,11 @@ especificado pelo fabricante:
 A calibração é realizada pelo Gazepoint Control, afim de estabelecer qual o apontamento ocular do participante. 
 A calibração pode ser feita em 5 pontos ou 9 pontos no monitor de exibição de estímulo. Os pontos na tela são apresentados
 em sequencia e o participante deve acompanha-los com o olhar até a finalização da calibração. Após a calibração ser concluída, a API calcula o erro do sistema em relação ao olhar para o olho esquerdo (em verde) 
-e direito (vermelho), dos pontos apresentados na tela. 
+e direito (vermelho), dos pontos apresentados na tela. Em um estudo sobre a qualidade de dados gerados pelo 
+equipamento, Brand et al. (2020) levanta alguns fatores que podem diminuir a qualidade dos dados coletados pelo GP3 
+em ambiente de pesquisa. Estes incluem: capacidade de processamento do computador afetando a frequência de captura, 
+capacidade em manter a distancia adequada do equipamento, controle de reflexos que gerem dados não utilizáveis. 
+
 
 O  equipamento GP3 possui uma \textit{Application Programming Interface} (API) própria, 
 o Open Gaze API. 
@@ -178,7 +182,7 @@ Depois de adicionar a pasta com o código no \textit{path} do MATLAB, o código 
 iniciado. O código foi construído com base na \textit{toolkit} Gazepoint, da EmotionCognitionLab. 
 Ele age da seguinte forma:
 
-\b egin{enumerate}
+\begin{enumerate}
     \item Fecha todas as variáveis pré existentes;
     \item Estabelece conexão com o GP3;
     \item Executa a calibração do GP3 com 5 pontos em tela;

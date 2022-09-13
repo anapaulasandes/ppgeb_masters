@@ -1269,6 +1269,12 @@ INPUT fundamentacao_teorica/chap_uso_em_algortimos.aux
 INPUT ./fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
+INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT ./fundamentacao_teorica/chap_resultados.aux
+INPUT fundamentacao_teorica/chap_resultados.aux
+INPUT fundamentacao_teorica/chap_resultados.aux
 OUTPUT ppgeb_mestrado.aux
 INPUT /usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1618,6 +1624,79 @@ INPUT ./figuras//blink.png
 INPUT figuras//blink.png
 INPUT ./figuras//blink.png
 INPUT ./figuras//blink.png
+INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
+OUTPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT fundamentacao_teorica/chap_materiais_e_métodos.tex
+INPUT ./figuras//mindwave_II.jpg
+INPUT ./figuras//mindwave_II.jpg
+INPUT figuras//mindwave_II.jpg
+INPUT ./figuras//mindwave_II.jpg
+INPUT ./figuras//mindwave_II.jpg
+INPUT ./figuras//gp3.png
+INPUT ./figuras//gp3.png
+INPUT figuras//gp3.png
+INPUT ./figuras//gp3.png
+INPUT ./figuras//gp3.png
+INPUT ./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT ./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT ./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT ./figuras//Gazepoint-GP3-setup-screen-showing-a-user-correctly-positioned-in-the-cameras-view-and.png
+INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT ./figuras//Screen Shot 2022-08-14 at 00.54.17.png
+INPUT ./figuras//Screen Shot 2022-09-05 at 19.25.37.png
+INPUT ./figuras//Screen Shot 2022-09-05 at 19.25.37.png
+INPUT figuras//Screen Shot 2022-09-05 at 19.25.37.png
+INPUT ./figuras//Screen Shot 2022-09-05 at 19.25.37.png
+INPUT ./figuras//Screen Shot 2022-09-05 at 19.25.37.png
+INPUT ./figuras//Screen Shot 2022-08-31 at 22.30.08.png
+INPUT ./figuras//Screen Shot 2022-08-31 at 22.30.08.png
+INPUT figuras//Screen Shot 2022-08-31 at 22.30.08.png
+INPUT ./figuras//Screen Shot 2022-08-31 at 22.30.08.png
+INPUT ./figuras//Screen Shot 2022-08-31 at 22.30.08.png
+INPUT ./figuras//4-1.png
+INPUT ./figuras//4-1.png
+INPUT figuras//4-1.png
+INPUT ./figuras//4-1.png
+INPUT ./figuras//4-1.png
+INPUT ./figuras//0_tG-IWcxL1jg7RkT0.png
+INPUT ./figuras//0_tG-IWcxL1jg7RkT0.png
+INPUT figuras//0_tG-IWcxL1jg7RkT0.png
+INPUT ./figuras//0_tG-IWcxL1jg7RkT0.png
+INPUT ./figuras//0_tG-IWcxL1jg7RkT0.png
+INPUT ./figuras//SVM_margin.png
+INPUT ./figuras//SVM_margin.png
+INPUT figuras//SVM_margin.png
+INPUT ./figuras//SVM_margin.png
+INPUT ./figuras//SVM_margin.png
+INPUT ./figuras//curvaROC.jpeg
+INPUT ./figuras//curvaROC.jpeg
+INPUT figuras//curvaROC.jpeg
+INPUT ./figuras//curvaROC.jpeg
+INPUT ./figuras//curvaROC.jpeg
+INPUT ./figuras//matrizConfusao-600x381.png
+INPUT ./figuras//matrizConfusao-600x381.png
+INPUT figuras//matrizConfusao-600x381.png
+INPUT ./figuras//matrizConfusao-600x381.png
+INPUT ./figuras//matrizConfusao-600x381.png
+INPUT ./fundamentacao_teorica/chap_resultados.tex
+OUTPUT fundamentacao_teorica/chap_resultados.aux
+INPUT ./fundamentacao_teorica/chap_resultados.tex
+INPUT ./fundamentacao_teorica/chap_resultados.tex
+INPUT ./fundamentacao_teorica/chap_resultados.tex
+INPUT ./fundamentacao_teorica/chap_resultados.tex
+INPUT fundamentacao_teorica/chap_resultados.tex
+INPUT ./fundamentacao_teorica/chap_resultados.tex
+INPUT fundamentacao_teorica/chap_resultados.tex
 INPUT ./ppgeb_mestrado.bbl
 INPUT ppgeb_mestrado.bbl
 INPUT ./ppgeb_mestrado.bbl
@@ -1639,6 +1718,12 @@ INPUT fundamentacao_teorica/chap_uso_em_algortimos.aux
 INPUT ./fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
 INPUT fundamentacao_teorica/chap_sincronization.aux
+INPUT ./fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT fundamentacao_teorica/chap_materiais_e_métodos.aux
+INPUT ./fundamentacao_teorica/chap_resultados.aux
+INPUT fundamentacao_teorica/chap_resultados.aux
+INPUT fundamentacao_teorica/chap_resultados.aux
 INPUT ./ppgeb_mestrado.out
 INPUT ./ppgeb_mestrado.out
 INPUT /Users/anasouza/Library/texlive/2022/texmf-var/fonts/pk/ljfour/public/cm-mf-extra-bold/cmbcsc10.1037pk

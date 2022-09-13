@@ -21,20 +21,36 @@
 \contentsline {section}{\numberline {4.1}Aquisição de EEG e ET}{14}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Pré-processamento de EEG}{14}{section.4.2}%
 \contentsline {section}{\numberline {4.3}A Fusão de Dados}{15}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Uso em Algortimos}{16}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Algortimos Classificatórios}{16}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Uso de Datasets Multimodais de EEG e ET na Pesquisa}{17}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Equipamentos Comerciais na Pesquisa}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Considerações Finais}{20}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Sincronização}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Sincronização com Timecode}{21}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Sincronização com Piscadas}{22}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Identificação no Sinal do EEG}{23}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Identificação no Sinal de ET}{24}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Calcular a Sincronização}{24}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Conclusão}{25}{chapter.7}%
-\contentsline {chapter}{\bf Lista de Referências}{25}{chapter.7}%
-\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{27}{apendice.1}%
-\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{28}{apendice.2}%
-\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{29}{anexo.1}%
-\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{30}{anexo.2}%
+\contentsline {chapter}{\numberline {5}Métodos de Construção e Uso de Datasets de EEG e ET}{16}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Equipamentos Comerciais na Pesquisa}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Considerações Finais}{19}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Sincronização}{20}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Sincronização com Timecode}{20}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Sincronização com Piscadas}{22}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Calcular a Sincronização}{23}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Materiais e Métodos}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Construção da Ferramenta}{25}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Mindwave Mobile II}{25}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Gazepoint GP3}{26}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}Linguagens de Programação e Softwares}{27}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Orange}{28}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Python}{28}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}MATLAB}{28}{subsection.8.2.3}%
+\contentsline {section}{\numberline {8.3}Protocolo de Coleta}{28}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Preparo de Coleta}{29}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Regressão Logística}{32}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Floresta Aleatória}{32}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Support Vector Machine - SVM}{33}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}Rede Neural}{34}{subsection.8.3.5}%
+\contentsline {subsection}{\numberline {8.3.6}Curva ROC}{34}{subsection.8.3.6}%
+\contentsline {subsection}{\numberline {8.3.7}Matriz de Confusão}{34}{subsection.8.3.7}%
+\contentsline {chapter}{\numberline {9}Resultados}{36}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Construção do Dataset}{36}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Sincronização}{36}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Discussão}{37}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusão}{38}{chapter.11}%
+\contentsline {chapter}{\bf Lista de Referências}{38}{chapter.11}%
+\contentsline {chapter}{Apêndice~\ref {apendice_exemplo}}{40}{apendice.1}%
+\contentsline {chapter}{Apêndice~\ref {apendice_outro_exemplo}}{41}{apendice.2}%
+\contentsline {chapter}{Anexo~\ref {anexo_exemplo}}{42}{anexo.1}%
+\contentsline {chapter}{Anexo~\ref {anexo_outro_exemplo}}{43}{anexo.2}%

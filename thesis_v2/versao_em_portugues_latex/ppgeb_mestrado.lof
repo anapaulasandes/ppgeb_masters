@@ -12,10 +12,25 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Exemplo de pipeline para processamento de EEG. Fonte: Neuroeletrics (2022)\relax }}{15}{figure.caption.16}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Exemplo de Fluxo para Fusão de Dados de Sensores. Fonte: Mendes et al. (2016)\relax }}{15}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Design de Experimento para Coleta de EEG e ET. Fonte: Zheng et al. (2014)\relax }}{18}{figure.caption.18}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Acurácia por Método de Fusão de Modalidade e Modalidade Única em Algoritmo Supervisionado. Fonte: Lu et. al. (2015)\relax }}{19}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces União de dados de EEG e ET. Fonte: Thapaliya et al. (2019)\relax }}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Design de Experimento para Coleta de EEG e ET. Fonte: Zheng et al. (2014)\relax }}{17}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Acurácia por Método de Fusão de Modalidade e Modalidade Única em Algoritmo Supervisionado. Fonte: Lu et. al. (2015)\relax }}{17}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces União de dados de EEG e ET. Fonte: Thapaliya et al. (2019)\relax }}{18}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Dados de EEG, ET (eye gaze) e posição de cursor (cursor position) 2 segundos antes da resposta de um participante em atividades de um site de línguas. Fonte: Notaro et al. (2018).\relax }}{22}{figure.caption.21}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Assinatura de piscada em microvolts. Fonte: Blinker (2022)\relax }}{23}{figure.caption.22}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Dados de EEG, ET (eye gaze) e posição de cursor (cursor position) 2 segundos antes da resposta de um participante em atividades de um site de línguas. Fonte: Notaro et al. (2018).\relax }}{21}{figure.caption.21}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Assinatura de piscada em microvolts. Fonte: Blinker (2022)\relax }}{23}{figure.caption.22}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Mindwave Mobile II (Neurosky)\relax }}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces GP3 (Gazepoint)\relax }}{27}{figure.caption.24}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Exemplo do Opengaze conectado. Fonte: Sibley et al. (2017)\relax }}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Montagem de Estudo de Caso da Ferramenta de Coleta EEG-ET.\relax }}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Workflow Orange para Algortimos de Classificação. (Orange, 2022).\relax }}{31}{figure.caption.27}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Workflow Utilizado no Projeto para Validar o Dataset Gerado pela Ferramenta Proposta.\relax }}{31}{figure.caption.28}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Regressão Logística\relax }}{32}{figure.caption.29}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Floresta Aleatória\relax }}{33}{figure.caption.30}%
+\contentsline {figure}{\numberline {8.9}{\ignorespaces SVM Linear\relax }}{33}{figure.caption.31}%
+\contentsline {figure}{\numberline {8.10}{\ignorespaces SVM Linear\relax }}{34}{figure.caption.32}%
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Matriz de Confusão\relax }}{35}{figure.caption.33}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
