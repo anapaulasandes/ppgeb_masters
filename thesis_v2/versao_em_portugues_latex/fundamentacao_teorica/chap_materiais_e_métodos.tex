@@ -121,7 +121,7 @@ O MATLAB é um software e linguagem de programação e software (Mathworks, 2018
 problemas complexos. Tem diversas “toolboxes”, que permite robustez e capacidade
 de processamento para diferentes tipos de dados.
 
-\section{Protocolo de Coleta}
+\section{Coleta dos Dados: Protocolo}
 
 Para a coleta simultânea, duas linguagens de programação foram utilizadas: MATLAB e Python, como tambpém 
 utilizado no trabalho de Notaro et al. (2018).  
@@ -173,10 +173,16 @@ Com o posicionamento do participante em frente as cameras, o passo de coleta dos
 
 \textbf{1. Coletando com MATLAB}
 
-O código em questão já se encontra disponível no \href{https://github.com/anapaulasandes/ppgeb_masters}{Github}.
-Depois de adicionar a pasta com o código no \textit{path} do MATLAB, o código de coleta é
-iniciado. O código foi construído com base na \textit{toolkit} Gazepoint, da EmotionCognitionLab. 
-Ele age da seguinte forma:
+O código foi escrito em MATLAB e funciona em quatro principais passos: 
+(1) estabelecendo conexão com o GP3 e o Mindwave, (2) realizando a calibração de rastreamento ocular em tela, 
+(3) gravando e plotando os dados de EEG e (4) gravando dados de ET e EEG simultaneos em um arquivo .txt pré definido (anterior ao início da gravação). 
+O código faz uso de uma função de envio de informações simultâneas (na mesma linha temporal do dataframe) definido pelo usuário 
+do equipamento GP3 na coluna "USER" do arquivo .txt. Esta coluna é comumente utilizada para identificar estímulos que o participante 
+estava sendo submetido no momento da gravação do rastreamento ocular. 
+
+Através do uso deste recurso do GP3 é armazenado a informação "RAW EEG" do Mindwave Mobile II, que corresponde ao dado de EEG sem tratamentos. 
+A gravação de ambos os equiapamentos são armazenados na mesma linha temporal do dataset e em mesma frequência, seguindo a
+ frequencia de coleta do equipamento GP3 (60Hz). Mais especificamente, o código realiza o seguinte: 
 
 \begin{enumerate}
     \item Fecha todas as variáveis pré existentes;
@@ -186,15 +192,13 @@ Ele age da seguinte forma:
     \item Instancia um segundo terminal para envio de mensagens ao GP3 (mensagens enviadas são o valor do RAW do mindwave);
     \item Plota em tempo-real a visualização do plot de EEG;
     \item Fecha o segundo terminal após termino da coleta em tempo pré-determinado;
-    \item Desconecta a conexão com ambos os equipamentos;
-    \item Fecha o primeiro terminal instanciado.
+    \item Desconecta a conexão com ambos os equipamentos e fecha os dois terminais.
 \end{enumerate}
 
- A conexão com o GP3 é estabelecida no primeiro terminal. Como o GP3 permite 
- o envio de mensagens para o equipamento através da coluna USER, na presente solução ela é
- usada para armazenar as informações RAW do Mindwave mobile. As informações são escritas 
- pelo segundo terminal para o arquivo .txt (previamente definido no código). A captura de informações 
- do GP3 e Mindwave acontecem de forma imediatamente sucessiva. 
+ A conexão com o GP3 é estabelecida no segundo terminal, enquanto o primeiro é utilizado para enviar os dados 
+    de RAW EEG para a coluna "USER". 
+
+
 
  \textbf{2. Validando o Dataset}
 

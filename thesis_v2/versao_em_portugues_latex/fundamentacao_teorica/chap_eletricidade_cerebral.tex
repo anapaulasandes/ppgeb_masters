@@ -1,17 +1,10 @@
 \chapter{Eletricidade Cerebral}
 
+O presente capítulo apresenta uma introdução aos princípios de eletricidade cerebral, o que são ondas cerebrais e como é registrado o EEG.
 
-
-\section{Correntes Elétricas}
+\section{Correntes Elétricas e Neurônios}
 %Gaspar, Alberto (2005). Física:Volume único. São Paulo: Editora Ática. 496 páginas. ISBN 9788508078837. Consultado em 12 de janeiro de 2012
-A eletricidade é o nome dado a uma série de fenômenos que envolvem o fluxo de cargas elétricas (Gaspar, 2005). 
-O potencial elétrico (também conhecido como tensão), é a quantidade de energia precisa para deslocar uma carga elétrica (Matias e Fratezzi, 2008). 
-A diferença de potencial elétrico entre um material condutor gera um fluxo de 
-cargas nomeado de \textbf{corrente elétrica} (Creder, 1989).
-A intensidade do fluxo é medida em ampère (A) e determinada pela quantiadade de partículas que atravessam o seguimento
-do condutor pelo tempo. As correntes podem ser contínuas ou alternadas, a depender se o sentido da corrente varia ou não; enquanto a corrente contínua 
-é composta de polos, a alternada é composta de fases (Bhargava e Kulshreshtha, 1983). O calculo de corrente elétrica é 
-dado pela seguinte equação:
+A diferença de potencial elétrico (se referindo a energia necessária para deslocar uma carga elétrica (Matias e Fratezzi, 2008)) entre um material condutor gera um fluxo de cargas nomeado corrente elétrica (Creder, 1989). A intensidade deste fluxo é medida em ampère, e determinada pela quantidade de elementos carregados que atravessam o mateiral condutor. As correntes (este fluxo), podem ser contínuos ou alternados, dependendo se o sentido da corrente varia ou não; sendo a corrente contínua composta por polos, e a alternada por fases (Bhargava e Kulshreshtha, 1983). O cálculo de corrente elétrica é dado pela seguinte equação:
 
 \begin{equation}
     I = \frac{\Delta Q }{\Delta T},
@@ -19,38 +12,22 @@ dado pela seguinte equação:
 
 onde $\Delta Q$ é a quantidade de particulas que passam em um seguimento do condutor e $\Delta T$ indica o tempo. 
 
-\section{Neurônios}
-Os neurônios são células responsáveis pela condução de impulsos nervosos e se comportam como um “cabo eletrificado” - analogia
-levantada a respeito da condução de impulsos elétricos, como apresentado no clássico estudo de Hodgkin e Huxley (1952), 
-que teve como resultado uma modelagem dos potenciais de ação emitidos pelas células 
-nervosas através de equações diferenciais não-lineares (figura 2.2). 
-Os neurônios comunicam-se uns com os outros através das \textbf{sinapses}, onde ocorre a transmissão dos impulsos nervosos. 
-É possível distinguir três partes anatomicas no neurônio: o corpo celular, o axônio e os dendrito (figura 2.1). 
-
+Os neurônios são células responsáveis pela condução dos chamados “impulsos nervosos”, e se comportam como um “cabo eletríficado”, que é uma analogia a respeito da condução de impulsos elétricos por estas células, como apresentado no clássico estudo de Hodgkin e Huxley (1952). Os neurônios comunicam-se através de sinapses, locais onde ocorrem a transmissão destas correntes elétricas; e podem ser divididos anatomicamente em três partes: corpo celular, axônio e dendritos, apresentados na figura 2.1. A membrana celular é uma membrana semi-permeável que permite a passagem de cargas elétricas através de canais. A diferença entre a concentração destas cargas separadas pela membrana resulta em uma atuação de capacitor. Capacitores são dispositivos de polaridades diferentes em suas extremidades, capazes de armazenar cargas elétricas (Serway, 2008). Em função desta característica de separação de diferentes densidades de cargas elétricas, a membrana pode ter sua capacitância calculada pela equação 2.2
 \begin{figure}
     \centering
     \includegraphics[width=40mm]{corpo_celular.jpg}
     \caption{Anatomia de um neurônio com destaque para área de sinapse entre neurônios. Fonte: Bear (2015)}
 \end{figure}
 
-% Serway, R.A.; Jewett Jr., J.W (2008). Princípios de Física. 3. São Paulo: Cengage Learning. p. 909-910. ISBN 85-221-0414-X
-A membrana celular permite a passagem de cargas elétricas através de canais, que podem ou não necessitar de energia para a movimentação
-das cargas. \textbf{Capacitores} são dispositivos de polaridades diferentes nas extremidades, que armazenam
-cargas elétricas num campo elétrico (Serway, 2008). Por sua capacidade de separar cargas elétricas entre o ambiente interno e externo, 
-a membrana celular age como os capacitadores, com sua capacitância (habilidade de armazenar cargas elétricas), definida pela seguinte equação:
 
 \begin{equation}
     C = \frac{Q}{\Delta V},
 \end{equation}
 
 onde $C$ é a capacitância, $Q$ é a quantidade de carga armazenada e $\Delta V$ é a tensão elétrica, medida em farad (F). 
-\textbf{Resistência elétrica} diz respeito a capacidade de oposição a passagem de corrente elétrica e é medido em
- ohms ($\Omega$). Os canais da membrana podem se comportar como resistores, se opondo a passagem da corrente elétrica, e sua 
- resistencia pode variar dependendo das condições celulares, como por exemplo se o canal está abero ou  não. Na figura 2.2, $E$ representa
- \textbf{bateria} pois a concentração de ions (particulas elétricas) é diferente no meio intra e extracelular, graças ao trabalho de canais ativos (com custo de energia
- para manter esse diferencial). De forma simplificada, a corrente aplicada no neurônio pode injetar corrente no capacitor e também 
- ser distribuída pelos canais. Dado a definição de um capacitor, $I_c = d u /d t$, é possível definir a corrente elétrica em uma seção da 
- membrana como:
+
+
+A resistência elétrica é outra propriedade de interesse, e se refere a capacidade de se opor a passagem de uma corrente elétrica. Esta capacidade é medida em ohms, e os canais de membrana podem se comportar como resistores a depender das condições celulares e das condições de canal, visto que estes podem estar abertos (facilitando passagem), ou não. Estes diferentes comportamentos dos componentes neuronais podem ser observados na figura 2.2.
 
 
 %https://neuronaldynamics.epfl.ch/online/Ch2.S2.html#Ch2.F2
@@ -71,15 +48,16 @@ onde $u$ = voltagem ao longo da membrana e $t$ = tempo.
 
 
 
-\subsection{Impulsos Nervosos e Potencial de Ação}
-Para passar informações, os neurônios geram \textbf{impulsos nervosos}, ou alterações no potencial elétrico de sua membrana. Este sinal elétrico
-ocorre quando o estímulo recebido pelo neurônio ultrapassa um limiar de ativação, que desencadeia uma série de respostas celulares. A célula pode 
-estar em repouso (com valor do interior celular em cerca de -70mV), passando por despolarização (quando ocorre um fluxo de cargas elétricas que faz com 
-que o meio intracelular passe a ser positivo em relação ao meio extracelular), e em repolarização, quando a célula está retornando ao potencial de repouso,
-como representado na figura 2.3. 
+\section{Eletroencefalograma}
 
-O aumento do inicial da voltagem é causado pela entrada de sódio através de canais dependentes de voltagem, que se segue 
-pela perda de potássio e fechamento dos canais de sódio. 
+Os impulsos nervosos gerados pelos neurônios são alterações no potencial elétrico de suas membranas. 
+Este sinal elétrico ocorre quando um estímulo recebido pelo neurônio é intenso o suficiente para ultrapassar seu chamado limiar de ativação.
+ O conjunto de impulsos nervosos por grupos de neurônios ao longo do tempo gera campos magnéticos que podem ser captados por eletrodos 
+ colocados sobre a cabeça humana (Kandel, 2000). Estes campos magnéticos foram primeiro registrados em humanos pelo psiquiatra Hans Berger 
+ (Ince et al., 2021), em uma coleta representada na figura 2.4. 
+ Estes registros são o resultado de potenciais de ação emitidos por células nervosas próximas ao eletrodo, 
+ e permitem uma boa resolução temporal – embora não apresentem uma boa resolução espacial -  do comportamento neuronal. 
+
 
 
 \begin{figure}[!h]
@@ -89,18 +67,6 @@ pela perda de potássio e fechamento dos canais de sódio.
     \end{figure}
 
 
-\section{Eletroencefalograma}
-O conjunto de impulsos nervosos de grupos de neurônios geram campos
-magnéticos que podem ser captados por eletrodos colocados sobre a cabeça humana
-(Kandel, 2000). Estes campos magnéticos foram primeiro registrados de coletas em
-humanos aproximadamente em 1929, em um experimento conduzido pelo psiquiatra
-alemão Hans Berger (Ince et al., 2021) – figura
-2.4. Estes registros são o resultado dos potenciais de ação emitidos pelas células
-nervosas abaixo do eletrodo, e permitem uma boa resolução temporal do
-comportamento nervoso (podendo atingir precisão de milissegundos), mas em geral
-não permitem uma boa resolução espacial (como identificar a localização espacial do
-grupo celular responsável pela variação de voltagem observada).
-
   \begin{figure}[h]
     \centering
     \includegraphics[width=100mm]{serie_temporal_EEG}
@@ -109,11 +75,9 @@ grupo celular responsável pela variação de voltagem observada).
 
 \section{Ondas Cerebrais}
 % Llinas, R. R. (2014). "Intrinsic electrical properties of mammalian neurons and CNS function: a historical perspective". Front Cell Neurosci. 8: 320. doi:10.3389/fncel.2014.00320. PMC 4219458free to read. PMID 25408634
-O cérebro consegue gerar ondas ritmicas geradas pelos impulsos nervosos de grupos de neurônios. 
-A oscilação de um neurônio único pode ser explorada na figura 2.3. As grandes oscilações (geradas por 
-mais de um nerônio sendo ativado) pode ser detectada pelos eletrodos posicionados 
-no crânio no eletroencefalograma (Llinas, 2014) e serem classificadas de acordo com suas características.
-Um exemplo de agrupamento das ondas cerebrais pode ser observado na figura 2.4. 
+
+O cérebro é capaz de gerar ondas de impulsos nervosos ritmadas. A oscilação de um único neurônio pode ser explorada na figura 2.5. As grandes oscilações são detectadas pelos eletrodos (Llinas, 2014), e classificadas de acordo com suas características. Um exemplo de agrupamento de ondas cerebrais pode ser observado na figura 2.6. 
+
 
 As ondas cerebrais são caracterizadas pela \textbf{frequência, amplitude e fase} (figura 2.5). 
 A amplitude mede a magnitude da oscilação de uma onda e pode ser representada pela equação
@@ -134,13 +98,12 @@ uma função senoidal, $t$ é o tempo, $k$ é a transalação temporal e b mede 
 
 \subsection{Sistema Internacional 10/20 de Posicionamento de Eletrodos} 
 
-    A técnica de registro de EEG vem sendo desde então aperfeiçoada e escolhida em
-    investigações comportamentais devido a sua natureza não invasiva. Um exemplo de
-    aperfeiçoamento foi a criação de um sistema internacional de posicionamentos de
-    eletrodos para a coleta de EEG – o sistema 10/20 (Klem et al., 1999), 
-    representado na figura 2.6.
-    O registro capturado nos eletrodos
-    advém de uma diferença de potencial elétrico. Esta diferença pode ser em referência à
+Para garantir uma padronização a respeito da coleta de EEG, o sistema de posicionamento de eletrodos pode ser adotado. 
+Em específico, sistema internacional de posicionamentos de
+eletrodos para a coleta de EEG – o sistema 10/20, é uma técnica desenvolvida por Klem et al. (1999) e amplamente adotada em estudos neurocientíficos. 
+
+
+O registro capturado nos eletrodos advém de uma diferença de potencial elétrico. Esta diferença pode ser em referência à
     um eletrodo colocado em uma região externa ao escalpo (como orelha), ou à uma
     voltagem média comum (Tavares, 2011).
 
@@ -160,8 +123,10 @@ uma função senoidal, $t$ é o tempo, $k$ é a transalação temporal e b mede 
         
 \subsection{Tipos de Eletrodos para Captura de EEG}
 
-    Existem diferentes tipos de eletrodos para a captura de EEG. 
-    Um resumo é apresentado no quadro 2.1. É notável também que com o 
+Existem diferentes tipos de eletrodos para a captura de EEG, e uma descrição deles pode ser encontrada no quadro 2.1. 
+Cada tipo de equipamento de coleta irá ter seu tipo de eletrodo. No caso de equipamentos de coleta de EEG comerciais, 
+é comum a presença do eletrodo do tipo seco – que requer menos preparo, dispensando a aplicação de gel (Brain Support Inc., 2019).  
+É notável também que com o 
     desenvolvimento da capacidade computacional, novos recursos e métodos 
     para a análise destes dados vem sendo benéficos à construção do conhecimento 
     científico, agora também contando com o desenvolvimento de algoritmos de aprendizado

@@ -1452,7 +1452,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm-mf-extra-bold/cmbcsc10.tfm
@@ -1475,7 +1474,6 @@ OUTPUT ppgeb_mestrado.lof
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm-mf-extra-bold/cmbcsc10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT ./figuras//problemas_eeget.jpg
 INPUT ./figuras//problemas_eeget.jpg
 INPUT figuras//problemas_eeget.jpg
@@ -1542,6 +1540,7 @@ INPUT ./fundamentacao_teorica/chap_rastreamento_ocular.tex
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.tex
 INPUT ./fundamentacao_teorica/chap_rastreamento_ocular.tex
 INPUT fundamentacao_teorica/chap_rastreamento_ocular.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT ./figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg
 INPUT ./figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg
 INPUT figuras//Eyeball-modelled-as-a-dipole-and-angular-deviation-of-the-eye-movements-in-response-to-a_W640.jpeg
@@ -1581,6 +1580,7 @@ INPUT ./figuras//fusao_decisao.png
 INPUT figuras//fusao_decisao.png
 INPUT ./figuras//fusao_decisao.png
 INPUT ./figuras//fusao_decisao.png
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.tex
 OUTPUT fundamentacao_teorica/chap_uso_em_algortimos.aux
 INPUT ./fundamentacao_teorica/chap_uso_em_algortimos.tex

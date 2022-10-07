@@ -199,27 +199,7 @@
 \acresetall % Manter essa linha!
 \vspace{12pt}
 
-O eletroencefalograma (EEG) e o rastreamento ocular (ET - \textit{Eye Tracking}) 
-são 
-formas não-invasivas de se observar o comportamento do sistema nervoso. 
-Algoritmos classificatórios treinados com bases de dados com 
-mais um tipo de dado fisiológico 
-tendem a apresentar uma maior performance do que algortimos treinados
-com datasets unimodais. Apesar das vantagens, o acesso aos datasets fisológicos
-ainda é restrito. O custo dos equipamentos e a complexidade da 
-sincronização entre diferentes sensores são alguns 
-fatores de limitação de acesso. 
-O presente estudo tem por objetivo
-propor uma ferramenta construída a partir de 
-equipamentos comerciais, 
-capaz de gerar um dataset multimodal com dados de EEG 
-e ET coletados simultaneamente. A ferramenta será avaliada a 
-respeito de sua capacidade de sincronização, dada através 
-da identidicação de piscadas em ambos os equipamentos.
-Após a avaliação de sincronização, o dataset multimodal gerado 
-será utilizado para treinar quatro diferentes 
-algoritmos classificatórios. 
-A performance dos algortimos será utilizada para argumentar sobre a possível aplicabilidade da ferramenta em estudos futuros.
+O eletroencefalograma (EEG) e o rastreamento ocular (ET, do inglês Eye Tracking) são formas não-invasivas de se observar o comportamento do sistema nervoso. Algoritmos classificatórios treinados com bases de dados compostas por mais de um tipo de dado fisiológico tendem a apresentar maior acurácia do que algoritmos treinados com datasets unimodais. Entretanto, o acesso a tais dados permanece restrito devido, dentre outros fatores, ao custo de equipamentos necessários para construção dos datasets. O presente estudo tem por objetivo propor uma ferramenta construída a partir de equipamentos comerciais capaz de gerar um dataset fisiológico de forma automatizada, constituído por dados de EEG e ET coletados de forma simultânea. A sincronização da ferramenta será analisada através da contagem da sobreposição de piscadas encontradas nos dados de ET e EEG, e um estudo de caso com aplicação do dataset no treinamento de algoritmos classificatórios será apresentado. 
 
 \vspace{14pt}
 
@@ -277,31 +257,15 @@ tool applicability in future studies.
 
 \chapter{Introdução}
 
-Existe uma importante vantagem advinda do uso de bases fisiológicas chamadas multimodais, 
-ou de mais de um tipo de dado fisiológico em algoritmos supervisionados: a possibilidade de conferir 
-um maior poder classificatório em relação aos datasets unimodais (Kang et al., 2020; Thapaliya et al., 2019). 
-Sobre os benefícios já alcançados com estes datasets, é possível citar: melhora de diagnóstico de transtornos 
-neurológicos, como depressão e autismo (Kang et al., 2020; Thapaliya et al., 2019; Wu et al., 2021), 
-maior poder de classificação de emoções (Guo et al., 2019; Zheng et al., 2019;  Lu et al, 2015; Zheng et al., 2014), 
-e uma maior compreensão da ativação de mecanismos nervosos durante atividades de rotina, como leitura (Hollenstein et al., 2018). 
-Um modelo específico de dataset fisiológico multimodal é constituído do eletroencefalograma (EEG) e
- rastreamento ocular (RO ou ET, da palavra em inglês \textit{Eye Tracking}), já tendo sido utilizado em diferentes estudos
- de aprendizado supervisionado e estudos de \textit{Brain Computer Interface}, ou BCI; onde a integração homem-máquina é aprofundada
- (Xu et al., 2022; Kim et al., 2015; Lee et al., 2010).
+Existe uma importante vantagem advinda do uso de bases fisiológicas chamadas multimodais, ou constituídas de mais de um tipo de dado fisiológico em algoritmos supervisionados: a possibilidade de conferir um maior poder classificatório em relação aos datasets multimodais (Kang et al., 2020; Thapaliya et al., 2019). Sobre os benefícios já alcançados com estes datasets, é possível citar: melhora no diagnóstico de depressão e autismo (Kang et al., 2020; Thapaliya et al., 2019; Wu et al., 2021), maior poder de classificação de emoções (Guo et al., 2019; Zheng et al., 2019; Lu et al., 2015; Zheng et al., 2014), e uma maior compreensão da ativação de mecanismos nervosos durante atividades rotineiras, como leitura (Hollenstein et al., 2018). Um modelo específico de dataset multimodal é o constituído por eletroencefalograma (EEG) e rastreamento ocular (RO, ou Eye Tracking – ET), utilizado previamente em estudos de aprendizado supervisionado relacionados a integração cérebro-máquina, ou Brain Computer Interface – BCI (Xu  et  al.,  2022;  Kim  et  al., 2015; Lee et al., 2010).
 
 %Se você deseja que o primeiro parágrafo de cada seção também tenha indentação, inclua no preâmbulo o comando \verb,\usepackage{indentfirst},.
 
 \section{Contextualização de Problema}
 
-Apesar das múltiplas vantagens, o acesso a estes datasets ainda é restrito. Sobre a coleta de EEG e ET, 
-Kastrati et al. comenta:
-
-\textit{“Coletar e classificar dados simultâneos de EEG e de rastreamento ocular é \textbf{demorado e caro},
- pois requer equipamento e experiência [...]. 
- Portanto, o acesso a dados de EEG-ET gravados simultaneamente é \textbf{altamente restrito}, o que retarda significativamente o progresso neste campo”. – Kastrati et al. (2021).}
-
-No recente estudo sobre a análise conjunta de dados de EEG e ET por Dimigen e Ehinger (2020) foram levantados
- quatro principais problemas com este tipo de coleta (figura 1.1):
+Apesar das vantagens, o acesso a bases de dados fisiológicos ainda é restrito por precisar de equipamento e experiência, 
+reduzindo o desenvolvimento na área (Kastrati et al., 2021). No recente estudo sobre a análise conjunta de dados de EEG e ET por 
+Dimigen e Ehinger (2020) foram levantados quatro principais problemas com este tipo de coleta (figura 1.1):
 
 
 \begin{itemize}
@@ -319,43 +283,30 @@ No recente estudo sobre a análise conjunta de dados de EEG e ET por Dimigen e E
     Ehinger (2020).}\label{fig:acelerador}
     \end{figure}
 
-Para auxiliar nos problemas levantados, a solução dos autores consistiu na construção de códigos especializados (o pacote EYE-EEG),
-que trabalham de forma integrada a uma \textit{toolbox} já consolidada em estudos de EEG, o EEGLAB (Delorme e Makeig, 2014) - a ser explorada adiante. A redução do custo das coletas fisiológicas já vem sido abordada através de equipamentos comercialmente disponíveis. 
-Um exemplo é o desenvolvimento de \textit{“smart watches”}, pequenos computadores de pulso que permitem o acompanhamento da
-frequência cardíaca do usuário, além do monitoramento de outras atividades fisiológicas, como o sono (Canaltech, 2022).
-O Mindwave Mobile II (Neurosky, Vale do Silício, CA, Estados Unidos), é um exemplo de equipamento comercial que possibilita a captura de ondas cerebrais, além de métricas 
-próprias do fabricante utilizadas para estimar atenção, meditação e a captura de piscadas dos usuários. Atualmente também 
-existem equipamentos disponíveis comercialmente para a coleta de ET, como o GP3 (Gazepoint, Vancouver, BC, Estados Unidos). 
+
+Por ser uma coleta que envolve diferentes equipamentos, a integração dos dados pode se tornar um desafio. 
+Diferentes autores propuseram soluções para tal integração. A respeito do custo de equipamentos de coleta, o avanço de equipamentos comerciais tem possibilitado maior acesso à dados fisiológicos. Por exemplo, o Mindwave Mobile II (Neurosky, CA, Estados Unidos), é um exemplo de equipamento de baixo custo que captura EEG, além de também capturar outras métricas próprias do fabricante, como nível de atenção e meditação (Neurosky). O GP3 (Gazepoint, BC, Estados Unidos), por sua vez, é um equipamento comercialmente disponível que captura dados de rastreamento ocular, incluindo dilatação da pupila e direção de foco. 
 
 
-Com o propósito de aumentar a acessibilidade aos datasets multimodais e suas amplas vantagens de uso, 
-o presente projeto tem por objetivo a criação de uma ferramenta de coleta simultânea de EEG e ET acessível a 
-partir da coleta de dados de dois equipamentos comerciais – GP3 e Mindwave Mobile II. A ferramenta construída tem como \textit{output} uma base de dados multimodal
- utilizada para treinamento de algoritmos classificatórios com o auxílio do software de mineração de dados Orange (Demsar et al., 2013), e terão seus resultados apresentados
- adiante no texto.
+    Com o propósito de desenvolver uma ferramenta de baixo custo que possa facilitar o acesso a bases de dados multimodais, o presente projeto tem por objetivo a integração dos dados coletados por estes dois equipamentos – Mindwave Mobile II e GP3. O output da ferramenta será analisado a respeito de sua capacidade de sincronização a partir dos dados de piscadas identificados em ambos os equipamentos. Acredita-se que a ferramenta proposta se apresente como uma alternativa para os equipamentos de coleta de alto custo por ser feita com equipamentos disponíveis comercialmente, e que também apresente uma oportunidade para construção de bases de dados multimodais de EEG e ET, incentivando o contínuo desenvolvimento em áreas que se beneficiem deste tipo de dataset, como BCI e diagnósticos de condições neurológicas. 
 
 
 \section{Objetivos}
 
-Criar uma ferramenta a partir de equipamentos comerciais que gere um dataset fisiológico multimodal com dados de EEG e ET.
+Criação de uma ferramenta para construção de datasets fisiológicos multimodais de EEG e ET.
 
 \subsection{Objetivos Específicos}
 
 \begin{itemize}
-    \item Criar código para coleta simultânea de EEG e ET;
-    \item Criar dataset multimodal a partir da fusão de dados de EEG e ET coletados pela ferramenta;
-    \item Avaliar o erro de sincronização, precisão e acurácia da ferramenta;
-    \item Realizar um estudo de caso com a aplicação do dataset gerado pela ferramenta para treinar algortimos classificatórios;
-    \item Avaliar a performance dos algortimos treinados para discutir a usabilidade da ferramenta em estudos futuros;
+    \item Criação de um código integrativo para equipamento de coleta de EEG e ET de forma simultânea;
+    \item Criação de um dataset de EEG e ET;
+    \item A•	Avaliação da capacidade de sincronização dos dados multimodais pela ferramenta através da análise de sobreposição de piscadas identificadas em ambos os equipamentos;
+
 \end{itemize}
 
 
 \section{Justificativa}
-A capacidade de coletar dados de forma simplificada e de baixo custo pode abrir espaço para novas investigações 
-científicas e também favorecer uma maior e mais representativa volumetria da população de estudo por eliminar a necessidade
-de deslocamento do participante à centros com os equipamentos (Brand el al., 2020). Ferramentas que gerem
-datasets multimodais também podem conferir vantagens na aplicação de iniciativas de aprendizado de máquina, \textit{Brain Computer Interface} (BCI) 
-e efomentar avanços na área de Inteligencia Artificial (IA) por promover bases de dados onde os algortimos possam ser treinados. 
+AA capacidade de coletar dados fisiológicos de forma simplificada e de baixo custo pode ser um motivador para desenvolvimento de diferentes áreas em destaque na atualidade, tais como integração homem-máquina, desenvolvimento de algoritmos e automatização de processos. Outro importante fator é a diminuição da necessidade de deslocamento do participante até centros de coleta, possibilitando uma maior diversidade na população em análise (Brand et al., 2020). 
 
 De forma geral, os benefícios da solução se concentram em:
 \begin{itemize}
