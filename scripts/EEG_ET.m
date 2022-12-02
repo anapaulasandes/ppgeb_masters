@@ -63,7 +63,7 @@ fprintf( 'Connected.  Reading EEG Packets...\n' );
 
 
 %% Spawn a second Matlab session2 that records GP3 data to output file
-outputFileName = 'scary_video.txt';
+outputFileName = 'teste_piscada_02_12_4segundos.txt';
 ExecuteRecordGP3Data(session1_client,outputFileName);
 
 
@@ -75,7 +75,7 @@ ExecuteRecordGP3Data(session1_client,outputFileName);
 
 j = 0;
 i = 0;
-while (i < 10240)   %loop for 20 seconds
+while (i < 61440)   %loop for 20 seconds
     if (calllib('thinkgear','TG_ReadPackets',connectionId1,1) == 1)   %if a packet was read...
         
             if (calllib('thinkgear','TG_GetValueStatus',connectionId1,TG_DATA_RAW) ~= 0)   %if RAW has been updated 

@@ -1,0 +1,64 @@
+%clear everything before loading
+clc;
+clear ALL;
+pause on;
+
+%re-read lib
+unloadlibrary thinkgear
+loadlibrary('thinkgear.dll');
+
+%to save data from all columns
+seg = 20
+linhas = seg * 512
+data = ones(linhas, 6);
+
+%get information on device connection
+portnum = 4;
+comPortName = sprintf('\\\\.\\.COM%d', portnum);
+
+%Baud rate
+TG_BAUD_RATE = 115200;
+
+%Define data format
+TG_STREAM_PACKETS = 0;
+
+%Data types
+TG_DATA_POOR_SIGNAL =     1;
+TG_DATA_ATTENTION =       2;
+TG_DATA_MEDITATION =      3;
+TG_DATA_RAW =             4;
+
+%% Checar conexão
+
+connect_id = callib('thinkgear', 'TG_GetNewConnectionId');
+sprintf('resultado da conexão: %d. Esperado era 1.', connect_id)
+
+%conectar na porta COM
+errCode =  calllib('thinkgear', 'TG_Connect', connectionId,comPortName,TG_BAUD_115200,TG_STREAM_PACKETS );
+if ( errCode < 0 )
+    calllib('thinkgear', 'TG_FreeConnection', connectionId1 );
+    sprintf('ERROR: TG_Connect() returned %d.\n' , errCode);
+end
+
+%% Record data
+fprintf('Começando a gravação de dados')
+
+j = 0;
+i = 0;
+while (i < (linhas))
+    
+    if (calllib('thinkgear','TG_ReadPackets',connectionId1,1) == 1)
+    
+        if (calllib('thinkgear','TG_GetValueStatus',connectionId1,TG_DATA_RAW) ~= 0)
+            i = i + 1
+            for j=1:14         
+                    if(j == 1)
+                        data(i,j) = now;
+                    end
+                    
+                    if(j == 2)
+            data(j) = calllib('thinkgear','TG_GetValue',connectionId1,TG_DATA_RAW);
+    
+        end
+    end
+end
