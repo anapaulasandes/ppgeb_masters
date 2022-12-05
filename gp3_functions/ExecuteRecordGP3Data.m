@@ -42,7 +42,7 @@ while  1
     if toc(time_start) > 120
         error('Connection time out: could not connect to session 2 client;')
     end
-     pause(.01);
+     %pause(.01); %o que essa pausa faz?
 end
 
 %% Stop recording on this client

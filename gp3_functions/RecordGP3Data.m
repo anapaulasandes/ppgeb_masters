@@ -56,7 +56,7 @@ while  1
     if toc(time_start) > 60
         error('Connection time out: could not connect to session 1 client;')
     end
-    pause(.01);
+    % pause(.01);
 end
 
 %% Send message to let Matlab session1 know that session2 is ready
@@ -75,26 +75,29 @@ fprintf(fileID,['DATATYPE\t' repmat('%s\t',1,length(header)) '\n'],header{:});
 
 %% Read and parse data from the buffer
 msg_count = 0;
-while  session2_client.BytesAvailable > 0
+while  session2_client.BytesAvailable > 0 %aqui esperamos os bytes serem de pelo menos uma informação
+    % mas o que posso fazer é deixar que não tenham bytes e mesmo assim
+    % entrar no loop. Assim, talvez, eu consiga aumentar a frequência de
+    % gravação dos dados de EEG. 
         %% Scan data from buffer and parse the xml format
         dataReceived = fscanf(session2_client);
         split = strsplit(dataReceived,'"');
         current_user_data = split{end-1};
         
-        if regexp(split{1},'<REC','once')        
+        if regexp(split{1},'<REC','once') %precisa que a expressão REC exista pelo menos uma vez.        
             %% Extracts the values from the xml file
             value = {};
-            for j=2:2:length(split)
+            for j=2:2:length(split) %pula de dois em dois no equipamento de dados recebidos. 
                 value = [value, split{j}];
             end
             
             %% Embeds message trigger in the data
-            if ~strcmp(current_user_data,previous_user_data)
+            if ~strcmp(current_user_data,previous_user_data) %se os novos dados de USER for diferente do "START_RECORDING", por exemplo, quando for "CLIENT2_READY"
                 % if the user_data tag differs from the previous sample, write
                 % the user_data to the output data file as a trigger;
                 % value{2} is Timestamp
                 msg_count = msg_count + 1;
-                previous_user_data = split{end-1};
+                previous_user_data = split{end-1}; %pega o valor de USER e salva como previous 
                 fprintf([split{end-1} '\n'])
                 msg_time = str2double(value{2}) - .008;      %NOTE: the precise instance when the msg was sent is inaccurate within +/-8ms
                 fprintf(fileID,'MSG\t%s\t%s\t%s\n',num2str(msg_count),num2str(msg_time),previous_user_data);

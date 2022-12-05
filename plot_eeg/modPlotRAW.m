@@ -1,4 +1,4 @@
-function modPlotRAW(data)
+O plfunction modPlotRAW(data)
 %this subfunction is used to plot EEG data
 
 plot(data)

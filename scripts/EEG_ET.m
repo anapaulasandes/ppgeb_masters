@@ -100,7 +100,7 @@ raw = total; %return value of data
 
 %% close mindwave connection
 
-calllib('thinkgear', 'TG_FreeConnection', connectionId1 );
+calllib('thinkgear', 'TG_FreeConnection', connectionId1);
 
 
 %% Stop collecting data in client2
